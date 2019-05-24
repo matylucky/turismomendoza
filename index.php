@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Mendoza turismo" />
     <meta property="og:description" content="Thoughts, stories and ideas." />
-    <meta property="og:url" content="https://mendozatursimo.herokuapp.com/" />
+    <meta property="og:url" content="https://turismomendoza.herokuapp.com/" />
     
 
 
@@ -24,7 +24,7 @@
  <?php echo '<p>Dentro de poco una nueva experiencia de turismo en Mendoza!!</p>'; ?>
 
         <footer class="site-footer clearfix">
-            <section class="copyright"><a href="https://mendozaturismo.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
+            <section class="copyright"><a href="https://turismomendoza.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
             <section class="poweredby">Proudly published with <a href="https://github.com">Github</a></section>
         </footer>
 
