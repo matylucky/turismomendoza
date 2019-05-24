@@ -19,11 +19,13 @@
 
 
 </main>
-
+<body>
+ <?php echo '<p>Bienvendidos a Mendoza Turismo</p>'; ?>
+ <?php echo '<p>Dentro de poco una nueva experiencia de turismo en Mendoza!!</p>'; ?>
 
         <footer class="site-footer clearfix">
-            <section class="copyright"><a href="http://blog.lolagomezdebarros.es">Lola Blog</a> &copy; 2019</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+            <section class="copyright"><a href="https://mendozaturismo.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
+            <section class="poweredby">Proudly published with <a href="https://github.com">Github</a></section>
         </footer>
 
     </div>
