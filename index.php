@@ -25,7 +25,7 @@
 
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="https://turismomendoza.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
-            <section class="poweredby">Proudly published with <a href="https://github.com">Github</a></section>
+            <section class="poweredby">Bancado por <a href="https://github.com">Github</a></section>
         </footer>
 
     </div>
