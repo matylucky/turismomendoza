@@ -33,6 +33,8 @@
      <?php echo '<p>Si todavia no tenes usuario, generalo desde acá!</p>'; ?>
     <form action="alta.php" method="POST" id="formulario">
             <input type="submit" value="Alta de usuario" name="Alta de usuario" />
+        
+        
         </form>
     
     
