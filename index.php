@@ -27,12 +27,12 @@
     <form action="ingresar.php" method="POST" id="formulario">
             <input type="text" placeholder="usuario" name="txtusuario" />
             <input type="password" placeholder="pass" name="txtpassword" />
-            <input type="submit" value="submit" name="entrar" />
+            <input type="submit" value="Entrar" name="entrar" />
         </form>
     
      <?php echo '<p>Si todavia no tenes usuario, generalo desde acá!</p>'; ?>
     <form action="alta.php" method="POST" id="formulario">
-            <input type="submit" value="submit" name="Alta de usuario" />
+            <input type="submit" value="Alta de usuario" name="Alta de usuario" />
         </form>
     
     
