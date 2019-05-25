@@ -22,7 +22,12 @@
 <body>
  <?php echo '<p>Bienvendidos a Mendoza Turismo</p>'; ?>
  <?php echo '<p>Dentro de poco una nueva experiencia de turismo en Mendoza!!</p>'; ?>
-
+ 
+    <form action="ingresar.php" method="POST" id="formulario">
+            <input type="text" placeholder="usuario" name="txtusuario" />
+            <input type="password" placeholder="pass" name="txtpassword" />
+            <input type="submit" value="submit" name="entrar" />
+        </form>
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="https://turismomendoza.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
             <section class="poweredby">Bancado por <a href="https://github.com">Github</a></section>
