@@ -7,10 +7,10 @@
 		public function __construct(){}
 
 		//inserta los datos del usuario
-		public function insertar($usuario){
+		public function insertar($USU_EMAIL){
 			$db=DB::conectar();
-			$insert=$db->prepare('INSERT INTO USUARIOS VALUES(NULL,:nombre, :clave)');
-			$insert->bindValue('nombre',$usuario->getNombre());
+			$insert=$db->prepare('INSERT INTO usuarios VALUES(NULL,:USU_EMAIL, :USU_CONTRASEÑA)');
+			$insert->bindValue('USU_EMAIL',$USU_EMAIL->getNombre());
 			//encripta la clave
 			$pass=password_hash($usuario->getClave(),PASSWORD_DEFAULT);
 			$insert->bindValue('clave',$pass);
@@ -18,28 +18,28 @@
 		}
 
 		//obtiene el usuario para el login
-		public function obtenerUsuario($nombre, $clave){
+		public function obtenerUsuario($USU_EMAIL, $USU_CONTRASENA){
 			$db=Db::conectar();
-			$select=$db->prepare('SELECT * FROM USUARIOS WHERE nombre=:nombre');//AND clave=:clave
-			$select->bindValue('nombre',$nombre);
+			$select=$db->prepare('SELECT * FROM USUARIOS WHERE USU_EMAIL=:USU_EMAIL');//AND clave=:clave
+			$select->bindValue('USU_EMAIL',$USU_EMAIL);
 			$select->execute();
 			$registro=$select->fetch();
-			$usuario=new Usuario();
+			$USU_EMAIL=new USU_EMAIL();
 			//verifica si la clave es conrrecta
-			if (password_verify($clave, $registro['clave'])) {				
+			if (password_verify($USU_CONTRASENA, $registro['USU_CONTRASEÑA'])) {				
 				//si es correcta, asigna los valores que trae desde la base de datos
 				$usuario->setId($registro['Id']);
-				$usuario->setNombre($registro['nombre']);
-				$usuario->setClave($registro['clave']);
+				$usuario->setNombre($registro['USU_EMAIL']);
+				$usuario->setClave($registro['USU_CONTRASEÑA']);
 			}			
-			return $usuario;
+			return $USU_EMAIL;
 		}
 
 		//busca el nombre del usuario si existe
-		public function buscarUsuario($nombre){
+		public function buscarUsuario($USU_EMAIL){
 			$db=Db::conectar();
-			$select=$db->prepare('SELECT * FROM USUARIOS WHERE nombre=:nombre');
-			$select->bindValue('nombre',$nombre);
+			$select=$db->prepare('SELECT * FROM USUARIOS WHERE USU_EMAIL=:USU_EMAIL');
+			$select->bindValue('USU_EMAIL',$USU_EMAIL);
 			$select->execute();
 			$registro=$select->fetch();
 			if($registro['Id']!=NULL){
