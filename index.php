@@ -7,11 +7,11 @@
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <header>
-	<div class="w3-container w3-black w3-center">
+	<div class="w3-container w3-teal w3-center">
 		<h1>BIENVENIDO A TURISMO MENDOZA</h1>
 	</div>
 </header>
@@ -40,7 +40,7 @@
 	</form>
 <footer>
 	<div class="w3-container w3-black">
-		<h4>ECODEUP 2017</h4>
+		<h4>Turismo Mendoza 2019</h4>
 	</div>
 </footer>
 </body>
