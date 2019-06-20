@@ -17,12 +17,28 @@
 		<div>
 			<form class="w3-container" action="controller_login.php" method="post">
 				<p>
-					<label class="w3-label">Nombre de usuario o correo electrónico</label>
-					<input class="w3-input w3-border" type="text" name="usuario">
+					<label class="w3-label">Correo electrónico</label>
+					<input class="w3-input w3-border" type="text" name="USU_EMAIL">
 				</p>
 				<p>
-					<label class="w3-label">Password</label>
-					<input class="w3-input w3-border" type="password" name="pas">
+					<label class="w3-label">Contraseña</label>
+					<input class="w3-input w3-border" type="password" name="USU_CONTRASEÑA">
+				</p>
+				<p>
+					<label class="w3-label">Nombre y Apellido</label>
+					<input class="w3-input w3-border" type="text" name="USU_NOMBRE">
+				</p>
+				<p>
+					<label class="w3-label">Telefono</label>
+					<input class="w3-input w3-border" type="text" name="USU_TEL">
+				</p>
+				<p>
+					<label class="w3-label">Nacionalidad</label>
+					<input class="w3-input w3-border" type="text" name="USU_NACIONALIDAD">
+				</p>
+				<p>
+					<label class="w3-label">Documento</label>
+					<input class="w3-input w3-border" type="text" name="USU_NRO_DOC">
 				</p>
 				<p>
 					<input type="hidden" name="registrarse" value="registrarse">
