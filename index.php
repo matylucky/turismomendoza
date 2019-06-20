@@ -1,55 +1,47 @@
+﻿<?php 
+	session_start();
+	unset($_SESSION['usuario']);
+?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <title>Bievenidos a Mendoza Turismo</title>
-    <meta name="description" content="Thoughts, stories and ideas." />
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta property="og:site_name" content="Mendoza Turismo" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mendoza turismo" />
-    <meta property="og:description" content="Thoughts, stories and ideas." />
-    <meta property="og:url" content="https://turismomendoza.herokuapp.com/" />
-    
-
-
-</main>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
 <body>
- <?php echo '<p>Bienvendidos a Mendoza Turismo</p>'; ?>
- <?php echo '<p>Dentro de poco una nueva experiencia de turismo en Mendoza!!</p>'; ?>
- 
-     <?php echo '<p>Logeate con tu usuario</p>'; ?>
-    <form action="ingresar.php" method="POST" id="formulario">
-            <input type="text" placeholder="usuario" name="txtusuario" />
-            <input type="password" placeholder="pass" name="txtpassword" />
-            <input type="submit" value="Entrar" name="entrar" />
-        </form>
-    
-     <?php echo '<p>Si todavia no tenes usuario, generalo desde acá!</p>'; ?>
-    <form action="alta.php" method="POST" id="formulario">
-            <input type="submit" value="Alta de usuario" name="Alta de usuario" />
-        
-        
-        </form>
-    
-    
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="https://turismomendoza.herokuapp.com">Mendoza turismo</a> &copy; 2019</section>
-            <section class="poweredby">Bancado por <a href="https://github.com">Github</a></section>
-        </footer>
+<header>
+	<div class="w3-container w3-black w3-center">
+		<h1>BIENVENIDO A TURISMO MENDOZA</h1>
+	</div>
+</header>
 
-    </div>
+	
+	<div class="w3-container w3-green">
+		<h2>Login</h2>
+	</div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    
-
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=134d9a8098"></script>
-    <script type="text/javascript" src="/assets/js/index.js?v=134d9a8098"></script>
-
+	<form class="w3-container" action="controller_login.php" method="post">
+		<p>
+			<label class="w3-label">
+				Usuario (dirección de correo)
+			</label>
+			<input class="w3-input w3-border " type="text" name="usuario">
+		</p>
+		<p>
+			<label class="w3-label">Contraseña</label>
+			<input class="w3-input w3-border" type="password" name="pas">
+		</p>
+		<p>
+			<input type="hidden" name="entrar" value="entrar">
+			<button class="w3-btn w3-green">Aceptar</button>
+		</p>
+		<p>Si aún no tienes cuenta ve al siguiente link <a href="registrarse.php">Registrarse</a></p>
+	</form>
+<footer>
+	<div class="w3-container w3-black">
+		<h4>ECODEUP 2017</h4>
+	</div>
+</footer>
 </body>
 </html>
