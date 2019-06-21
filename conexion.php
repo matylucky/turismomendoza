@@ -13,7 +13,7 @@
 		$database = "heroku_06e2145fb0a0577";
 		$username = "bdaacf63d00d60";
 		$password = "565681cb";
-		// Create connection
+		Create connection
 		$conexion = mysqli_connect($servername, $username, $password, $database);
 	        Check connection
 		if (!$conexion) {
