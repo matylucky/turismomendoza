@@ -18,6 +18,7 @@
 	</div>
 </header>
 </body>
+</html>
 	////inicio de sesion
 	//session_start();
 
