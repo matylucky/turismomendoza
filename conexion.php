@@ -15,10 +15,10 @@
 		$password = "565681cb";
 		Create connection
 		$conexion = mysqli_connect($servername, $username, $password, $database);
-	        Check connection
-		if (!$conexion) {
- 		  die("Connection failed: " . mysqli_connect_error());
-		}
+	        //Check connection
+		//if (!$conexion) {
+ 		//  die("Connection failed: " . mysqli_connect_error());
+		//}
 		//echo "Conectado a la base";
 		echo "Hola";	
 		mysqli_close($conexion);
