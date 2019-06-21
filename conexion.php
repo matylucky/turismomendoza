@@ -20,7 +20,7 @@
   		  die("Connection failed: " . mysqli_connect_error());
 		}
 		echo "Conectado";
-		mysqli_close($conn);
+		//mysqli_close($conn);
 		}
 	}
 ?>
