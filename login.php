@@ -4,7 +4,20 @@
 	//require_once('conexion.php');
 
 
-	echo = "login";
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<header>
+	<div class="w3-container w3-teal w3-center">
+		<h1>BIENVENIDO A LOGIN</h1>
+	</div>
+</header>
+</body>
 	////inicio de sesion
 	//session_start();
 
