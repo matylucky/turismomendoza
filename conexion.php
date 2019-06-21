@@ -21,7 +21,7 @@
 		}
 		echo "Conectado a la base";
 		mysqli_close($conexion);
-		return self::$conexion;
+		//return self::$conexion;
 		}
 	}
 ?>
