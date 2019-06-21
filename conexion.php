@@ -1,6 +1,6 @@
 <?php 
 	class Db{
-		private static $conexion=null;
+		private static $conn=null;
 		private function __construct(){}
 
 		//public static function conectar(){
@@ -14,7 +14,7 @@
 		$username = "bdaacf63d00d60";
 		$password = "565681cb";
 		//Create connection
-		$conexion = mysqli_connect($servername, $username, $password, $database);
+		$conn = mysqli_connect($servername, $username, $password, $database);
 	        //Check connection
 		//if (!$conn) {
  		//  die("Connection failed: " . mysqli_connect_error());
