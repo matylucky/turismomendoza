@@ -13,16 +13,22 @@
 		$database = "heroku_06e2145fb0a0577";
 		$username = "bdaacf63d00d60";
 		$password = "565681cb";
-		Create connection
+		//Create connection
 		$conexion = mysqli_connect($servername, $username, $password, $database);
 	        //Check connection
-		//if (!$conexion) {
+		//if (!$conn) {
  		//  die("Connection failed: " . mysqli_connect_error());
 		//}
 		//echo "Conectado a la base";
-		echo "Hola";	
-		mysqli_close($conexion);
+		//echo "Hola";	
+		//mysqli_close($conexion);
 		//return self::$conexion;
+		if (!$conn) {
+   		 die("Connection failed: " . mysqli_connect_error());
+		}
+		echo "Conectado a la base";
+		mysqli_close($conn);
+		
 		}
 	}
 ?>
