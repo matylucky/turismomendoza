@@ -1,24 +1,10 @@
-<?php 
+//<?php 
 	//require_once('usuario.php');
 	//require_once('crud_usuario.php');
 	//require_once('conexion.php');
 
 
-	<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-<header>
-	<div class="w3-container w3-teal w3-center">
-		<h1>BIENVENIDO A LOGIN</h1>
-	</div>
-</header>
-</body>
-</html>
+
 	////inicio de sesion
 	//session_start();
 
@@ -49,4 +35,32 @@
 	//	header('Location: index.php');
 	//	unset($_SESSION['usuario']); //destruye la sesión
 	//}
+//?>
+
+
+<?php 
+	session_start();
+	unset($_SESSION['usuario']);
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<header>
+	<div class="w3-container w3-teal w3-center">
+		<h1>BIENVENIDO A LOGIN</h1>
+	</div>
+</header>
+
+
+<footer>
+	<div class="w3-container w3-black">
+		<h4>Turismo Mendoza 2019</h4>
+	</div>
+</footer>
+</body>
+</html>
