@@ -19,7 +19,8 @@
 		if (!$conexion) {
  		  die("Connection failed: " . mysqli_connect_error());
 		}
-		echo "Conectado a la base";
+		//echo "Conectado a la base";
+		echo "Hola";	
 		mysqli_close($conexion);
 		//return self::$conexion;
 		}
