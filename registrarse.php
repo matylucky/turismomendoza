@@ -15,14 +15,14 @@
 			<h1>Registrarse</h1>
 		</div>
 		<div>
-			<form class="w3-container" action="controller_login.php" method="post">
+			<form class="w3-container" action="login.php" method="post">
 				<p>
 					<label class="w3-label">Correo electrónico</label>
 					<input class="w3-input w3-border" type="text" name="USU_EMAIL">
 				</p>
 				<p>
 					<label class="w3-label">Contraseña</label>
-					<input class="w3-input w3-border" type="password" name="USU_CONTRASEÑA">
+					<input class="w3-input w3-border" type="password" name="USU_PASS">
 				</p>
 				<p>
 					<label class="w3-label">Nombre y Apellido</label>
