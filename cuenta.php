@@ -15,6 +15,7 @@
 <body>
 	<div class="w3-container w3-black w3-center">
 		<h1>BIENVENIDO A TURISMO MENDOZA</h1>
+		<h1>HA INGRESADO EXITOSAMENTE</h1>
 	</div>
 	<p></p>
 	<form class="w3-container" action="controller_login.php" method="post">
