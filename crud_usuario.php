@@ -20,9 +20,12 @@
 		//obtiene el usuario para el login
 		public function obtenerUsuario($USU_EMAIL, $USU_PASS){
 			$db=Db::conectar();
+			
 			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = ? ');//& $USU_EMAIL);//AND clave=:clave
+			
 			$select->bindValue('s',$USU_EMAIL);
 			$select->execute();
+			
 			$registro=$select->fetch();
 			$USU_EMAIL=new usuario();
 			//verifica si la clave es conrrecta
@@ -38,9 +41,12 @@
 		//busca el nombre del usuario si existe
 		public function buscarUsuario($USU_EMAIL){
 			$db=Db::conectar();
+			echo = "Matias1";
 			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = ?'); //'& $USU_EMAIL);
 			$select->bindValue('s',$USU_EMAIL);
+			echo = "Matias 2";
 			$select->execute();
+			echo = "Matias 3";
 			$registro=$select->fetch();
 			if($registro['Id']!=NULL){
 				$usado=False;
