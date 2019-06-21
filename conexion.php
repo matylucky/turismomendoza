@@ -25,7 +25,7 @@
 		//return self::$conexion;
 		if (!$conn) {
    		 die("Connection failed: " . mysqli_connect_error());
-		}
+		} 
 		echo "Conectado a la base";
 		mysqli_close($conn);
 		
