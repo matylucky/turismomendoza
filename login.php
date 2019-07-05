@@ -1,4 +1,4 @@
-//<?php 
+<?php 
 	require_once('usuario.php');
 	require_once('crud_usuario.php');
 	require_once('conexion.php');
