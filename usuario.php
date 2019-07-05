@@ -4,7 +4,7 @@
 	*
 	*/
 	class Usuario{
-		private $id;
+		private $USU_ID;
 		private $USU_EMAIL;
 		private $USU_PASS;
 
@@ -12,8 +12,8 @@
 			return $this->id;
 		}
 
-		public function setId($id){
-			$this->id = $id;
+		public function setId($USU_ID){
+			$this->id = $USU_ID;
 		}
 
 		public function getUSU_EMAIL(){
