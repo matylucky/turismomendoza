@@ -8,7 +8,7 @@
 	//inicio de sesion
 	session_start();
 
-	$USU_EMAIL=new Usuario();
+	$USU_EMAIL=new USU_EMAIL();
 	$crud=new CrudUsuario();
 	//verifica si la variable registrarse está definida
 	//se da que está definicda cuando el usuario se loguea, ya que la envía en la petición
