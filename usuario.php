@@ -5,8 +5,8 @@
 	*/
 	class Usuario{
 		private $id;
-		private $nombre;
-		private $clave;
+		private $USU_EMAIL;
+		private $USU_PASS;
 
 		public function getId(){
 			return $this->id;
@@ -16,20 +16,20 @@
 			$this->id = $id;
 		}
 
-		public function getNombre(){
+		public function getUSU_EMAIL(){
 			return $this->nombre;
 		}
 
-		public function setNombre($nombre){
-			$this->nombre = $nombre;
+		public function setUSU_EMAIL($USU_EMAIL){
+			$this->nombre = $USU_EMAIL;
 		}
 
-		public function getClave(){
+		public function getUSU_PASS(){
 			return $this->clave;
 		}
 
-		public function setClave($clave){
-			$this->clave = $clave;
+		public function setUSU_PASS($USU_PASS){
+			$this->clave = $USU_PASS;
 		}
 	}
 ?>
