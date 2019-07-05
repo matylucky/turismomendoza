@@ -9,7 +9,7 @@
 		//inserta los datos del usuario
 		public function insertar($usuario){
 			$db=DB::conectar();
-			$insert=$db->prepare('INSERT INTO USUARIO VALUES(NULL, NULL, NULL, NULL, NULL, :USU_EMAIL, NULL, :USU_PASS, NULL,)');
+			$insert=$db->prepare('INSERT INTO USUARIO VALUES(:USU_NOMBRE, NULL, :USU_NRO_DOC, :USU_NACIONALIDAD, :USU_EMAIL, :USU_TEL, :USU_PASS, NULL,)');
 			$insert->bindValue('USU_EMAIL',$usuario->getUSU_EMAIL());
 			//encripta la clave
 			$pass=password_hash($usuario->getUSU_PASS(),PASSWORD_DEFAULT);
@@ -21,9 +21,9 @@
 		public function obtenerUsuario($USU_EMAIL, $USU_PASS){
 			$db=Db::conectar();
 			
-			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = ? ');//& $USU_EMAIL);//AND clave=:clave
+			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = :USU_EMAIL);//AND clave=:clave
 			
-			$select->bindValue('s',$USU_EMAIL);
+			$select->bindValue('USU_EMAIL',$USU_EMAIL);
 			$select->execute();
 			
 			$registro=$select->fetch();
@@ -31,7 +31,7 @@
 			//verifica si la clave es conrrecta
 			if (password_verify($USU_PASS, $registro['USU_PASS'])) {				
 				//si es correcta, asigna los valores que trae desde la base de datos
-				$usuario->setId($registro['Id']);
+				$usuario->setId($registro['USU_ID']);
 				$usuario->setNombre($registro['USU_EMAIL']);
 				$usuario->setClave($registro['USU_PASS']);
 			}			
@@ -42,8 +42,8 @@
 		public function buscarUsuario($USU_EMAIL){
 			$db=Db::conectar();
 		//	echo = "Matias1";
-			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = ?'); //'& $USU_EMAIL);
-			$select->bindValue('s',$USU_EMAIL);
+			$select=$db->prepare('SELECT * FROM USUARIO WHERE USU_EMAIL = :USU_EMAIL);
+			$select->bindValue('USU_EMAIL',$USU_EMAIL);
 		//	echo = "Matias 2";
 			$select->execute();
 		//	echo = "Matias 3";
