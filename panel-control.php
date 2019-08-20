@@ -66,7 +66,7 @@ exit;
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Bienvenido <?php echo  $_SESSION['username'];?></h1>
+  <h1>Bienvenido <?php echo  $_SESSION['usuario'];?></h1>
   <p>A Turismo Mendoza!</p> 
   <a href=logout.php><button type="button" class="btn btn-success"> Cerrar Sesion</button></a>
 </div>
