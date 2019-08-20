@@ -54,7 +54,7 @@
         <li><a href="#">Contacto</a></li>
       </ul>
        </button>
-      <a class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.php'"></a>
+      <a class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php""></a>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.html'"></li>
       </ul> -->
