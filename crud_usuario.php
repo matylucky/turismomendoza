@@ -9,7 +9,7 @@
 		//inserta los datos del usuario
 		public function insertar($usuario){
 			$db=DB::conectar();
-			$insert=$db->prepare('INSERT INTO USUARIO VALUES(:USU_NOMBRE, NULL, :USU_NRO_DOC, :USU_NACIONALIDAD, :USU_EMAIL, :USU_TEL, :USU_PASS, NULL,)');
+			$insert=$db->prepare('INSERT INTO USUARIO VALUES(NULL, :USU_NOMBRE, NULL, :USU_NRO_DOC, :USU_NACIONALIDAD, :USU_EMAIL, :USU_TEL, :USU_PASS, NULL,)');
 			$insert->bindValue('USU_EMAIL',$usuario->getUSU_EMAIL());
 			//encripta la clave
 			$pass=password_hash($usuario->getUSU_PASS(),PASSWORD_DEFAULT);
