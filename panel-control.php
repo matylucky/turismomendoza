@@ -12,7 +12,11 @@ Apoyanos con tus visitas y comentarios en nuestras redes sociales para seguir av
 session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-
+ 
+ 
+ $usuario = $_POST['usuario'];
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
+ 
 } else {
    echo "Inicia Sesion para acceder a este contenido.<br>";
    echo "<br><a href='login.html'>Login</a>";
