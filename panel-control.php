@@ -14,8 +14,8 @@ session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
  
  
- $usuario = $_POST['usuario'];
-$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
+ $usuario = $_POST['usuarios'];
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$_POST[usuarios]'";
  
 } else {
    echo "Inicia Sesion para acceder a este contenido.<br>";
@@ -58,7 +58,7 @@ exit;
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Bienvenido <?php echo  $_SESSION['usuario'];?></h1>
+  <h1>Bienvenido <?php echo  $_SESSION['usuarios'];?></h1>
   <p>A Turismo Mendoza!</p> 
   <a href=logout.php><button type="button" class="btn btn-success"> Cerrar Sesion</button></a>
 </div>
