@@ -21,9 +21,11 @@ if ($conexion->connect_error) {
 }
 
 $username = $_POST['username'];
+$email = $_POST['email']
 $password = $_POST['password'];
  
-$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$username'";
+$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$username'";
 
 
 $result = $conexion->query($sql);
