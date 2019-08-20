@@ -12,7 +12,7 @@
  die("La conexion falló: " . $conexion->connect_error);
 }
 
- $buscarUsuario = "SELECT * FROM $tbl_name
+ $buscarUsuario = "SELECT * FROM usuario
  WHERE USU_NOMBRE = '$_POST[username]' ";
 
  $result = $conexion->query($buscarUsuario);
