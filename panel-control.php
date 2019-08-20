@@ -66,27 +66,22 @@ exit;
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Bienvenido <?php echo  $_SESSION['usuario'];?></h1>
-  <p>A Turismo Mendoza!</p> 
+  <h1>Bienvenido A Turismo Mendoza! </h1>
+  //<h1>Bienvenido <?php echo  $_SESSION['usuario'];?></h1>
+  <p><?php echo  $_SESSION['usuario'];?></p> 
+  //<p>A Turismo Mendoza!</p>
   <a href=logout.php><button type="button" class="btn btn-success"> Cerrar Sesion</button></a>
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <a href=""><h3>Sobre Mi</h3></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <a href=""><h3>Mis Reservas</h3></a>
+      <p>Accede a tus reservas para ver el estado de las mismas</p>
     </div>
     <div class="col-sm-4">
-      <a href=""><h3>Ajustes</h3></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <a href=""><h3>Editar Perfil</h3></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <a href=""><h3>Mi Perfil</h3></a>
+      <p>Ver mis datos</p>
     </div>
   </div>
 
