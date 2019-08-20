@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
-body {font-family: Arial, Helvetica, sans-serif; background-image: url("img/fondo.png");  }/*
+body {font-family: Arial, Helvetica, sans-serif; background-image: url("http://oi65.tinypic.com/2uszqt0.jpg");  }/*
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
