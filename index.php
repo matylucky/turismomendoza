@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
-/*body {font-family: Arial, Helvetica, sans-serif; background-image: url("img/fondo.png");  }/*
+body {font-family: Arial, Helvetica, sans-serif; background-image: url("img/fondo.png");  }/*
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -120,7 +120,7 @@ span.psw {
   <form class="modal-content animate" action="checklogin.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img/avatar.png" alt="Avatar" class="avatar">
+      <img src="http://oi66.tinypic.com/w9d63q.jpg" alt="Banner" class="banner">
     </div>
 
     <div class="container">
