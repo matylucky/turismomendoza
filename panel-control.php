@@ -17,7 +17,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
    echo "Inicia Sesion para acceder a este contenido.<br>";
    echo "<br><a href='login.html'>Login</a>";
    echo "<br><br><a href='index.html'>Registrarme</a>";
-   header('Location: http://localhost/login/login.html');//redirige a la página de login si el usuario quiere ingresar sin iniciar sesion
+   header('Location: https://turismomendoza.herokuapp.com/login.html');//redirige a la página de login si el usuario quiere ingresar sin iniciar sesion
 
 
 exit;
@@ -27,7 +27,7 @@ $now = time();
 
 if($now > $_SESSION['expire']) {
 session_destroy();
-header('Location: http://localhost/login/login.html');//redirige a la página de login, modifica la url a tu conveniencia
+header('Location: https://turismomendoza.herokuapp.com/login.html');//redirige a la página de login, modifica la url a tu conveniencia
 echo "Tu sesion a expirado,
 <a href='login.html'>Inicia Sesion</a>";
 exit;
