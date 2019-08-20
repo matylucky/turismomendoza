@@ -3,7 +3,7 @@
 //incluimos el archivo donde se encuentran nuestros datos de conexion
  include 'conexion.php';
  
- $form_pass = $_POST['password'];
+ $form_pass = $_POST['USU_PASS'];
  
  
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
@@ -13,7 +13,7 @@
 }
 
  $buscarUsuario = "SELECT * FROM $tbl_name
- WHERE nombre_usuario = '$_POST[username]' ";
+ WHERE USU_NOMBRE = '$_POST[username]' ";
 
  $result = $conexion->query($buscarUsuario);
 
@@ -26,7 +26,7 @@
  }
  else{
 
- $query = "INSERT INTO usuariosdb (nombre_usuario, password) VALUES ('$_POST[username]', '$form_pass')";
+ $query = "INSERT INTO usuario (USU_NOMBRE, USU_PASS) VALUES ('$_POST[username]', '$form_pass')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
