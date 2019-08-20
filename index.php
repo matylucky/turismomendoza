@@ -120,7 +120,7 @@ span.psw {
   <form class="modal-content animate" action="checklogin.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="http://oi66.tinypic.com/w9d63q.jpg" alt="Banner" class="banner">
+      <img src="http://oi66.tinypic.com/w9d63q.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
