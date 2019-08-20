@@ -40,14 +40,14 @@ button:hover {
     position: relative;
 }
 img.avatar {
-    width: 20%;
+    width: 100%;
     border-radius: 50%;
 }
 .container {
     padding: 16px;
 }
 span.psw {
-    float: right;
+    float: center;
     padding-top: 16px;
 }
 /* The Modal (background) */
