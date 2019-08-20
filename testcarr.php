@@ -48,10 +48,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Reservas</a></li>
+        <!--<li><a href="#">Projects</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -70,18 +70,18 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Ciudad_de_Mendoza%2C_la_cuarta_ciudad_m%C3%A1s_poblada_del_pa%C3%ADs..jpg/250px-Ciudad_de_Mendoza%2C_la_cuarta_ciudad_m%C3%A1s_poblada_del_pa%C3%ADs..jpg" alt="Image">
+        <img src="https://placehold.it/1200x400?text=IMAGEN VIÑEDOS" alt="Image">
         <div class="carousel-caption">
           <h3>Mendoza</h3>
-          <p>ciudad</p>
+          <p>Viñedos</p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <img src="https://placehold.it/1200x400?text=IMAGEN MONTAÑAS" alt="Image">
         <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
+          <h3>Mendoza</h3>
+          <p>Montañas</p>
         </div>      
       </div>
     </div>
@@ -98,7 +98,7 @@
 </div>
   
 <div class="container text-center">    
-  <h3>What We Do</h3><br>
+  <h3>Que Hacemos</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <img src="https://s3-us-west-2.amazonaws.com/puntoapunto.com.ar/wp-content/uploads/sites/3/2017/02/07132918/mendoza.jpg" class="img-responsive" style="width:100%" alt="Image">
@@ -109,8 +109,8 @@
       <p>Project 2</p>    
     </div>
     <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
+      <div class="Viajes">
+       <p>Aca van a ir unas breves explicaciones</p>
       </div>
       <div class="well">
        <p>Some text..</p>
@@ -120,7 +120,7 @@
 </div><br>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Información Inferior que puede ser una breve reseña del grupo</p>
 </footer>
 
 </body>
