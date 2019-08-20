@@ -3,8 +3,8 @@
 //incluimos el archivo donde se encuentran nuestros datos de conexion
  include 'conexion.php';
  
- $form_pass = $_POST['USU_PASS'];
- 
+ $form_pass = $_POST['password'];
+ $form_dni = $_POST['dni']
  
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
@@ -26,7 +26,7 @@
  }
  else{
 
- $query = "INSERT INTO usuario (USU_NOMBRE, USU_PASS) VALUES ('$_POST[username]', '$form_pass')";
+ $query = "INSERT INTO usuario (USU_NOMBRE, USU_PASS, USU_NRO_DOC) VALUES ('$_POST[username]', '$form_pass', '$form_dni')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
