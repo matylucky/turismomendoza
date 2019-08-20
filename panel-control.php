@@ -14,7 +14,7 @@ session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
  
  
- $usuario = $_POST['usuarios'];
+ $usuarios = $_POST['usuarios'];
 $sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$_POST[usuarios]'";
  
 } else {
