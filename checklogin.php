@@ -44,7 +44,7 @@ if ($password==$row['password']) {
 
     echo "Bienvenido! " . $_SESSION['username'];
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
-    header('Location: http://localhost/login/panel-control.php');//redirecciona a la pagina del usuario
+    header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
 
  } else { 
    echo "Username o Password estan incorrectos.";
