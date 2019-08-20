@@ -14,8 +14,7 @@ session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
  
  
- $usuarios = $_POST['usuarios'];
-$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$_POST[usuarios]'";
+
  
 } else {
    echo "Inicia Sesion para acceder a este contenido.<br>";
@@ -26,6 +25,14 @@ $sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$_POST[usuarios]'";
 
 exit;
 }
+
+$usuarios = $_POST['usuarios'];
+ 
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuarios'";
+
+
+
+
 
 $now = time();
 
