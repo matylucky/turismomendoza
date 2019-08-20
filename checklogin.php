@@ -42,7 +42,7 @@ if ($password==$row['USU_PASS']) {
  
     $_SESSION['loggedin'] = true;
    $_SESSION['username'] = $username;
-   // $_SESSION['usuario'] = $usuario;
+    $_SESSION['usuario'] = $row['USU_NOMBRE'];
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
