@@ -12,6 +12,6 @@ session_start();
 unset ($SESSION['username']);
 session_destroy();
 
-header('Location: http://localhost/Login/login.html');
+header('Location: https://turismomendoza.herokuapp.com/login.html');
 
 ?>
