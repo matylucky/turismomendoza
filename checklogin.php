@@ -25,7 +25,7 @@ $email = $_POST['email']
 $password = $_POST['password'];
  
 $sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
-$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$username'";
+//$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$username'";
 
 
 $result = $conexion->query($sql);
@@ -40,7 +40,8 @@ if ($password==$row['USU_PASS']) {
 
  
     $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $username;
+    //$_SESSION['username'] = $username;
+    $_SESSION['email'] = $email;
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
