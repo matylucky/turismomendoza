@@ -11,6 +11,10 @@ Apoyanos con tus visitas y comentarios en nuestras redes sociales para seguir av
 <?php
 session_start();
 
+$ususarios = new usuarios();
+//$->name = 'blah'
+$_SESSION['usuarios'] = $ususarios; 
+
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
  
  
@@ -26,7 +30,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 exit;
 }
 
-$usuarios = $_POST['usuarios'];
+//$usuarios = $_POST['usuarios'];
  
 $sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuarios'";
 
