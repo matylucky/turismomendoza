@@ -25,7 +25,7 @@
  }
  else{
 
- $query = "INSERT INTO $tbl_name (USU_NOMBRE, USU_PASS, USU_NRO_DOC) VALUES ('$_POST[username]', '$_POST[password]', '$_POST[dni]')";
+ $query = "INSERT INTO $tbl_name (USU_NOMBRE, USU_PASS, USU_NRO_DOC, USU_NACIONALIDAD, USU_TEL, USU_EMAIL) VALUES ('$_POST[username]', '$_POST[password]', '$_POST[dni]', '$_POST[nacionalidad]', '$_POST[telefono]', '$_POST[email]')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
