@@ -54,7 +54,7 @@
         <li><a href="#">Contacto</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in" onclick="location.href='index.html'></span> Logear Usuario</a></li>
       </ul>
     </div>
   </div>
