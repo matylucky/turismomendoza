@@ -55,7 +55,7 @@ exit;
 
 <div class="jumbotron text-center">
   <h1>Bienvenido <?php echo  $_SESSION['username'];?></h1>
-  <p>Manten tu perfil actualizado</p> 
+  <p>A Turismo Mendoza!</p> 
   <a href=logout.php><button type="button" class="btn btn-success"> Cerrar Sesion</button></a>
 </div>
   
