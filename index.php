@@ -1,47 +1,55 @@
-﻿<?php 
-	session_start();
-	unset($_SESSION['usuario']);
-?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Registro de usuario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<header>
-	<div class="w3-container w3-teal w3-center">
-		<h1>BIENVENIDO A TURISMO MENDOZA</h1>
-	</div>
-</header>
 
-	
-	<div class="w3-container w3-green">
-		<h2>Login</h2>
-	</div>
+<div class="container">
+  <h2>Crea una cuenta</h2>
+  <form class="form-horizontal" action="registrar-usuario.php" method="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Usuario</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" maxlength="20" placeholder="Ingresa tu usuario" name="username" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" maxlength="50" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" maxlength="30" id="pwd" placeholder="Ingresa una Contraseña" name="password" required>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Recordarme</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Crear</button>
+        <button type="button" class="btn btn-default" onclick="location.href='login.html'">Login</button>
+      </div>
+    </div>
+   
+  </form>
 
-	<form class="w3-container" action="login.php" method="post">
-		<p>
-			<label class="w3-label">
-				Usuario (dirección de correo)
-			</label>
-			<input class="w3-input w3-border " type="text" name="usuario">
-		</p>
-		<p>
-			<label class="w3-label">Contraseña</label>
-			<input class="w3-input w3-border" type="password" name="pas">
-		</p>
-		<p>
-			<input type="hidden" name="entrar" value="entrar">
-			<button class="w3-btn w3-green">Aceptar</button>
-		</p>
-		<p>Si aún no tenés cuenta clickeá el siguiente link <a href="registrarse.php">Registrarse</a></p>
-	</form>
-<footer>
-	<div class="w3-container w3-black">
-		<h4>Turismo Mendoza 2019</h4>
-	</div>
-</footer>
+  
+</div>
+
 </body>
 </html>
