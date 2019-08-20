@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {     }
  
   $row = $result->fetch_array(MYSQLI_ASSOC);
  // if (password_verify($password, $row['password'])) { 
-if ($password==$row['password']) { 
+if ($password==$row['USU_PASS']) { 
 
  
     $_SESSION['loggedin'] = true;
