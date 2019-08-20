@@ -11,9 +11,6 @@ Apoyanos con tus visitas y comentarios en nuestras redes sociales para seguir av
 <?php
 session_start();
 
-$user = new user();
-$user->name = 'blah'
-$_SESSION['usuarios'] = $user; 
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
  
@@ -32,7 +29,7 @@ exit;
 
 //$usuarios = $_POST['usuarios'];
  
-$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$user'";
+
 
 
 
@@ -69,7 +66,7 @@ exit;
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Bienvenido <?php echo  $_SESSION['usuarios'];?></h1>
+  <h1>Bienvenido <?php echo  $_SESSION['username'];?></h1>
   <p>A Turismo Mendoza!</p> 
   <a href=logout.php><button type="button" class="btn btn-success"> Cerrar Sesion</button></a>
 </div>
