@@ -23,10 +23,11 @@ if ($conexion->connect_error) {
 $username = $_POST['username'];
 //$email = $_POST['USU_USUARIO']
 $password = $_POST['password'];
+$usuario = $_POST['usuario'];
  
 //$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
-$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$username'";
-
+$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$username'";
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
 
 $result = $conexion->query($sql);
 
@@ -45,7 +46,7 @@ if ($password==$row['USU_PASS']) {
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
-    echo "Bienvenido! " . $_SESSION['username'];
+    echo "Bienvenido! " . $_SESSION['usuario'];
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
     header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
 
