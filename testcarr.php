@@ -53,7 +53,8 @@
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
-       </button type="button" class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php"">
+             </button>	       </button type="button" class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php"">
+      <a class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php""></a>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.html'"></li>
       </ul> -->
