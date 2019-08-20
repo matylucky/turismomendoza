@@ -23,7 +23,7 @@ if ($conexion->connect_error) {
 $username = $_POST['username'];
 $password = $_POST['password'];
  
-$sql = "SELECT * FROM $tbl_name WHERE nombre_usuario = '$username'";
+$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$username'";
 
 
 $result = $conexion->query($sql);
