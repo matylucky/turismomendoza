@@ -26,13 +26,13 @@
  }
  else{
 
- $query = "INSERT INTO usuarios (nombre_usuario, password) VALUES ('$_POST[username]', '$form_pass')";
+ $query = "INSERT INTO usuariosdb (nombre_usuario, password) VALUES ('$_POST[username]', '$form_pass')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
  echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Bienvenido: " . $_POST['username'] . "</h3>" . "\n\n";
- echo "<h3>" . "Iniciar Sesion: " . "<a href='login2.html'>Login</a>" . "</h3>"; 
+ echo "<h3>" . "Iniciar Sesion: " . "<a href='login.html'>Login</a>" . "</h3>"; 
  }
 
  else {
