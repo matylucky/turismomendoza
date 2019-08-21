@@ -71,10 +71,10 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+        <img src="https://i.ibb.co/RznT9QV/carrousel1.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
+          <h3>Viñedos</h3>
+          <p>Pase un dia de cata y comida</p>
         </div>      
       </div>
 
