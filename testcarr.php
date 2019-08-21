@@ -51,7 +51,7 @@
         <li class="active"><a href="#">Inicio</a></li>
         <li><a href="#">Reservas</a></li>
         <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
              </button> <a class="navbar-brand navbar-right" href="index.php"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a>
       <!--<ul class="nav navbar-nav navbar-right">
