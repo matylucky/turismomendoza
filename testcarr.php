@@ -88,9 +88,10 @@
     </div>-->
   
         <div class="item">
-        <img src="https://i.ibb.co/q5QPmT1/carrouse2.jpg?text=Las Leñas" alt="Image">
+        <img src="https://i.ibb.co/q5QPmT1/carrouse2.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Maravillosa escapada de sky o snowboard</h3>
+          <h3>Las Leñas</h3>
+          <p>Maravillosa escapada de sky o snowboard</p>
           <p>Ideal para hacer en pareja o con amigos</p>
         </div>      
       </div>
@@ -111,8 +112,8 @@
   <h3>Bienvenidos a Turismo Mendoza!</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=Historia" class="img-responsive" style="width:100%" alt="Image">
-      <p>Turismo!</p>
+      <img src="https://i.ibb.co/RQL4C6H/Bus-Mercedes-Benz-Sprinter.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Servicios</p>
     </div>
     <div class="col-sm-4"> 
       <img src="https://placehold.it/150x80?text=Turismo!" class="img-responsive" style="width:100%" alt="Image">
