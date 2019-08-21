@@ -138,7 +138,7 @@ span.psw {
 
     <div class="container" style="background-color:#f1f1f1">
       
-      <button type="button" onclick="location.href='logeo.php'">Registrarse</button>
+      <button type="button" onclick="location.href='registro.html'">Registrarse</button>
       <span class="psw">Olvidé <a href="#">contraseña</a></span>
     </div>
   </form>
