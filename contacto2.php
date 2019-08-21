@@ -60,7 +60,7 @@ exit;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="testcarr2.php">Inicio</a></li>
+        <li><a href="index2.php">Inicio</a></li>
         <li><a href="#">Reservas</a></li>
         <li><a href="#">Nosotros</a></li>
         <li class="active"><a href="#">Contacto</a></li>
