@@ -78,11 +78,20 @@
         </div>      
       </div>
 
-      <div class="item">
+     <!-- <div class="item">
         <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
         <div class="carousel-caption">
           <h3>More Sell $</h3>
           <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+    </div>-->
+  
+        <div class="item">
+        <img src="https://i.ibb.co/q5QPmT1/carrouse2.jpg?text=Las Leñas" alt="Image">
+        <div class="carousel-caption">
+          <h3>Maravillosa escapada de sky o snowboard</h3>
+          <p>Ideal para hacer en pareja o con amigos</p>
         </div>      
       </div>
     </div>
