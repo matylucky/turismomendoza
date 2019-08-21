@@ -131,7 +131,7 @@ exit;
   <h3>Bienvenidos a Turismo Mendoza!</h3><br>
   <div class="row">
     <div class="col-sm-4">
-        <a href="servicios.php"><img src="https://i.ibb.co/RQL4C6H/Bus-Mercedes-Benz-Sprinter.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+        <a href="servicios2.php"><img src="https://i.ibb.co/RQL4C6H/Bus-Mercedes-Benz-Sprinter.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
       <p>Servicios</p>
     </div>
     <div class="col-sm-4"> 
