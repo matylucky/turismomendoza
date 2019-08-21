@@ -12,6 +12,6 @@ session_start();
 unset ($SESSION['username']);
 session_destroy();
 
-header('Location: https://turismomendoza.herokuapp.com/index.php');
+header('Location: https://turismomendoza.herokuapp.com/testcarr.php');
 
 ?>
