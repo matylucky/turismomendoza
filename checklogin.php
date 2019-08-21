@@ -49,13 +49,13 @@ if ($password==$row['USU_PASS']) {
     echo "Bienvenido! " . $_SESSION['usuario'];
     //echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
     //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
-    header('Location: https://turismomendoza.herokuapp.com/testcarr2.php');//redirecciona a la pagina del usuario
+    header('Location: https://turismomendoza.herokuapp.com/index2.php');//redirecciona a la pagina del usuario
 
 	
  } else { 
    echo "Username o Password estan incorrectos.";
 
-   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
+   echo "<br><a href='logeo.php'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion); 
  ?>
