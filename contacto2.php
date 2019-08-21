@@ -60,10 +60,10 @@ exit;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="testcarr2.php">Inicio</a></li>
+        <li><a href="testcarr2.php">Inicio</a></li>
         <li><a href="#">Reservas</a></li>
         <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li class="active"><a href="#">Contacto</a></li>
       </ul>
              </button> <a class="navbar-brand navbar-right" href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a>
       <!--<ul class="nav navbar-nav navbar-right">
