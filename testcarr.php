@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bienvenidos a Turismo Mendoza</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -53,8 +53,7 @@
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
-             </button>	       </button type="button" class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php"">
-      <a class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php""></a>
+             </button> <a class="navbar-brand navbar-right" href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href="https://turismomendoza.herokuapp.com/index.php""></a>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.html'"></li>
       </ul> -->
