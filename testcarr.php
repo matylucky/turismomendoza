@@ -53,7 +53,7 @@
         <li><a href="#">Nosotros</a></li>
         <li><a href="contacto.php">Contacto</a></li>
       </ul>
-             </button> <a class="navbar-brand navbar-right" href="index.php"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a>
+             </button> <a class="navbar-brand navbar-right" href="logeo.php"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.html'"></li>
       </ul> -->
