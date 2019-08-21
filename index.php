@@ -117,21 +117,21 @@
     </div>
     <div class="col-sm-4"> 
       <img src="https://placehold.it/150x80?text=Turismo!" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+      <p>Hay que ver que poner aca</p>    
     </div>
     <div class="col-sm-4">
       <div class="well">
        <p>texto del medio</p>
       </div>
       <div class="well">
-       <p>Some text..</p>
+       <p>Acá puede ir el calendario</p>
       </div>
     </div>
   </div>
 </div><br>
 
 <footer class="container-fluid text-center">
-  <p>Texto Inferior, puede ir una breve reseña de nosotros</p>
+  <p>Mail: contacto@turismomendoza.com.ar  ---  Telefonos / whatsapp: 261-15-685-3796  ---  Local: Paseo Peatonal Sarmiento 2411</p>
 </footer>
 
 </body>
