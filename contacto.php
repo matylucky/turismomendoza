@@ -47,9 +47,11 @@
   </div>
 </nav>
 
-<h3>Who Am I?</h3>
-<img src="bird.jpg" alt="Bird">
-<h3>I'm an adventurer</h3>
+<h3>Contactenos por los siguientes canales</h3>
+<!--<img src="bird.jpg" alt="Bird">-->
+<h3>Mail: contacto@turismomendoza.com.ar</h3>
+ <h3>Telefonos / whatsapp: 261-15-685-3796</h3>
+ <h3>Local: Paseo Peatonal Sarmiento 2411</h3>
 
 </body>
 </html>
