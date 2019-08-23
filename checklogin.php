@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {     }
  // if (password_verify($password, $row['password'])) { 
 if ($password==$row['USU_PASS']) { 
 
-  if ($row['ROL_ID´] = 2 ){
+  if ($row['ROL_ID'] = 2 ){
     $_SESSION['loggedin'] = true;
    $_SESSION['username'] = $username;
     $_SESSION['usuario'] = $row['USU_NOMBRE'];
