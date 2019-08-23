@@ -49,7 +49,8 @@
 
 <h3>Contactenos por los siguientes canales</h3>
 <!--<img src="bird.jpg" alt="Bird">-->
-<h3>Mail: contacto@turismomendoza.com.ar</h3>
+<h3>Mail:</h3> echo "<a href='contacto@turismomendoza.com.ar'>contacto@turismomendoza.com.ar</a>";
+
  <h3>Telefonos / whatsapp: 261-15-685-3796</h3>
  <h3>Local: Paseo Peatonal Sarmiento 2411</h3>
 
