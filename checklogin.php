@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {     }
  // if (password_verify($password, $row['password'])) { 
 if ($password==$row['USU_PASS']) { 
 
- 
+   if ($row['ROL_ID´] === 2 ){
     $_SESSION['loggedin'] = true;
    $_SESSION['username'] = $username;
     $_SESSION['usuario'] = $row['USU_NOMBRE'];
@@ -50,7 +50,17 @@ if ($password==$row['USU_PASS']) {
     //echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
     //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
     header('Location: https://turismomendoza.herokuapp.com/index2.php');//redirecciona a la pagina del usuario
+	    }
+	    else{ $_SESSION['loggedin'] = true;
+   			$_SESSION['username'] = $username;
+			$_SESSION['usuario'] = $row['USU_NOMBRE'];
+			$_SESSION['start'] = time();
+			$_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
+			echo "Bienvenido! " . $_SESSION['usuario'];
+			    //echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
+			    //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
+			header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
 	
  } else { 
    echo "Username o Password estan incorrectos.";
