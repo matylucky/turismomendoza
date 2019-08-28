@@ -46,10 +46,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="index.php">Inicio</a></li>
+        <li><a href="index2.php">Inicio</a></li>
         <!--<li><a href="#">Reservas</a></li>-->
         <li><a href="#">Nosotros</a></li>
-        <li><a href="contacto.php">Contacto</a></li>
+        <li><a href="contacto2.php">Contacto</a></li>
       </ul>
              </button> <a class="navbar-brand navbar-right" href="logeo.php"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a>
       <!--<ul class="nav navbar-nav navbar-right">
