@@ -1,3 +1,28 @@
+<?php
+session_start();
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+ 
+ 
+ 
+} else {
+   echo "Inicia Sesion para acceder a este contenido.<br>";
+   echo "<br><a href='login.html'>Login</a>";
+   echo "<br><br><a href='index.html'>Registrarme</a>";
+   header('Location: https://turismomendoza.herokuapp.com/login.html');//redirige a la página de login si el usuario quiere ingresar sin iniciar sesion
+exit;
+}
+//$usuarios = $_POST['usuarios'];
+ 
+$now = time();
+if($now > $_SESSION['expire']) {
+session_destroy();
+header('Location: https://turismomendoza.herokuapp.com/login.html');//redirige a la página de login, modifica la url a tu conveniencia
+echo "Tu sesion a expirado,
+<a href='login.html'>Inicia Sesion</a>";
+exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,8 +76,8 @@
         <li><a href="#">Nosotros</a></li>
         <li><a href="contacto2.php">Contacto</a></li>
       </ul>
-             </button> <a class="navbar-brand navbar-right" href="logeo.php"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a>
-      <!--<ul class="nav navbar-nav navbar-right">
+           </button> <a class="navbar-brand navbar-right" href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a>
+  <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logear Usuario</a><onclick="location.href='index.html'"></li>
       </ul> -->
     </div>
