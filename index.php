@@ -71,10 +71,12 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
+        <a href="destino1.php">
         <img src="https://i.ibb.co/RznT9QV/carrousel1.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Viñedos</h3>
           <p>Pase un dia de cata y comida</p>
+          </a>
         </div>      
       </div>
 
@@ -88,11 +90,13 @@
     </div>-->
   
         <div class="item">
+          <a href="destino2.php">
         <img src="https://i.ibb.co/q5QPmT1/carrouse2.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>Las Leñas</h3>
           <p>Maravillosa escapada de sky o snowboard</p>
           <p>Ideal para hacer en pareja o con amigos</p>
+          </a>
         </div>      
       </div>
     </div>
