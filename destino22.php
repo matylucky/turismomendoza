@@ -67,8 +67,7 @@ exit;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Turismo Mendoza</a>
-    </div>
+<a class="navbar-brand" href="#"> <p><?php echo  $_SESSION['usuario'];?></p></a>    </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index2.php">Inicio</a></li>
@@ -86,5 +85,12 @@ exit;
 <h3>Destino 2</h3>
 <img src="https://i.ibb.co/q5QPmT1/carrouse2.jpg" alt="Bird">
 <h3>Esto es una prueba de destino 2</h3>
+ 
+ <div class="btn-group">
+  <button type="button" class="btn btn-primary">Fecha 1</button>
+  <button type="button" class="btn btn-primary">Fecha 2</button>
+  <button type="button" class="btn btn-primary">Fecha 3</button>
+</div>
+ 
 </body>
 </html>
