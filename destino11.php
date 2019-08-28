@@ -67,8 +67,7 @@ exit;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Turismo Mendoza</a>
-    </div>
+     <a class="navbar-brand" href="#"> <p><?php echo  $_SESSION['usuario'];?></p></a>    </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index2.php">Inicio</a></li>
