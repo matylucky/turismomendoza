@@ -61,8 +61,9 @@
 
 <h3>Viñedos</h3>
 <img src="https://i.ibb.co/RznT9QV/carrousel1.jpg" alt="Image">
+  <p>Pase un dia de cata y comida</p>
   
-  <div class="btn-group">
+<div class="btn-group">
   <button type="button" class="btn btn-primary">Fecha 1</button>
   <button type="button" class="btn btn-primary">Fecha 2</button>
   <button type="button" class="btn btn-primary">Fecha 3</button>
