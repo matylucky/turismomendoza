@@ -59,9 +59,17 @@
   </div>
 </nav>
 
-<h3>Destino 1</h3>
+<h3>Viñedos</h3>
 <img src="https://i.ibb.co/RznT9QV/carrousel1.jpg" alt="Image">
-<h3>Esto es una prueba</h3>
+  
+  <div class="btn-group">
+  <button type="button" class="btn btn-primary">Fecha 1</button>
+  <button type="button" class="btn btn-primary">Fecha 2</button>
+  <button type="button" class="btn btn-primary">Fecha 3</button>
+</div>
+
+<h3>A este destino se sale a las 8 y se vuelve a las 17 los días de semana</h3>
+<h3>Los fines de semana se sale a las 7 y se vuelve a las 16</h3>
 
 </body>
 </html>
