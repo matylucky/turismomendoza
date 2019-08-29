@@ -87,9 +87,8 @@ exit;
   <p>Pase un dia de cata y comida</p>
  
  
- registropasajero.php	
   
-<div class="btn-group-vertical">
+<div class="btn-group btn-group-justified">
   <a href="registropasajero.php"</a><button type="button" class="btn btn-primary"> Fecha 1</button>
   <a href="registropasajero.php"</a><button type="button" class="btn btn-primary"> Fecha 2</button>
   <a href="registropasajero.php"</a><button type="button" class="btn btn-primary"> Fecha 3</button>
