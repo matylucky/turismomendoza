@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {     }
  
   $row = $result->fetch_array(MYSQLI_ASSOC);
  // if (password_verify($password, $row['password'])) { 
-if($_session['admin'] == "2"){
+if($row['ROL_ID'] == "2"){
  //echo "Inicia Sesion para acceder a este contenido.<br>";
    echo "<br><a href='test.php'>Admin</a>";
    //echo "<br><br><a href='index.html'>Registrarme</a>";
