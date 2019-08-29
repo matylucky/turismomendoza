@@ -25,6 +25,8 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $usuario = $_POST['usuario'];
 $mail = $_POST['mail'];
+$dni = $_POST['dni'];
+$tel = $_POST['tel'];
  
 //$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
 $sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$username'";
@@ -45,6 +47,8 @@ if ($password==$row['USU_PASS']) {
     $_SESSION['username'] = $username;
     $_SESSION['usuario'] = $row['USU_NOMBRE'];
     $_SESSION['mail'] = $row['USU_EMAIL'];
+	$_SESSION['dni'] = $row['USU_NRO_DOC'];
+	$_SESSION['tel'] = $row['USU_TEL'];
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
