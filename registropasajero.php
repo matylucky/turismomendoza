@@ -652,9 +652,8 @@ exit;
     </div>
   </div>
 	    
-	    
-	    <a href="#demo" class="btn btn-info" data-toggle="collapse">Ultimo Pasajero</a>
-  <div id="demo" class="collapse">
+  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Ultimo Pasajero</a>
+  <div id="demo2" class="collapse">
     <div class="container">
   <h2>Alta pasajero 3</h2>
   <form class="form-horizontal" action="registrar-pasajero.php" method="post">
