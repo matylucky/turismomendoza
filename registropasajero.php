@@ -101,7 +101,7 @@ exit;
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" maxlength="20" placeholder=<p><?php echo  $_SESSION['usuario'];?></p> name="username" required>
+        <input type="text" class="form-control" maxlength="20" placeholder=<?php echo  $_SESSION['usuario'];?> name="username" required>
       </div>
     </div>
     <div class="form-group">
