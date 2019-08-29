@@ -11,6 +11,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
    header('Location: https://turismomendoza.herokuapp.com/login.html');//redirige a la página de login si el usuario quiere ingresar sin iniciar sesion
 exit;
 }
+
+if($_session['admin'] == 2){
+ //echo "Inicia Sesion para acceder a este contenido.<br>";
+   echo "<br><a href='test.php'>Admin</a>";
+   //echo "<br><br><a href='index.html'>Registrarme</a>";
+   header('Location: https://turismomendoza.herokuapp.com/test.php');//redirige a la página de login si el usuario quiere ingresar sin iniciar sesion
+exit;
+ 
+}
+
 //$usuarios = $_POST['usuarios'];
  
 $now = time();
