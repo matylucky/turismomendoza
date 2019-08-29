@@ -101,13 +101,13 @@ exit;
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" maxlength="20" placeholder=<?php echo  $_SESSION['usuario'];?> name="username" required>
+        <input type="text" class="form-control" maxlength="20" placeholder=<?php echo  $_SESSION['usuario'];?> name="username">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" maxlength="50" id="email" placeholder=<?php echo  $_SESSION['mail'];?> name="email" required>
+        <input type="email" class="form-control" maxlength="50" id="email" placeholder=<?php echo  $_SESSION['mail'];?> name="email" >
       </div>
     </div>
    <!--    <div class="form-group">
@@ -361,13 +361,13 @@ exit;
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder="Ingresa su DNI" name="dni" required  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder=<?php echo  $_SESSION['dni'];?> name="dni"  onkeypress="solonumeros(event);">
       </div>
     </div>
        <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder="Ingresa su telefono" name="telefono" required  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder=<?php echo  $_SESSION['tel'];?> name="telefono"  onkeypress="solonumeros(event);">
       </div>
     </div>
     <div class="form-group">        
