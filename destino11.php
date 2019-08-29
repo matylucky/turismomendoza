@@ -89,9 +89,9 @@ exit;
  
   
 <div class="btn-group btn-group-justified">
-  <a href="registropasajero.php"</a><button type="button" class="btn btn-primary"> Fecha 1</button>
-  <a href="registropasajero2.php"</a><button type="button" class="btn btn-primary"> Fecha 2</button>
-  <a href="registropasajero3.php"</a><button type="button" class="btn btn-primary"> Fecha 3</button>
+  <a href="registropasajero.php" class="btn btn-primary"> Fecha 1</button></a>
+  <a href="registropasajero2.php" class="btn btn-primary"> Fecha 2</button></a>
+  <a href="registropasajero3.php" class="btn btn-primary"> Fecha 3</button></a>
  
 </div>
  
