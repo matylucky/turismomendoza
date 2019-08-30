@@ -644,13 +644,13 @@ exit;
         <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder="DNI" name="dni"  onkeypress="solonumeros(event);">
       </div>
     </div>
-       <div class="form-group">
+  <!--     <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
         <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder="Telefono" name="telefono"  onkeypress="solonumeros(event);">
       </div>
     </div>
-  </div>
+  </div> -->
 	    
   <a href="#demo2" class="btn btn-info" data-toggle="collapse">Ultimo Pasajero</a>
   <div id="demo2" class="collapse">
@@ -923,13 +923,13 @@ exit;
         <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder="DNI" name="dni"  onkeypress="solonumeros(event);">
       </div>
     </div>
-       <div class="form-group">
+ <!--      <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
         <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder="Telefono" name="telefono"  onkeypress="solonumeros(event);">
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
 	    
 </div>
