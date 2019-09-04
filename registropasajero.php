@@ -979,15 +979,29 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 				    e.preventDefault();
 			    }
 
-	$paquete2 ="";	
+	
 	$( document ).ready(function() {
 
+		$( "#paquete" ).change(function() {
+			$paquete2 = "";	
+			$( #paquete ).each(function(){
+			$paquete2 = $( this ).text();
+		});
+			alert("|" + $paquete2 + "|");
+		});
+	});
+
+		
+		
+/*		
+	$paquete2 ="";	
+	$( document ).ready(function() {
 		$( "#paquete" ).change(function() {
 			$paquete2 = $( this ).text();
 			alert("|" + $paquete2 + "|");
 		});
 	});
-
+*/
 </script>
 </body>
 	 
