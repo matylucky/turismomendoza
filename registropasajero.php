@@ -40,11 +40,11 @@ exit;
 }
 
 //-----------------------------------------------
-$paquete2 = "";
-	   for ($i=0;$i<count($paquete);$i++)    
+/*$paquete2 = "";
+//	   for ($i=0;$i<count($paquete);$i++)    
 {     
 $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];    
-} 
+}*/ 
 ?>
 
 <!DOCTYPE html>
