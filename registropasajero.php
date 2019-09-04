@@ -110,9 +110,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <label class="control-label col-sm-2" for="Fechas">Fechas</label>
       <div class="col-sm-10">
     <select class="form-control" id="fechas">
-    <optionselected>Fecha 1</option>
-	<option>Fecha 2</option>
-	<option>Fecha 3</option>
+    <option value="Fecha 1" selected>Fecha 1</option>
+	<option value="Fecha 2">Fecha 2</option>
+	<option value="Fecha 3">Fecha 3</option>
 	</select>
         </div>
     </div>
@@ -986,6 +986,15 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 			
 			//$( "#paquete select" ).each(function(){
 			$paquete2 = $( this ).val();
+		
+			alert("|" + $paquete2 + "|");
+		});
+		
+		
+		$( "#fechas" ).change(function() {
+			
+			//$( "#paquete select" ).each(function(){
+			$paquete2 += " " +  $( this ).val();
 		
 			alert("|" + $paquete2 + "|");
 		});
