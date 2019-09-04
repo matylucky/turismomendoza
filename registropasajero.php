@@ -94,6 +94,31 @@ exit;
 	
 	
 <body>
+<h2>Seleccion destino y fecha a reservar</h2>	
+ <div class="form-group">
+    <label class="control-label col-sm-2" for="Paquete">Paquete</label>
+      <div class="col-sm-10">
+    <select class="form-control" id="paquete">
+    <option value="1" selected>Viñedos</option>
+	<option value="2">Las Leñas</option>
+
+		</select>
+        </div>
+    </div>
+	
+	
+	 <div class="form-group">
+    <label class="control-label col-sm-2" for="Fechas">Fechas</label>
+      <div class="col-sm-10">
+    <select class="form-control" id="fechas">
+    <option value="1" selected>Fecha 1</option>
+	<option value="2">Fecha 2</option>
+	<option value="3">Fecha 3</option>
+		</select>
+        </div>
+    </div>
+	
+	
 
 <div class="container">
   <h2>Alta pasajero 1</h2>
