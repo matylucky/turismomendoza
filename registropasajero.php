@@ -983,8 +983,8 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	$paquete2 ="";	
 	$( document ).ready(function() {
 
-		$( "#paquete" ).change(function() {
-			$paquete2 += $( this ).text() + "";
+		$( "#paquete option" ).change(function() {
+			$paquete2 = $( this ).text() + "";
 			alert("|" + $paquete2 + "|");
 		});
 	});
