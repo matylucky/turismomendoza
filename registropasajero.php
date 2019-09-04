@@ -984,7 +984,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
 		$( "#paquete" ).change(function() {
 			$paquete2 = "";	
-			$( "select" ).each(function(){
+			$( "#paquete select" ).each(function(){
 			$paquete2 = $( this ).text();
 		});
 			alert("|" + $paquete2 + "|");
