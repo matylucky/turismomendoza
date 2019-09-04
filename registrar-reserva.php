@@ -8,7 +8,7 @@
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- $buscarUsuario = "SELECT * FROM $tbl_name
+ /*$buscarUsuario = "SELECT * FROM $tbl_name
  WHERE USU_NOMBRE = '$_POST[username]' ";
  $result = $conexion->query($buscarUsuario);
  $count = mysqli_num_rows($result);
@@ -17,7 +17,7 @@
  echo "<a href='index.html'>Por favor escoga otro Nombre</a>";
  }
  else{
-
+*/
  $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[username]', '$_POST[paquete2]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
 
