@@ -99,8 +99,8 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <label class="control-label col-sm-2" for="Paquete">Paquete</label>
       <div class="col-sm-10">
     <select class="form-control" id="paquete">
-    <option selected>Viñedos</option>
-	<option>Las Leñas</option>
+    <option value="viñedos" selected>Viñedos</option>
+	<option value="Las Leñas">Las Leñas</option>
     </select>
         </div>
     </div>
@@ -979,14 +979,14 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 				    e.preventDefault();
 			    }
 
-	
+	$paquete2 = "";	
 	$( document ).ready(function() {
 
 		$( "#paquete" ).change(function() {
-			$paquete2 = "";	
-			$( "#paquete select" ).each(function(){
-			$paquete2 = $( this ).text();
-		});
+			
+			//$( "#paquete select" ).each(function(){
+			$paquete2 = $( this ).value();
+		
 			alert("|" + $paquete2 + "|");
 		});
 	});
