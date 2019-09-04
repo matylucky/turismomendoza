@@ -1,20 +1,3 @@
-<script>function solonumeros(e)
-                    {
-         var key = window.event ? e.which : e.keyCode;
-                        if(key < 48 || key > 57)
-                            e.preventDefault();
-                    }
-	
-$paquete2 ="";	
-$( document ).ready(function() {
-	
-	$( "#paquete" ).change(function() {
-  		$paquete2 = $( this ).text();
-		alert("|" + $paquete2 + "|");
-	});
-});
-
-</script>
 <?php
 session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -989,7 +972,24 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
   
 </div>
+	    
+	<script>function solonumeros(e)
+			    {
+		 var key = window.event ? e.which : e.keyCode;
+				if(key < 48 || key > 57)
+				    e.preventDefault();
+			    }
 
+	$paquete2 ="";	
+	$( document ).ready(function() {
+
+		$( "#paquete" ).change(function() {
+			$paquete2 = $( this ).text();
+			alert("|" + $paquete2 + "|");
+		});
+	});
+
+</script>
 </body>
 	 
 	  
