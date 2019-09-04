@@ -121,7 +121,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
 <div class="container">
   <h2>Alta pasajero 1</h2>
-  <form class="form-horizontal" action="registrar-pasajero.php" method="post">
+  <form class="form-horizontal" action="registrar-reserva.php" method="post">
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
@@ -962,7 +962,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	    
 	    <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Alta pasajero</button>
+        <button type="submit" class="btn btn-default">Alta reserva</button>
         <!--<button type="button" class="btn btn-default" onclick="location.href=#">Agregar otro pasajero</button>-->
       </div>
     </div>
