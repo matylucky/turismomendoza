@@ -4,6 +4,16 @@
                         if(key < 48 || key > 57)
                             e.preventDefault();
                     }
+	
+$paquete2 ="";	
+$( document ).ready(function() {
+	
+	$( "#paquete" ).change(function() {
+  		$paquete2 = $( this ).text();
+		alert("|" + $paquete2 + "|");
+	});
+});
+
 </script>
 <?php
 session_start();
@@ -28,6 +38,13 @@ echo "Tu sesion a expirado,
 <a href='login.html'>Inicia Sesion</a>";
 exit;
 }
+
+//-----------------------------------------------
+$paquete2 = "";
+	   for ($i=0;$i<count($paquete);$i++)    
+{     
+$paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];    
+} 
 ?>
 
 <!DOCTYPE html>
@@ -974,4 +991,8 @@ exit;
 </div>
 
 </body>
+	 
+	  
+
+					      
 </html>
