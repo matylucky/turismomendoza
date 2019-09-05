@@ -395,7 +395,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       </div>
     </div>
     
-   
+ <!--  
 	  <div class="container">
   <a href="#demo" class="btn btn-info" data-toggle="collapse">Otro Pasajero</a>
   <div id="demo" class="collapse">
@@ -661,7 +661,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		<option value="ZW">Zimbabue</option>
 		</select>
         </div>
-    </div> -->
+    </div> 
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
@@ -674,7 +674,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
         <input type="numbers" class="form-control" maxlength="16" id="telefono2" placeholder="Telefono" name="telefono2"  onkeypress="solonumeros(event);">
       </div>
     </div>
-  </div> -->
+  </div> 
 	    
   <a href="#demo2" class="btn btn-info" data-toggle="collapse">Ultimo Pasajero</a>
   <div id="demo2" class="collapse">
@@ -940,7 +940,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		<option value="ZW">Zimbabue</option>
 		</select>
         </div>
-    </div> -->
+    </div> 
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
