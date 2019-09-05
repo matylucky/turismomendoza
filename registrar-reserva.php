@@ -18,7 +18,7 @@
  }
  else{
 */
- //$query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[username]', '$_POST[paquete2]')";
+ $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[username]', '$_POST[paquete2]')";
  $query = "INSERT INTO $tbl_name (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
 
  if ($conexion->query($query) === TRUE) {
