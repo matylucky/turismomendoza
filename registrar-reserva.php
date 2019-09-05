@@ -25,7 +25,7 @@
  // header('Location: http://localhost/Login/login.html');
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
- // echo "<h3>" . "Iniciar Sesion: " . "<a href='login.html'>Login</a>" . "</h3>"; 
+ echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
  }
  else {
  echo "Error al crear una reserva." . $query . "<br>" . $conexion->error; 
