@@ -957,15 +957,15 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 </div>
 	    
 </div>
-	  
-</form>	    
+   
 	    
 	    <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-default">Alta reserva</button>
         <!--<button type="button" class="btn btn-default" onclick="location.href=#">Agregar otro pasajero</button>-->
       </div>
-    </div>
+    </div>	  
+</form>	 
 	  
   
 
@@ -980,7 +980,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 			    }
 
 	
-	$( document ).ready(function() {
+/*	$( document ).ready(function() {
 			$paquete2 = "";	
 		$( "#paquete" ).change(function() {
 			
@@ -1001,7 +1001,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	});
 
 		
-		
+*/		
 /*		
 	$paquete2 ="";	
 	$( document ).ready(function() {
