@@ -128,13 +128,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
         <input type="text" class="form-control" maxlength="20" placeholder=<?php echo  $_SESSION['usuario'];?> name="username">
       </div>
     </div>
-  <!--  <div class="form-group">
+    <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" maxlength="50" id="email" placeholder=<?php echo  $_SESSION['mail'];?> name="email" >
       </div>
     </div>
-      <div class="form-group">
+  <!--    <div class="form-group">
       <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
