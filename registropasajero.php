@@ -128,18 +128,18 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
         <input type="text" class="form-control" maxlength="20" placeholder=<?php echo  $_SESSION['usuario'];?> name="username">
       </div>
     </div>
-    <div class="form-group">
+  <!--  <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" maxlength="50" id="email" placeholder=<?php echo  $_SESSION['mail'];?> name="email" >
       </div>
     </div>
-   <!--    <div class="form-group">
+      <div class="form-group">
       <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
       </div>
-    </div>-->
+    </div>
     
     <div class="form-group">
     <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
@@ -381,19 +381,19 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		<option value="ZW">Zimbabue</option>
 		</select>
         </div>
-    </div>
+    </div>-->
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
         <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder=<?php echo  $_SESSION['dni'];?> name="dni"  onkeypress="solonumeros(event);">
       </div>
     </div>
-       <div class="form-group">
+      <!-- <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
         <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder=<?php echo  $_SESSION['tel'];?> name="telefono"  onkeypress="solonumeros(event);">
       </div>
-    </div>
+    </div> -->
     
  <!--  
 	  <div class="container">
@@ -954,9 +954,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       </div>
     </div>
   </div>-->
-</div>
-	    
-</div>
+
    
 	    
 	    <div class="form-group">        
@@ -970,7 +968,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
   
 
   
-</div>
+
 	    
 	<script>function solonumeros(e)
 			    {
