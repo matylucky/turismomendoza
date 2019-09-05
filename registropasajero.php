@@ -405,19 +405,19 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" maxlength="20" placeholder="Nombre y apellido" name="username">
+        <input type="text" class="form-control" maxlength="20" placeholder="Nombre y apellido" name="username2">
       </div>
     </div>
 <!--    <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" maxlength="50" id="email" placeholder="Email" name="email" >
+        <input type="email" class="form-control" maxlength="50" id="email2" placeholder="Email" name="email2" >
       </div>
     </div> 
       <div class="form-group">
       <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
+        <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad2" required>
       </div>
     </div>
     
@@ -665,13 +665,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder="DNI" name="dni"  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="20" id="dni2" placeholder="DNI" name="dni2"  onkeypress="solonumeros(event);">
       </div>
     </div>
   <!--     <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder="Telefono" name="telefono"  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="16" id="telefono2" placeholder="Telefono" name="telefono2"  onkeypress="solonumeros(event);">
       </div>
     </div>
   </div> -->
@@ -684,7 +684,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" maxlength="20" placeholder="Nombre y apellido" name="username">
+        <input type="text" class="form-control" maxlength="20" placeholder="Nombre y apellido" name="username3">
       </div>
     </div>
  <!--   <div class="form-group">
@@ -944,13 +944,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder="DNI" name="dni"  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="20" id="dni3" placeholder="DNI" name="dni3"  onkeypress="solonumeros(event);">
       </div>
     </div>
  <!--      <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
-        <input type="numbers" class="form-control" maxlength="16" id="telefono" placeholder="Telefono" name="telefono"  onkeypress="solonumeros(event);">
+        <input type="numbers" class="form-control" maxlength="16" id="telefono3" placeholder="Telefono" name="telefono3"  onkeypress="solonumeros(event);">
       </div>
     </div>
   </div>-->
