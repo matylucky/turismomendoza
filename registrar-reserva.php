@@ -2,7 +2,7 @@
 //incluimos el archivo donde se encuentran nuestros datos de conexion
  include 'conexion2.php';
  
- $form_pass = $_POST['password'];
+ //$form_pass = $_POST['password'];
  
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
@@ -31,5 +31,5 @@
  echo "Error al crear una reserva." . $query . "<br>" . $conexion->error; 
    }
  }
- mysqli_close($conexion2);
+ mysqli_close($conexion);
 ?>
