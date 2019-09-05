@@ -30,6 +30,6 @@
  else {
  echo "Error al crear una reserva." . $query . "<br>" . $conexion->error; 
    }
- }
+ //}
  mysqli_close($conexion);
 ?>
