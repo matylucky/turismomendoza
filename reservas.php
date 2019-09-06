@@ -1,6 +1,6 @@
 <?php
 include("encabezado2.php"); //incluimos el archivo logotipo.php
-include("conexion.php");
+/*include("conexion.php");
 
 
 $link = mysql_connect($server, $db_user, $db_pass) 
@@ -33,7 +33,7 @@ echo "Lo Sentimos no tiene reserva registrada";
 } 
 ob_end_flush();
 
-
+*/
 ?>
 
 
