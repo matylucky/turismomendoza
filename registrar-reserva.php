@@ -22,7 +22,7 @@ $row = mysql_fetch_array($result)
  $ID=$row["USU_ID"];  
  //}
  //else{
-*/
+
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
  // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST['$ID']', '$_POST['$paquete2']')";
