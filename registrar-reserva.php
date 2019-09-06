@@ -21,7 +21,7 @@ $result=mysql_query($buscarUsuario);
 $row = mysql_fetch_array($result)
  $ID=$row["USU_ID"];  
  //}
- else{
+ //else{
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
