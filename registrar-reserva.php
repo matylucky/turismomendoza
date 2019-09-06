@@ -25,7 +25,8 @@ $row = mysql_fetch_array($result)
  //else{
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
- $query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST['$paquete2']', '$_POST['$fecha']')";
+ //$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST['$paquete2']', '$_POST['$fecha']')";
+$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]')";
  // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST["email"]', '$_POST["20"]')";
 
  if ($conexion->query($query) === TRUE) {
