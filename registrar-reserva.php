@@ -3,7 +3,8 @@
  include 'conexion.php';
  
  //$form_pass = $_POST['password'];
- $ID = "";
+
+$paquete2=($_GET['paquete2']);
   
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
@@ -11,10 +12,11 @@
 }
  $buscarUsuario = "SELECT * FROM $tbl_name
  WHERE USU_NOMBRE = '$_POST[username]' ";
- $result = $conexion->query($buscarUsuario);
+ //$result = $conexion->query($buscarUsuario);
  //$count = mysqli_num_rows($result);
  //if ($count == 1) {
- $row = mysql_fetch_array($result)
+$result=mysql_query($buscarUsuario); 
+$row = mysql_fetch_array($result)
  $ID=$row["USU_ID"];  
  }
  else{
