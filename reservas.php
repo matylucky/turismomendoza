@@ -11,7 +11,7 @@ include("encabezado2.php"); //incluimos el archivo logotipo.php
     <h3>aca se veran las reservas realizadas</h3>
       <p><?php echo  $_SESSION['usuario'];?></p>
     <p><?php echo  $_SESSION['pasajero'];?></p>
-    <p><?php echo  $_SESSION['mail'];?></p>
+    <p><?php echo  $_SESSION['mail2'];?></p>
     <p><?php echo  $_SESSION['dni2'];?></p>
 
 </body>
