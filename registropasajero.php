@@ -962,7 +962,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
         <button type="submit" class="btn btn-default">Alta reserva</button>
         <!--<button type="button" class="btn btn-default" onclick="location.href=#">Agregar otro pasajero</button>-->
       </div>
-    </div>	  
+    </div>	
+	  
+	  $paquetes = "Hola";
 </form>	 
 	  
   
@@ -1011,7 +1013,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 */
 </script>
 	
-	<a href="registrar-reserva.php?paquete2=<?php echo $paquete2 ?>Ver la otra Pagina</a>
+	<a href="registrar-reserva.php?paquete2=<?php echo $paquetes ?>Ver la otra Pagina</a>
 
 </body>
 	 
