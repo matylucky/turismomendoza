@@ -27,9 +27,12 @@ $usuario = $_POST['usuario'];
 $mail = $_POST['mail'];
 $dni = $_POST['dni'];
 $tel = $_POST['tel'];
+$mail2 = $_POST['mail2'];
+
  
 //$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
 $sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$username'";
+$sql2 = "SELECT * FROM $tbl_name2 WHERE USU_EMAIL = '$mail2'";
 //$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
 
 $result = $conexion->query($sql);
@@ -60,7 +63,13 @@ if ($password==$row['USU_PASS']) {
     $_SESSION['dni'] = $row['USU_NRO_DOC'];
     $_SESSION['tel'] = $row['USU_TEL'];
     $_SESSION['admin'] = $row['ROL_ID'];
-    $_SESSION['start'] = time();
+    
+    $_SESSION['pasajero'] = $row['PAS_NOMBRE'];
+    $_SESSION['mail2'] = $row['RES_EMAIL'];
+    $_SESSION['dni2'] = $row['PAS_DNI'];
+	
+	
+	$_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
     echo "Bienvenido! " . $_SESSION['usuario'];
