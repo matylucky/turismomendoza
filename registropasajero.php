@@ -996,7 +996,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		
 			alert("|" + $paquete2 + "|");
 		});
-		$paquetes = $paquete2;
+		
 	});
 
 		
