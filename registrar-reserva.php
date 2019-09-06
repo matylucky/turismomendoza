@@ -1,6 +1,6 @@
 <?php
 //incluimos el archivo donde se encuentran nuestros datos de conexion
- //$paquete2=($_GET['paquete2']);
+ $paquete2=($_GET['paquetes']);
 
 include 'conexion.php';
  
@@ -33,7 +33,7 @@ include 'conexion.php';
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
  echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
  //echo "<h3>" . $_POST['$ID'] . "</h3>" . "\n\n";
- // echo "$paquete2" "\n\n";
+  echo "$paquete2" "\n\n";
  }
  else {
  echo "Error al crear una reserva." . $query . "<br>" . $conexion->error; 
