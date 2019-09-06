@@ -20,7 +20,7 @@ include 'conexion.php';
 $result=mysql_query($buscarUsuario); 
 $row = mysql_fetch_array($result)
  $ID=$count["USU_ID"];  
- }
+ //}
  else{
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
