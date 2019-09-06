@@ -1,7 +1,7 @@
 <?php
 //incluimos el archivo donde se encuentran nuestros datos de conexion
  //$paquete2=($_GET['paquetes']);
-
+$paquete2= "Hola MUNDO";
 include 'conexion.php';
  
  //$form_pass = $_POST['password'];
@@ -12,7 +12,7 @@ include 'conexion.php';
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- $buscarUsuario = "SELECT * FROM $tbl_name
+ /*$buscarUsuario = "SELECT * FROM $tbl_name
  WHERE USU_EMAIL = '$_POST[email]' ";
  //$result = $conexion->query($buscarUsuario);
  //$count = mysqli_num_rows($result);
@@ -22,7 +22,7 @@ $row = mysql_fetch_array($result)
  $ID=$row["USU_ID"];  
  //}
  //else{
-
+*/
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
  // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST['$ID']', '$_POST['$paquete2']')";
@@ -32,7 +32,7 @@ $row = mysql_fetch_array($result)
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
  echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
- //echo "<h3>" . $ID . "</h3>" . "\n\n";
+ echo "$paquete2";
 
  }
  else {
