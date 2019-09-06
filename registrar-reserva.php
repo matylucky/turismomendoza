@@ -1,10 +1,12 @@
 <?php
 //incluimos el archivo donde se encuentran nuestros datos de conexion
- include 'conexion.php';
+ $paquete2=($_GET['paquete2']);
+
+include 'conexion.php';
  
  //$form_pass = $_POST['password'];
 
-$paquete2=($_GET['paquete2']);
+
   
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
