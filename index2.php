@@ -73,7 +73,7 @@ exit;
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Inicio</a></li>
-        <li><a href="#">Reservas</a></li>
+        <li><a href="reservas.php">Reservas</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="contacto2.php">Contacto</a></li>
       </ul>
