@@ -23,13 +23,15 @@ $row = mysql_fetch_array($result)
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
-  $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST['$ID']', '$_POST['$paquete2']')";
+ // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST['$ID']', '$_POST['$paquete2']')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
  echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
+ echo "<h3>" . $_POST['$ID'] . "</h3>" . "\n\n";
+  
  }
  else {
  echo "Error al crear una reserva." . $query . "<br>" . $conexion->error; 
