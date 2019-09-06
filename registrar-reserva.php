@@ -10,7 +10,7 @@ $paquete2=($_GET['paquete2']);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- $buscarUsuario = "SELECT * FROM $tbl_name
+ /*$buscarUsuario = "SELECT * FROM $tbl_name
  WHERE USU_EMAIL = '$_POST[email]' ";
  $result = $conexion->query($buscarUsuario);
  $count = mysqli_num_rows($result);
@@ -30,7 +30,7 @@ $paquete2=($_GET['paquete2']);
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
  echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
- echo "<h3>" . $_POST['$ID'] . "</h3>" . "\n\n";
+ //echo "<h3>" . $_POST['$ID'] . "</h3>" . "\n\n";
   echo "<h3>" . $_POST['$paquete2'] . "</h3>" . "\n\n";
  }
  else {
