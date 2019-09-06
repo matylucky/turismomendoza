@@ -92,6 +92,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 </nav>
 	
 	
+	$paquetes = "prueba";
 	
 <body>
 <h2>Seleccione destino y fecha a reservar</h2>	
@@ -966,7 +967,6 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 </form>	 
 	  
   
-
   
 
 	    
@@ -996,6 +996,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		
 			alert("|" + $paquete2 + "|");
 		});
+		$paquetes = $paquete2;
 	});
 
 		
