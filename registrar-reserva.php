@@ -3,24 +3,25 @@
  include 'conexion.php';
  
  //$form_pass = $_POST['password'];
- 
+ $ID = "";
+  
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- /*$buscarUsuario = "SELECT * FROM $tbl_name
+ $buscarUsuario = "SELECT * FROM $tbl_name
  WHERE USU_NOMBRE = '$_POST[username]' ";
  $result = $conexion->query($buscarUsuario);
- $count = mysqli_num_rows($result);
- if ($count == 1) {
- echo "<br />". "Nombre de Usuario ya asignado, ingresa otro." . "<br />";
- echo "<a href='index.html'>Por favor escoga otro Nombre</a>";
+ //$count = mysqli_num_rows($result);
+ //if ($count == 1) {
+ $row = mysql_fetch_array($result)
+ $ID=$row["USU_ID"];  
  }
  else{
 */
-// $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[email]', '$_POST[paquetes]')";
+// $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
-  $query = "INSERT INTO $tbl_name2 (USU_ID) SELECT (USU_ID) FROM &tbl_name3;
+  $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST['$ID']', '$_POST[paquetes]')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
