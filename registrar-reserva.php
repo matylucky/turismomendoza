@@ -18,8 +18,9 @@
  }
  else{
 */
- $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[email]', '$_POST[paquetes]')";
+// $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID,) VALUES ('$_POST[email]', '$_POST[paquetes]')";
  $query = "INSERT INTO $tbl_name3 (PAS_NOMBRE, PAS_DNI) VALUES ('$_POST[username]', '$_POST[dni]')";
+  $query = "INSERT INTO $tbl_name2 (USU_ID) VALUES ('$_POST[email]')";
 
  if ($conexion->query($query) === TRUE) {
  // header('Location: http://localhost/Login/login.html');
