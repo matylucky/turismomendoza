@@ -19,7 +19,7 @@ include 'conexion.php';
  //if ($count == 1) {
 $result=mysql_query($buscarUsuario); 
 $row = mysql_fetch_array($result)
- $ID=$count["USU_ID"];  
+ $ID=$row["USU_ID"];  
  //}
  else{
 */
