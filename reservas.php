@@ -1,8 +1,18 @@
 <?php
 include("encabezado2.php"); //incluimos el archivo logotipo.php
+ 
 
-$query = "SELECT FROM $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]')";
+$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+ if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+}
+$query = "SELECT * FROM $tbl_name2";
+ if $row['RES_EMAIL'] == $_SESSION['mail']{
+     echo "Aca va a figurar reserva, matcheo de mails exitosa";
+ }
 
+ mysqli_close($conexion);
+    
 /*include("conexion.php");
 
 
