@@ -1,6 +1,6 @@
 <?php
 //incluimos el archivo donde se encuentran nuestros datos de conexion
- $paquete2=($_GET['paquetes']);
+ $paquete2=($_GET['paquete2']);
 //$paquete2= "Hola MUNDO";
 include 'conexion.php';
  
