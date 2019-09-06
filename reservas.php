@@ -1,6 +1,6 @@
 <?php
-//include("encabezado2.php"); //incluimos el archivo logotipo.php
- include 'conexion.php';
+include("encabezado2.php"); //incluimos el archivo logotipo.php
+/* include 'conexion.php';
 
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
@@ -49,7 +49,7 @@ ob_end_flush();
 */
 ?>
 
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <body>
     <h3>Reservas</h3>
@@ -60,4 +60,4 @@ ob_end_flush();
     <p><?php echo  $_SESSION['dni2'];?></p>
 
 </body>
-</html> -->
+</html> 
