@@ -1013,7 +1013,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	});
 */
 </script>
-	$paquete2 = "Prueba";
+
 	
 	<a href="registrar-reserva.php?paquete2=<?php echo $paquete2 ?>&fecha=<?php echo $fecha ?>Ver la otra Pagina</a>
 
