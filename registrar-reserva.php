@@ -11,13 +11,13 @@ $paquete2=($_GET['paquete2']);
  die("La conexion falló: " . $conexion->connect_error);
 }
  $buscarUsuario = "SELECT * FROM $tbl_name
- WHERE USU_NOMBRE = '$_POST[username]' ";
- //$result = $conexion->query($buscarUsuario);
- //$count = mysqli_num_rows($result);
- //if ($count == 1) {
-$result=mysql_query($buscarUsuario); 
-$row = mysql_fetch_array($result)
- $ID=$row["USU_ID"];  
+ WHERE USU_EMAIL = '$_POST[email]' ";
+ $result = $conexion->query($buscarUsuario);
+ $count = mysqli_num_rows($result);
+ if ($count == 1) {
+//$result=mysql_query($buscarUsuario); 
+//$row = mysql_fetch_array($result)
+ $ID=$count["USU_ID"];  
  }
  else{
 */
