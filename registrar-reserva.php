@@ -6,7 +6,7 @@
 include 'conexion.php';
  
  //$form_pass = $_POST['password'];
-
+echo "$paquete2";
 
   
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
@@ -34,7 +34,7 @@ $query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
  echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
- echo "$paquete2";
+ 
 
  }
  else {
