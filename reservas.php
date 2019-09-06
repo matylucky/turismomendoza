@@ -1,5 +1,8 @@
 <?php
 include("encabezado2.php"); //incluimos el archivo logotipo.php
+
+$query = "SELECT FROM $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]')";
+
 /*include("conexion.php");
 
 
