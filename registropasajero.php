@@ -964,7 +964,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       </div>
     </div>	
 	  
-	  $paquetes = "Hola";
+
 </form>	 
 	  
   
@@ -980,22 +980,22 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
 	
 	$( document ).ready(function() {
-			$paquete2 = "";	
+			$paquete3 = "";	
 		$( "#paquete" ).change(function() {
 			
 			//$( "#paquete select" ).each(function(){
-			$paquete2 = $( this ).val();
+			$paquete3 = $( this ).val();
 		
-			alert("|" + $paquete2 + "|");
+			alert("|" + $paquete3 + "|");
 		});
 		
 		
 		$( "#fechas" ).change(function() {
 			
 			//$( "#paquete select" ).each(function(){
-			$paquete2 += " " +  $( this ).val();
+			$paquete3 += " " +  $( this ).val();
 		
-			alert("|" + $paquete2 + "|");
+			alert("|" + $paquete3 + "|");
 		});
 		
 	});
@@ -1012,8 +1012,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	});
 */
 </script>
+	$paquete2 = "Prueba";
 	
-	<a href="registrar-reserva.php?paquete2=<?php echo $paquetes ?>Ver la otra Pagina</a>
+	<a href="registrar-reserva.php?paquete2=<?php echo $paquete2 ?>Ver la otra Pagina</a>
 
 </body>
 	 
