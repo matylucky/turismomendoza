@@ -89,13 +89,20 @@ exit;
  
   
 <div class="btn-group btn-group-justified">
-  <a href="registropasajero.php" class="btn btn-primary"> Fecha 1</button></a>
-  <a href="registropasajero2.php" class="btn btn-primary"> Fecha 2</button></a>
-  <a href="registropasajero3.php" class="btn btn-primary"> Fecha 3</button></a>
+  <a class="btn btn-primary"> Fecha 1</button></a>
+  <a class="btn btn-primary"> Fecha 2</button></a>
+  <a class="btn btn-primary"> Fecha 3</button></a>
  
 </div>
  
 <h3>A este destino se sale a las 8 y se vuelve a las 17 los días de semana</h3>
 <h3>Los fines de semana se sale a las 7 y se vuelve a las 16</h3>
+<h3> </h3>
+<h3> </h3>
+<h3> </h3>
+<div class="btn-group btn-group-justified">
+  <a href="registropasajero.php" class="btn btn-primary"> Reservar</button></a>
+
+
 </body>
 </html>
