@@ -92,7 +92,6 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 </nav>
 	
 	
-	$paquetes = "prueba";
 	
 <body>
 <h2>Seleccione destino y fecha a reservar</h2>	
