@@ -106,6 +106,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <option value="viñedos">Viñedos</option>
 	<option value="Las Leñas">Las Leñas</option>
     </select>
+	       <input type="paquete">
         </div>
     </div>
 	
@@ -119,6 +120,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	<option value="Fecha 2">Fecha 2</option>
 	<option value="Fecha 3">Fecha 3</option>
 	</select>
+	      <input type="fechas">
         </div>
     </div>
   <form class="form-horizontal" action="registrar-reserva.php" method="post">
