@@ -1,20 +1,12 @@
 <?php
 //incluimos el archivo donde se encuentran nuestros datos de conexion
- $paquete2=($_GET['paquete2']);
- $fecha=($_GET['fecha']);
+ //$paquete2=($_GET['paquete2']);
+ //$fecha=($_GET['fecha']);
 //$paquete2= "Hola MUNDO";
 include 'conexion.php';
  
  //$form_pass = $_POST['password'];
 
- ?>
- <pre>
- <?php
- print_t($_POST);
- ?>
- </pre>
-
-echo "$paquete2";
 
   
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
@@ -33,7 +25,7 @@ $row = mysql_fetch_array($result)
  //else{
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
-/$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST['$paquete2']', '$_POST['$fecha']')";
+$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST[paquete]', '$_POST[fechas]')";
 //$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]')";
  // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST["email"]', '$_POST["20"]')";
 
