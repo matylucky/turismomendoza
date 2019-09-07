@@ -113,7 +113,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	 <div class="form-group">
     <label class="control-label col-sm-2" for="Fechas">Fechas</label>
       <div class="col-sm-10">
-    <select class="form-control" id="fechas">
+    <select class="form-control" id="fechas" name="fechas">
 	<option>Seleccionar...</option>
     <option value="Fecha 1">Fecha 1</option>
 	<option value="Fecha 2">Fecha 2</option>
@@ -142,7 +142,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     </div>
 
 	
-    
+   <!-- 
     <div class="form-group">
     <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
@@ -1018,7 +1018,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 </script>
 
 	
-	<a href="registrar-reserva.php?paquete2=<?php echo $paquete2 ?>&fecha=<?php echo $fecha ?>Ver la otra Pagina</a>
+<!--	<a href="registrar-reserva.php?paquete2=<?php echo $paquete2 ?>&fecha=<?php echo $fecha ?>Ver la otra Pagina</a> -->
 
 </body>
 	 
