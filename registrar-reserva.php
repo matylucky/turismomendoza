@@ -7,7 +7,13 @@ include 'conexion.php';
  
  //$form_pass = $_POST['password'];
 
- die($_POST);
+ ?>
+ <pre>
+ <?php
+ print_t($_POST);
+ ?>
+ </pre>
+
 echo "$paquete2";
 
   
