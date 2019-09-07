@@ -95,11 +95,15 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	
 <body>
 <h2>Seleccione destino y fecha a reservar</h2>	
- <div class="form-group">
+ 
+<div class="container">
+  <h2>Alta pasajero 1</h2>
+  <div class="form-group">
     <label class="control-label col-sm-2" for="Paquete">Paquete</label>
       <div class="col-sm-10">
-    <select class="form-control" id="paquete">
-    <option value="viñedos" selected>Viñedos</option>
+    <select class="form-control" id="paquete" name="paquete">
+	<option>Seleccionar...</option>
+    <option value="viñedos">Viñedos</option>
 	<option value="Las Leñas">Las Leñas</option>
     </select>
         </div>
@@ -110,17 +114,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <label class="control-label col-sm-2" for="Fechas">Fechas</label>
       <div class="col-sm-10">
     <select class="form-control" id="fechas">
-    <option value="Fecha 1" selected>Fecha 1</option>
+	<option>Seleccionar...</option>
+    <option value="Fecha 1">Fecha 1</option>
 	<option value="Fecha 2">Fecha 2</option>
 	<option value="Fecha 3">Fecha 3</option>
 	</select>
         </div>
     </div>
-	
-	
-
-<div class="container">
-  <h2>Alta pasajero 1</h2>
   <form class="form-horizontal" action="registrar-reserva.php" method="post">
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
@@ -134,17 +134,20 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
         <input type="email" class="form-control" maxlength="50" id="email" placeholder=<?php echo  $_SESSION['mail'];?> name="email" >
       </div>
     </div>
-  <!--    <div class="form-group">
+  <div class="form-group">
       <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
       </div>
     </div>
+
+	
     
     <div class="form-group">
     <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad</label>
       <div class="col-sm-10">
-    <select class="form-control" id="nacionalidad">
+    <select class="form-control" id="nacionalidad" name="nacionalidad">
+	<option>Seleccionar...</option>
     <option value="AF">Afganistán</option>
 		<option value="AL">Albania</option>
 		<option value="DE">Alemania</option>
@@ -156,7 +159,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		<option value="AN">Antillas Holandesas</option>
 		<option value="SA">Arabia Saudí</option>
 		<option value="DZ">Argelia</option>
-		<option value="AR" selected>Argentina</option>
+		<option value="AR">Argentina</option>
 		<option value="AM">Armenia</option>
 		<option value="AW">Aruba</option>
 		<option value="AU">Australia</option>
