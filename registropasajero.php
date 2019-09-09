@@ -105,8 +105,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	<option>Seleccionar...</option>
     <option value="vinedos">Viñedos</option>
 	<option value="Lenas">Las Leñas</option>
-    </select>
-	       <input type="paquete">
+    </select> 
         </div>
     </div>
 	
@@ -120,7 +119,6 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	<option value="Fecha 2">Fecha 2</option>
 	<option value="Fecha 3">Fecha 3</option>
 	</select>
-	      <input type="fechas">
         </div>
     </div>
   <form class="form-horizontal" action="registrar-reserva.php" method="post">
@@ -983,7 +981,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 				    e.preventDefault();
 			    }
 
-	
+	/*
 	$( document ).ready(function() {
 			$paquete2 = "";	
 			$fecha ="";
@@ -1008,7 +1006,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
 		
 		
-/*		
+		
 	$paquete2 ="";	
 	$( document ).ready(function() {
 		$( "#paquete" ).change(function() {
