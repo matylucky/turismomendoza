@@ -103,8 +103,8 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
     <select class="form-control" id="paquete" name="paquete">
 	<option>Seleccionar...</option>
-    <option value="viñedos">Viñedos</option>
-	<option value="Las Leñas">Las Leñas</option>
+    <option value="vinedos">Viñedos</option>
+	<option value="Lenas">Las Leñas</option>
     </select>
 	       <input type="paquete">
         </div>
