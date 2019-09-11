@@ -95,7 +95,8 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	
 <body>
 <h2>Seleccione destino y fecha a reservar</h2>	
- 
+   <form class="form-horizontal" action="registrar-reserva.php" method="post">
+
 <div class="container">
   <h2>Alta pasajero 1</h2>
   <div class="form-group">
@@ -121,7 +122,6 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	</select>
         </div>
     </div>
-  <form class="form-horizontal" action="registrar-reserva.php" method="post">
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nombre y Apellido</label>
       <div class="col-sm-10">
