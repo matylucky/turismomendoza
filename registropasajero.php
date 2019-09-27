@@ -139,7 +139,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
         <input type="text" class="form-control" maxlength="25" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
       </div>
-    </div>-->
+    </div>
 
 	
    
@@ -384,13 +384,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		<option value="ZW">Zimbabue</option>
 		</select>
         </div>
-    </div>
-   <!-- <div class="form-group">
+    </div>-->
+    <div class="form-group">
       <label class="control-label col-sm-2" for="dni">DNI:</label>
       <div class="col-sm-10">          
         <input type="numbers" class="form-control" maxlength="20" id="dni" placeholder=<?php echo  $_SESSION['dni'];?> name="dni"  onkeypress="solonumeros(event);">
       </div>
-    </div>-->
+    </div>
       <!-- <div class="form-group">
       <label class="control-label col-sm-2" for="telefono">Telefono:</label>
       <div class="col-sm-10">          
