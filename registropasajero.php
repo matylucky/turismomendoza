@@ -131,7 +131,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Email:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" maxlength="50" id="email" value="<?php echo  $_SESSION['mail'];?>" name="email" >
+        <input type="email" class="form-control" maxlength="50" id="email" name="email" value="<? echo  $_SESSION['mail'] ?>">
       </div>
     </div>
   <div class="form-group">
