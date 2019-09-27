@@ -32,7 +32,7 @@ $mail2 = $_POST['mail2'];
  
 //$sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$email'";
 $sql = "SELECT * FROM $tbl_name WHERE USU_EMAIL = '$username'";
-$sql2 = "SELECT perfil_rol FROM $tbl_name WHERE USU_EMAIL = '$username' AND USU_PASS = '$password'"
+$sql2 = "SELECT perfil_rol FROM $tbl_name WHERE USU_EMAIL = '$username' AND USU_PASS = '$password'";
 //$sql2 = "SELECT * FROM $tbl_name2 WHERE RES_EMAIL = '$mail2'";
 //$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
 
