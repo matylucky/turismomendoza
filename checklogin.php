@@ -36,7 +36,7 @@ $sql2 = "SELECT ROL_ID FROM $tbl_name WHERE USU_EMAIL = '$username' AND USU_PASS
 //$sql2 = "SELECT * FROM $tbl_name2 WHERE RES_EMAIL = '$mail2'";
 //$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
 
-$result = $conexion->query($sql);
+$result = $conexion->query($sql2);
 
 
 if ($result->num_rows > 0) {     }
@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {     }
 }*/
 
 
-if ($password==$row['USU_PASS']) { 
+//if ($password==$row['USU_PASS']) { 
 
   if ($row['ROL_ID'] == 2 ){
     $_SESSION['loggedin'] = true;
@@ -92,9 +92,9 @@ if ($password==$row['USU_PASS']) {
 			    //echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
 			    //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
 			header('Location: https://turismomendoza.herokuapp.com/test.php');//redirecciona a la pagina del usuario
-*/	
+//*/	
  } 
-}	
+//}	
 else { 
    echo "Username o Password estan incorrectos.";
 
