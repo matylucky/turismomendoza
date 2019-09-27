@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {     }
     //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
     header('Location: https://turismomendoza.herokuapp.com/index2.php');//redirecciona a la pagina del usuario
 	    }
-	elseif ($row['ROL_ID'] === 2 ){
+	elseif ($row['ROL_ID'] == NULL ){
 			 $_SESSION['loggedin'] = true;
    			$_SESSION['username'] = $username;
 			$_SESSION['usuario'] = $row['USU_NOMBRE'];
