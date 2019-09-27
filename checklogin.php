@@ -36,7 +36,7 @@ $sql2 = "SELECT ROL_ID FROM $tbl_name WHERE USU_EMAIL = '$username' AND USU_PASS
 //$sql2 = "SELECT * FROM $tbl_name2 WHERE RES_EMAIL = '$mail2'";
 //$sql = "SELECT * FROM $tbl_name WHERE USU_NOMBRE = '$usuario'";
 
-$result = $conexion->query($sql2);
+$result = $conexion->query($sql);
 
 
 if ($result->num_rows > 0) {     }
