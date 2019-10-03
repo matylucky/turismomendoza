@@ -15,7 +15,7 @@
          ’c1969fe7872181d’,          // La contraseña 
          heroku_06e2145fb0a0577); // La base de datos 
  
- if($mysqli->connect_errno) { 
+ if($mysqli->connect_error) { 
    echo ’<p>Error al conectar con la base de datos: ’ . $mysqli->connect_error; 
    echo ’</p>’; 
    exit; 
