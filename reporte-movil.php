@@ -34,10 +34,10 @@
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
  while ($columna = mysqli_fetch_array( $resultado )) {
    echo "<tr>"; 
-   echo "<td>" . $fila["BUS_ID"] . "</td>"; 
-   echo "<td>" . $fila["BUS_PATENTE"] . "</td>"; 
-   echo "<td>" . $fila["BUS_CAPACIDAD"] . "</td>"; 
-   echo "<td>" . $fila["BUS_ESTADO"] . "</td>"; 
+   echo "<td>" . $columna["BUS_ID"] . "</td>"; 
+   echo "<td>" . $columna["BUS_PATENTE"] . "</td>"; 
+   echo "<td>" . $columna["BUS_CAPACIDAD"] . "</td>"; 
+   echo "<td>" . $columna["BUS_ESTADO"] . "</td>"; 
    echo "</tr>"; 
  } 
  echo "</table>"; 
