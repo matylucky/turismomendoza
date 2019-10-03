@@ -149,12 +149,12 @@ Modulo de Administración proporcionado por MSP
 }
 
   // Se conecta al SGBD 
-  if(!($iden = mysql_connect("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577"))) 
+  if(!($iden = mysql_connect("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d"))) 
     die("Error: No se pudo conectar");
     
     
     // Selecciona la base de datos 
-  if(!mysql_select_db("biblioteca", $iden))
+  if(!mysql_select_db("heroku_06e2145fb0a0577", $iden))
     die("Error: No existe la base de datos"); 
 	
   // Sentencia SQL: muestra todo el contenido de la tabla "books" 
