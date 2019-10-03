@@ -85,6 +85,9 @@ if ($result->num_rows > 0) {     }
 			 $_SESSION['loggedin'] = true;
    			$_SESSION['username'] = $username;
 			$_SESSION['usuario'] = $row['USU_NOMBRE'];
+			$_SESSION['mail'] = $row['USU_EMAIL'];
+    			$_SESSION['dni'] = $row['USU_NRO_DOC'];
+    			$_SESSION['tel'] = $row['USU_TEL'];
 			$_SESSION['start'] = time();
 			$_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
