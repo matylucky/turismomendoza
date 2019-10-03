@@ -88,16 +88,21 @@ exit;
   </div>
 </nav>
 
-<?php echo $_SESSION['mail'];?>
+<!--<?php echo $_SESSION['mail'];?>-->
  
 <?php 
+ 
+  $mail = $_SESSION['mail'];
+ 
+ print("el usuario es : $mail");
+ 
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- $mail = $_SESSION['mail'];
+
  // Ejecuta una sentencia SQL 
  $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL == $mail"; 
  /*if(!($resultado = $conexion->query($consulta))) { 
