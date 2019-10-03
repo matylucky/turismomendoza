@@ -90,13 +90,13 @@ exit;
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="patente">Patente</label>
-      <div class="col-sm-8">
+      <div class="col-sm-4">
         <input type="text" class="form-control" maxlength="7" placeholder="Ingrese patente" name="patente" id="patente">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="pax">Capacidad de pasajeros:</label>
-      <div class="col-sm-8">
+      <div class="col-sm-4">
         <input type="number" class="form-control" maxlength="2" id="pax" name="pax" placeholder="Ingresar número" onkeypress="solonumeros(event);">
       </div>
     </div>
@@ -111,37 +111,10 @@ exit;
 
 
 
-
-
-
-
-
-  
-<div class="container text-center">    
-  <h3>Modulo de Administración</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-        <a href="servicios2.php"><img src="https://i.ibb.co/RQL4C6H/Bus-Mercedes-Benz-Sprinter.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
-      <p>Servicios</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=Turismo!" class="img-responsive" style="width:100%" alt="Image">
-      <p>Hay que ver que poner aca</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>texto del medio</p>
-      </div>
-      <div class="well">
-       <p>Acá puede ir el calendario</p>
-      </div>
-    </div>
-  </div>
-</div><br>
-
 <footer class="container-fluid text-center">
 Modulo de Administración proporcionado por MSP
 </footer>
+
 
 
 
