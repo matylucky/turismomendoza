@@ -94,8 +94,8 @@ exit;
  
   $mail = $_SESSION['mail'];
  
- print("el usuario es : $_SESSION['mail']");
- 
+ print("el usuario es : $mail");
+ print("");
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
@@ -104,7 +104,7 @@ exit;
 }
 
  // Ejecuta una sentencia SQL 
- $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL = $_SESSION['mail']"; 
+ $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL = eli@eli.com"; 
  /*if(!($resultado = $conexion->query($consulta))) { 
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
