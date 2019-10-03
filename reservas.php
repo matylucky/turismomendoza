@@ -21,20 +21,16 @@ echo "Tu sesion a expirado,
 <a href='login.html'>Inicia Sesion</a>";
 exit;
 }
-//-----------------------------------------------
-/*$paquete2 = "";
-//	   for ($i=0;$i<count($paquete);$i++)    
-{     
-$paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];    
-}*/ 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Registro de Pasajeros</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reporte de reservas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -65,6 +61,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
   </style>
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -75,10 +72,11 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       </button>
       <a class="navbar-brand" href="#"> <p><?php echo  $_SESSION['usuario'];?></p> </a>
     </div>
+    
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="#"><a href="#">Inicio</a></li>
-        <li><a href="#">Reservas</a></li>
+        <li><a href="index2.php">Inicio</a></li>
+        <li class="active"><a href="#">Reservas</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="contacto2.php">Contacto</a></li>
       </ul>
@@ -89,20 +87,52 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     </div>
   </div>
 </nav>
-	
-	
-	
-<body>
 
-<!DOCTYPE html>
-<html lang="en">
-<body>
-    <h3>Reservas</h3>
-    <h3>aca se veran las reservas realizadas</h3>
-      <p><?php echo  $_SESSION['usuario'];?></p>
-    <p><?php echo  $_SESSION['pasajero'];?></p>
-    <p><?php echo  $_SESSION['mail2'];?></p>
-    <p><?php echo  $_SESSION['dni2'];?></p>
 
-</body>
-</html> 
+<?php 
+ // Conecta con el servidor de MySQL 
+ include 'conexion.php';
+ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+ if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+}
+ $mail = $_SESSION['mail'];
+ // Ejecuta una sentencia SQL 
+ $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL=$mail"; 
+ /*if(!($resultado = $conexion->query($consulta))) { 
+   echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
+   echo ’</p>’; 
+   exit; 
+ } */
+ $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
+    
+    
+ echo "<table borde='2'>";
+ echo "<tr>";
+ echo "<th>RES_ID</th><th>PAS_NOMBRE</th><th>PAS_DNI</th>"; 
+ echo "<th>RES_MAIL</th><th>PAQ_ID</th><th>PAQ_FECHA</th>"; 
+ echo "</tr>"; 
+ // Recorre el resultado y lo muestra en forma de tabla HTML 
+ //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
+ while ($columna = mysqli_fetch_array( $resultado )) {
+   echo "<tr>"; 
+   echo "<td>" . $columna["RES_ID"] . "</td>"; 
+   echo "<td>" . $columna["PAS_NOMBRE"] . "</td>"; 
+   echo "<td>" . $columna["PAS_DNI"] . "</td>"; 
+   echo "<td>" . $columna["RES_MAIL"] . "</td>"; 
+   echo "<td>" . $columna["PAQ_ID"] . "</td>"; 
+   echo "<td>" . $columna["PAQ_FECHA"] . "</td>"; 
+   echo "</tr>"; 
+ } 
+ echo "</table>"; 
+ 
+ // Libera la memoria ocupada por el resultado 
+ $resultado->close(); 
+ // Cierra la conexión 
+ $conexion->close(); 
+?> 
+    
+    
+    <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
+</body> 
+</html>
