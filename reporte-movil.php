@@ -22,7 +22,7 @@
  } 
  
  // Ejecuta una sentencia SQL 
- $sentencia = ’SELECT * FROM buses; 
+ $sentencia = "SELECT * FROM buses"; 
  if(!($resultado = $mysqli->query($sentencia))) { 
    echo "<p>Error al ejecutar la sentencia <b>$sentencia</b>: " . $mysqli->error; 
    echo ’</p>’; 
