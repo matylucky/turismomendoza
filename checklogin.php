@@ -79,7 +79,7 @@ if ($result->num_rows > 0) {     }
     echo "Bienvenido! " . $_SESSION['usuario'];
     //echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
     //header('Location: https://turismomendoza.herokuapp.com/panel-control.php');//redirecciona a la pagina del usuario
-    header('Location: https://turismomendoza.herokuapp.com/test.php');//redirecciona a la pagina del usuario
+    header('Location: https://turismomendoza.herokuapp.com/admin.php');//redirecciona a la pagina del usuario
 	    }
 	elseif ($row['ROL_ID'] == NULL ){
 			 $_SESSION['loggedin'] = true;
