@@ -10,7 +10,7 @@
 <?php 
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
- $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
@@ -25,7 +25,8 @@
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
     
- echo "<table><tr>"; 
+ echo "<table borde='2'>";
+ echo "<tr>";
  echo "<th>BUS_ID</th><th>BUS_PATENTE</th><th>BUS_CAPACIDAD</th>"; 
  echo "<th>BUS_ESTADO</th>"; 
  echo "</tr>"; 
