@@ -88,7 +88,8 @@ exit;
   </div>
 </nav>
 
-
+echo $_SESSION['mail'];
+ 
 <?php 
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
