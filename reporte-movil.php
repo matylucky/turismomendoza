@@ -34,7 +34,7 @@
  echo "<th>BUS_ESTADO</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
- while($fila = $resultado->fetch_assoc()) { 
+ while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
    echo "<tr>"; 
    echo "<td>" . $fila["BUS_ID"] . "</td>"; 
    echo "<td>" . $fila["BUS_PATENTE"] . "</td>"; 
