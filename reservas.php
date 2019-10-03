@@ -88,7 +88,7 @@ exit;
   </div>
 </nav>
 
-echo $_SESSION['mail'];
+<?php echo $_SESSION['mail'];?>
  
 <?php 
  // Conecta con el servidor de MySQL 
