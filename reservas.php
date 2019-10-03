@@ -139,6 +139,6 @@ exit;
 ?> 
     
     
-    <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
+    <a href="index2.php" class="btn btn-info btn-lg" role="button">Volver</a>
 </body> 
 </html>
