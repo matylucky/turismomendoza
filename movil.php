@@ -109,6 +109,7 @@ exit;
 
 </form>	 
 
+	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>
 
 
 <footer class="container-fluid text-center">
