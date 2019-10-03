@@ -98,7 +98,7 @@ exit;
 }
  $mail = $_SESSION['mail'];
  // Ejecuta una sentencia SQL 
- $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL=$mail"; 
+ $consulta = "SELECT * FROM $tbl_name2 WHERE RES_MAIL == $mail"; 
  /*if(!($resultado = $conexion->query($consulta))) { 
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
