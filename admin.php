@@ -85,27 +85,20 @@ exit;
 
   
   
+
+    
+  
 <div class="container text-center">    
-  <h3>Bienvenidos a la administración de Turismo Mendoza!</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-        <a href="servicios2.php"><img src="https://i.ibb.co/RQL4C6H/Bus-Mercedes-Benz-Sprinter.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
-      <p>Servicios</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=Turismo!" class="img-responsive" style="width:100%" alt="Image">
-      <p>Hay que ver que poner aca</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>texto del medio</p>
-      </div>
-      <div class="well">
-       <p>Acá puede ir el calendario</p>
-      </div>
-    </div>
-  </div>
+  <h3>Modulo de Administración</h3><br>
+
+
+  
+  <a href="movil.php" class="btn btn-info btn-lg" role="button">Alta de móviles</a>
+
+  <a href="viajes.php" class="btn btn-info btn-lg" role="button">Vista de reservas</a> 
+
 </div><br>
+
 
 <footer class="container-fluid text-center">
 Modulo de Administración proporcionado por MSP
