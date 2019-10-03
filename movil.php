@@ -97,7 +97,7 @@ exit;
     <div class="form-group">
       <label class="control-label col-sm-2" for="pax">Capacidad de pasajeros:</label>
       <div class="col-sm-4">
-        <input type="number" class="form-control" maxlength="2" id="pax" name="pax" placeholder="Ingresar número" onkeypress="solonumeros(event);">
+        <input type="text" class="form-control" maxlength="2" id="pax" name="pax" placeholder="Ingresar número" onkeypress="solonumeros(event);">
       </div>
     </div>
     <div class="form-group">        
