@@ -117,7 +117,7 @@ exit;
  } */
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
- $columna = mysqli_fetch_array( $resultado ))
+ //$columna = mysqli_fetch_array( $resultado ))
  
  //$prueba['prueba'] =  $columna["PAS_NOMBRE"];   
  /*echo "<table borde='2'>";
