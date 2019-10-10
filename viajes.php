@@ -132,5 +132,6 @@ exit;
     
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
+    <a href="viajes.html" class="btn btn-info btn-lg" role="button">Prueba</a>
 </body> 
 </html>
