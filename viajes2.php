@@ -95,7 +95,7 @@ exit;
          
         </div>
     </div>
-  <!--<font color="blue"> <b> <?php echo $prueba['prueba'];?></b></font>-->
+  <font color="blue"> <b> <?php echo $prueba['prueba'];?></b></font>
 
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
@@ -116,11 +116,8 @@ exit;
    exit; 
  } */
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
-    
- //$columna = mysqli_fetch_array( $resultado ))
- 
- //$prueba['prueba'] =  $columna["PAS_NOMBRE"];   
- /*echo "<table borde='2'>";
+  
+ echo "<table borde='2'>";
  echo "<tr>";
  echo "<th>RES_ID</th><th>PAS_NOMBRE</th><th>PAS_DNI</th>"; 
  echo "<th>RES_MAIL</th><th>PAQ_ID</th><th>PAQ_FECHA</th>"; 
@@ -137,7 +134,7 @@ exit;
    echo "<td>" . $columna["PAQ_FECHA"] . "</td>"; 
    echo "</tr>"; 
  } 
- echo "</table>"; */
+ echo "</table>";
  
  // Libera la memoria ocupada por el resultado 
  $resultado->close(); 
