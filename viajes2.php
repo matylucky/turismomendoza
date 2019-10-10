@@ -87,7 +87,7 @@ exit;
 </nav>
 
 
-<font color="red">Reservas: <b> <?php include('viajes.php');?></b></font>
+<font color="red">Reservas: <b> <?php include('viajeses.php');?></b></font>
 
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
