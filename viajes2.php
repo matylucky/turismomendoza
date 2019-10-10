@@ -89,7 +89,7 @@ exit;
 
  <div class="container">
         <div class="jumbotron">
-            
+            <h1>Listado de reservas</h1>
        <font color="blue"> <b> <?php include('viajeses.php');?></b></font>
          
         </div>
