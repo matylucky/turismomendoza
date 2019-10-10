@@ -21,6 +21,8 @@ echo "Tu sesion a expirado,
 <a href='login.html'>Inicia Sesion</a>";
 exit;
 }
+
+include 'viajeses.php';
 ?>
 
 <!DOCTYPE html>
@@ -94,7 +96,7 @@ exit;
          
         </div>
     </div>
- 
+  <font color="blue"> <b> <?php echo $columna["PAS_NOMBRE"];?></b></font>
 
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
