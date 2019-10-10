@@ -18,8 +18,8 @@
     
  echo "<table borde='2'>";
  echo "<tr>";
- echo "<th>RES_ID</th><th>PAS_NOMBRE</th><th>PAS_DNI</th>"; 
- echo "<th>RES_MAIL</th><th>PAQ_ID</th><th>PAQ_FECHA</th>"; 
+ echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
+ echo "<th>Mail de usuario</th><th>Destino</th><th>Fecha</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
