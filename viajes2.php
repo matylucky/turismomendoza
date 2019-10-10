@@ -95,7 +95,7 @@ exit;
          
         </div>
     </div>
-  <font color="blue"> <b> <?php echo $prueba['prueba'];?></b></font>
+  <!--<font color="blue"> <b> <?php echo $prueba['prueba'];?></b></font>-->
 
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
