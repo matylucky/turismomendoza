@@ -58,6 +58,9 @@ exit;
       display: none; 
     }
   }
+   #fecha1 {display:none;}
+   #fecha2 {display:none;}
+   #fecha3 {display:none;}
   </style>
 </head>
 <body>
@@ -89,8 +92,8 @@ exit;
 
  <div class="container" id=gral>
         <div class="jumbotron">
-            <h1>Listado de las Leñas</h1>
-       <font color="blue"> <b> <?php include('lenases.php');?></b></font>
+            <h1>Listado de Viñedos</h1>
+       <font color="blue"> <b> <?php include('vines.php');?></b></font>
          
         </div>
   
