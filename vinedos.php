@@ -93,6 +93,15 @@ exit;
 <div class="w3-container w3-teal" id=gral>
   <h2>Listado de Viñedos</h2>	
 </div>  
+  <div class="w3-container w3-teal" id=fecha1>
+  <h2>Viñedos Fecha 1</h2>	
+</div>  
+   <div class="w3-container w3-teal" id=fecha2>
+  <h2>Viñedos Fecha 2</h2>	
+</div>  
+  <div class="w3-container w3-teal" id=fecha3>
+  <h2>Viñedos Fecha 3</h2>	
+</div>  
  <div class="container" id=gral>
         <div class="jumbotron">
            
@@ -105,9 +114,7 @@ exit;
           <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
  
- <div class="w3-container w3-teal" id=fecha1>
-  <h2>Viñedos Fecha 1</h2>	
-</div>  
+
     <div class="container" id=fecha1>
         <div class="jumbotron">
           
@@ -122,9 +129,7 @@ exit;
 
     </div>
 
-  <div class="w3-container w3-teal" id=fecha2>
-  <h2>Viñedos Fecha 2</h2>	
-</div>  
+
     <div class="container" id=fecha2>
         <div class="jumbotron">
             
@@ -137,9 +142,7 @@ exit;
           <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
-  <div class="w3-container w3-teal" id=fecha3>
-  <h2>Viñedos Fecha 3</h2>	
-</div>  
+ 
     <div class="container" id=fecha3>
         <div class="jumbotron">
             
