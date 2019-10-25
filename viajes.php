@@ -75,8 +75,8 @@ exit;
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="admin.php">Inicio</a></li>
-        <li><a href="#">Moviles</a></li>
-        <li class="active"><a href="viajes.php">Reservas</a></li>
+        <li><a href="movil.php">Moviles</a></li>
+        <li class="active"><a href="#">Reservas</a></li>
       </ul>
              </button> <a class="navbar-brand navbar-right" href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a>
       <!--<ul class="nav navbar-nav navbar-right">
