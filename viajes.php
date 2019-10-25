@@ -93,12 +93,15 @@ exit;
          
         </div>
   
-          
+              <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
+    <a href="lenas.php" class="btn btn-info btn-lg" role="button">Reservas de Las Leñas</a>
+    <a href="vinedos.php" class="btn btn-info btn-lg" role="button">Reservas de Viñedos</a>
+  <!--  <a href="viajes2.php" class="btn btn-info btn-lg" role="button">Prueba</a> -->
     </div>
 
 <?php 
  // Conecta con el servidor de MySQL 
- include 'conexion.php';
+ /*include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
@@ -110,7 +113,7 @@ exit;
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
    exit; 
- } */
+ } 
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
     
@@ -136,13 +139,13 @@ exit;
  // Libera la memoria ocupada por el resultado 
  $resultado->close(); 
  // Cierra la conexión 
- $conexion->close(); 
+ $conexion->close(); */
 ?> 
     
     
-    <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
+ <!--   <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
     <a href="lenas.php" class="btn btn-info btn-lg" role="button">Reservas de Las Leñas</a>
     <a href="vinedos.php" class="btn btn-info btn-lg" role="button">Reservas de Viñedos</a>
-    <a href="viajes2.php" class="btn btn-info btn-lg" role="button">Prueba</a>
+    <a href="viajes2.php" class="btn btn-info btn-lg" role="button">Prueba</a> -->
 </body> 
 </html>
