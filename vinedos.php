@@ -129,7 +129,7 @@ exit;
  </div>
  
 
-    <div class="container" id=fecha1>
+    <div class="container" id=fecha1l>
         <div class="jumbotron">
           
        <font color="blue"> <b> <?php include('vinesf1.php');?></b></font>
@@ -155,7 +155,7 @@ exit;
     </div>
 
 
-    <div class="container" id=fecha2>
+    <div class="container" id=fecha2l>
         <div class="jumbotron">
             
        <font color="blue"> <b> <?php include('vinesf2.php');?></b></font>
@@ -179,7 +179,7 @@ exit;
     </div>
 
  
-    <div class="container" id=fecha3>
+    <div class="container" id=fecha3l>
         <div class="jumbotron">
             
        <font color="blue"> <b> <?php include('vinesf3.php');?></b></font>
