@@ -88,6 +88,16 @@ exit;
   </div>
 </nav>
 
+ 
+ <div class="container" id=gral>
+        <div class="jumbotron">
+            <h1>Reservas</h1>
+       <font color="blue"> <b> <?php include('reservaes.php');?></b></font>
+         
+        </div>
+  
+  </div>
+ 
 <!--<?php echo $_SESSION['mail'];?>-->
  
 <?php 
