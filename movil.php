@@ -84,8 +84,10 @@ exit;
   </div>
 </nav>
 
-  
-<h2>Formulario de alta de móviles</h2>	
+<div class="w3-container w3-teal">
+  <h2>Formulario de alta de móviles</h2>	
+</div>  
+
    <form class="form-horizontal" action="registrar-movil.php" method="post">
 
 
@@ -111,11 +113,12 @@ exit;
 </form>	 
 
 <div class="container" id=gral>
-        <div >
+        <div class="jumbotron">
             <h1>Listado de las Leñas</h1>
        <font color="blue"> <b> <?php include('repmov.php');?></b></font>
          
         </div>
+</div>
 						     
 						     
 						     
