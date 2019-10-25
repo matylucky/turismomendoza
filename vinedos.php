@@ -97,9 +97,9 @@ exit;
          
         </div>
   
-          <a href="#" onclick="document.getElementById('tr').style.display='block'; this.focus(); return false;" onblur="document.getElementById('tr').style.display='none';"" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="lenasf2.php" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="lenasf3.php" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+          <a href="javascript:document.getElementById('fecha1').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+          <a href="javascript:document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="javascript:document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
     <div class="container" id=fecha1>
         <div class="jumbotron">
