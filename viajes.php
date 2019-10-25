@@ -133,6 +133,7 @@ exit;
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
     <a href="lenas.php" class="btn btn-info btn-lg" role="button">Reservas de Las Leñas</a>
+    <a href="vinedos.php" class="btn btn-info btn-lg" role="button">Reservas de Viñedos</a>
     <a href="viajes2.php" class="btn btn-info btn-lg" role="button">Prueba</a>
 </body> 
 </html>
