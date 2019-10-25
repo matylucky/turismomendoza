@@ -30,6 +30,7 @@ exit;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -84,7 +85,7 @@ exit;
 </nav>
 
   
-<h2>Formulario de alta de móviles</h2>	
+<h2 class="w3-container w3-teal>Formulario de alta de móviles</h2>	
    <form class="form-horizontal" action="registrar-movil.php" method="post">
 
 
@@ -109,7 +110,16 @@ exit;
 
 </form>	 
 
-	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>
+<div class="container" id=gral>
+        <div class="jumbotron">
+            <h1>Listado de las Leñas</h1>
+       <font color="blue"> <b> <?php include('repmov.php');?></b></font>
+         
+        </div>
+						     
+						     
+						     
+<!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
 
 
 <footer class="container-fluid text-center">
