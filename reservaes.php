@@ -2,8 +2,8 @@
  
   $mail = $_SESSION['mail'];
  
- print("el usuario es : $mail");
- print("");
+ /*print("el usuario es : $mail");
+ print("");*/
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
