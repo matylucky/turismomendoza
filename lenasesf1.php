@@ -7,7 +7,7 @@
 }
  
  // Ejecuta una sentencia SQL 
- $consulta = "SELECT * FROM $tbl_name2 WHERE PAQ_ID='Lenas' & PAQ_FECHA='fecha1'";
+ $consulta = "SELECT * FROM $tbl_name2 WHERE PAQ_ID='Lenas' AND PAQ_FECHA='fecha1'";
  /*if(!($resultado = $conexion->query($consulta))) { 
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
