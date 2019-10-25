@@ -89,8 +89,8 @@ exit;
 
  <div class="container">
         <div class="jumbotron">
-            <h1>Listado de reservas</h1>
-       <font color="blue"> <b> <?php include('viajeses.php');?></b></font>
+            <h1>Listado de reservas para las Leñas</h1>
+       <font color="blue"> <b> <?php include('lenases.php');?></b></font>
          
         </div>
     </div>
@@ -106,7 +106,7 @@ exit;
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
 }
- 
+ /*
  // Ejecuta una sentencia SQL 
  //$consulta = "SELECT * FROM $tbl_name2"; 
  $consulta = "SELECT * FROM $tbl_name2 WHERE PAQ_ID='Lenas'";
@@ -114,7 +114,7 @@ exit;
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
    exit; 
- } */
+ } 
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
   
  echo "<table borde='2'>";
@@ -141,6 +141,6 @@ exit;
  // Cierra la conexión 
  $conexion->close(); 
 ?> 
-    
+   */ 
 </body> 
 </html>
