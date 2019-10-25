@@ -59,6 +59,9 @@ exit;
       display: none; 
     }
   }
+   #gral{
+    background-color: #3352FF!important;
+   }
   </style>
 </head>
 <body>
@@ -89,7 +92,7 @@ exit;
   </div>
 </nav>
 
-<div class="w3-container w3-teal" id=gral>
+<div class="w3-container w3-teal" id=gral >
   <h2>Reservas de <?php echo  $_SESSION['usuario'];?></h2>	
 </div> 
  
