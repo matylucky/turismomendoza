@@ -18,8 +18,8 @@
     
  echo "<table border='2' style='background-color:#FFFFFF;border-collapse:collapse;border:2px solid #6699FF;color:#000000;width:400'>";
  echo "<tr>";
- echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
- echo "<th>Mail de usuario</th><th>Destino</th><th>Fecha</th>"; 
+ echo "<th background-color: #4CAF50; color: white;>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
+ echo "<th background-color: #4CAF50; color: white;>Mail de usuario</th><th>Destino</th><th>Fecha</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
