@@ -96,7 +96,7 @@ exit;
   <h2>Reservas de <?php echo  $_SESSION['usuario'];?></h2>	
 </div> 
  
- <div class="container" id=gral>
+ <div class="container" id=grall>
         <div class="jumbotron">
             
        <font color="blue"> <b> <?php include('reservaes.php');?></b></font>
