@@ -109,8 +109,10 @@ exit;
         </div>
   
           
-          <a href="lenasf2.php" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="lenasf3.php" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+
     </div>
 
     <div class="container" id=fecha2>
@@ -120,9 +122,9 @@ exit;
          
         </div>
   
-          <a href="lenasf1.php" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          
-          <a href="lenasf3.php" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
     <div class="container" id=fecha3>
@@ -132,8 +134,9 @@ exit;
          
         </div>
   
-          <a href="lenasf1.php" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="lenasf2.php" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
           
     </div>
 
