@@ -93,9 +93,12 @@ exit;
        <font color="blue"> <b> <?php include('lenases.php');?></b></font>
          
         </div>
+  
+          <a href="lenasf1.php" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+          <a href="lenasf2.php" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="lenasf3.php" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
-    <a href="lenasf1.php" class="btn btn-info btn-lg" role="button">Fecha 1</a>
 
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
  
