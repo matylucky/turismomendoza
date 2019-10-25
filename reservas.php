@@ -101,7 +101,7 @@ exit;
 <!--<?php echo $_SESSION['mail'];?>-->
  
 <?php 
- 
+ /*
   $mail = $_SESSION['mail'];
  
  print("el usuario es : $mail");
@@ -120,7 +120,7 @@ exit;
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
    exit; 
- } */
+ } 
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
     
@@ -146,7 +146,7 @@ exit;
  // Libera la memoria ocupada por el resultado 
  $resultado->close(); 
  // Cierra la conexión 
- $conexion->close(); 
+ $conexion->close(); */
 ?> 
     
     
