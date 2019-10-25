@@ -32,6 +32,7 @@ exit;
     <title>Reporte de reservas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -89,10 +90,12 @@ exit;
   </div>
 </nav>
 
-
+<div class="w3-container w3-teal" id=gral>
+  <h2>Listado de Viñedos</h2>	
+</div>  
  <div class="container" id=gral>
         <div class="jumbotron">
-            <h1>Listado de Viñedos</h1>
+           
        <font color="blue"> <b> <?php include('vines.php');?></b></font>
          
         </div>
@@ -101,9 +104,13 @@ exit;
           <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
           <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
+ 
+ <div class="w3-container w3-teal" id=fecha1>
+  <h2>Viñedos Fecha 1</h2>	
+</div>  
     <div class="container" id=fecha1>
         <div class="jumbotron">
-            <h1>Viñedos Fecha 1</h1>
+          
        <font color="blue"> <b> <?php include('vinesf1.php');?></b></font>
          
         </div>
@@ -115,9 +122,12 @@ exit;
 
     </div>
 
+  <div class="w3-container w3-teal" id=fecha2>
+  <h2>Viñedos Fecha 2</h2>	
+</div>  
     <div class="container" id=fecha2>
         <div class="jumbotron">
-            <h1>Viñedos Fecha 2</h1>
+            
        <font color="blue"> <b> <?php include('vinesf2.php');?></b></font>
          
         </div>
@@ -127,9 +137,12 @@ exit;
           <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
+  <div class="w3-container w3-teal" id=fecha3>
+  <h2>Viñedos Fecha 3</h2>	
+</div>  
     <div class="container" id=fecha3>
         <div class="jumbotron">
-            <h1>Viñedos Fecha 3</h1>
+            
        <font color="blue"> <b> <?php include('vinesf3.php');?></b></font>
          
         </div>
