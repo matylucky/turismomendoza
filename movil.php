@@ -111,7 +111,7 @@ exit;
 </form>	 
 
 <div class="container" id=gral>
-        <div class="jumbotron">
+        <div >
             <h1>Listado de las Leñas</h1>
        <font color="blue"> <b> <?php include('repmov.php');?></b></font>
          
