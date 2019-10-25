@@ -89,7 +89,7 @@ exit;
 
  <div class="container">
         <div class="jumbotron">
-            <h1>Listado de las Leñas Fecha 1</h1>
+            <h1>Listado de las Leñas Fecha 2</h1>
        <font color="blue"> <b> <?php include('lenasesf2.php');?></b></font>
          
         </div>
