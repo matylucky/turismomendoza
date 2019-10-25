@@ -86,9 +86,12 @@ exit;
   </div>
 </nav>
  
+ <div class="w3-container w3-teal">
+  <h2>Listado de reservas</h2>	
+</div>  
+ 
 <div class="container" id=gral>
         <div class="jumbotron">
-            <h1>Listado total de reservas</h1>
        <font color="blue"> <b> <?php include('viajeses.php');?></b></font>
          
         </div>
