@@ -62,6 +62,9 @@ exit;
    #fecha1 {display:none;}
    #fecha2 {display:none;}
    #fecha3 {display:none;}
+   #fecha1l {display:none;}
+   #fecha2l {display:none;}
+   #fecha3l {display:none;}
   </style>
 </head>
 <body>
@@ -102,17 +105,28 @@ exit;
   <div class="w3-container w3-teal" id=fecha3>
   <h2>Viñedos Fecha 3</h2>	
 </div>  
- <div class="container" id=gral>
+ <div class="container" id=grall>
         <div class="jumbotron">
            
        <font color="blue"> <b> <?php include('vines.php');?></b></font>
          
         </div>
   
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
-    </div>
+        <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+       document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+       document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+       document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+       <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+       document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+       document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+       document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+
+       <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+       document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+       document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+       document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>       
+ </div>
  
 
     <div class="container" id=fecha1>
@@ -123,9 +137,20 @@ exit;
         </div>
   
           
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+        <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+        <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+
+        <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
 
     </div>
 
@@ -137,9 +162,20 @@ exit;
          
         </div>
   
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+        <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+        <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+        document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+        <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
  
@@ -150,9 +186,20 @@ exit;
          
         </div>
   
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+          document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+          document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+          <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+          document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+          document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+          <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+          document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+          document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
           
     </div>
 
