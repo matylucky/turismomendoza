@@ -95,7 +95,8 @@ exit;
         </div>
     </div>
 
-    
+    <a href="lenasf1.php" class="btn btn-info btn-lg" role="Fecha 1">Volver</a>
+
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
  
 
