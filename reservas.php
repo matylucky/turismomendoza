@@ -91,7 +91,7 @@ exit;
  
  <div class="container" id=gral>
         <div class="jumbotron">
-            <h1>Reservas</h1>
+            <h1>Reservas de <?php echo  $_SESSION['usuario'];?></h1>
        <font color="blue"> <b> <?php include('reservaes.php');?></b></font>
          
         </div>
