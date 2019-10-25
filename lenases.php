@@ -16,7 +16,7 @@
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
     
- echo "<table border='2';cellpadding="10">";
+ echo "<table border='2' cellpadding='10'>";
  echo "<tr>";
  echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
  echo "<th>Mail de usuario</th><th>Destino</th><th>Fecha</th>"; 
