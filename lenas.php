@@ -32,6 +32,7 @@ exit;
     <title>Reporte de reservas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -61,6 +62,9 @@ exit;
    #fecha1 {display:none;}
    #fecha2 {display:none;}
    #fecha3 {display:none;}
+   #fecha1l {display:none;}
+   #fecha2l {display:none;}
+   #fecha3l {display:none;}
   </style>
 </head>
 <body>
@@ -89,54 +93,111 @@ exit;
   </div>
 </nav>
 
+ <div class="w3-container w3-teal" id=gral>
+  <h2>Listado de Las Leñas</h2>	
+</div>  
+  <div class="w3-container w3-teal" id=fecha1>
+  <h2>Las Leñas Fecha 1</h2>	
+</div>  
+   <div class="w3-container w3-teal" id=fecha2>
+  <h2>Las Leñas Fecha 2</h2>	
+</div>  
+  <div class="w3-container w3-teal" id=fecha3>
+  <h2>Las Leñas Fecha 3</h2>	
+</div>  
 
- <div class="container" id=gral>
+ <div class="container" id=grall>
         <div class="jumbotron">
-            <h1>Listado de las Leñas</h1>
+            
        <font color="blue"> <b> <?php include('lenases.php');?></b></font>
          
         </div>
   
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
-    </div>
-    <div class="container" id=fecha1>
+        <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+       document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+       document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+       document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+       <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+       document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+       document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+       document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+
+       <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+       document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+       document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+       document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>       
+
+  </div>
+    <div class="container" id=fecha1l>
         <div class="jumbotron">
-            <h1>Las Leñas Fecha 1</h1>
+            
        <font color="blue"> <b> <?php include('lenasesf1.php');?></b></font>
          
         </div>
   
           
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Las Leñas todas fechas</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+        <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+        <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+
+        <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
 
     </div>
 
-    <div class="container" id=fecha2>
+    <div class="container" id=fecha2l>
         <div class="jumbotron">
-            <h1>Las Leñas Fecha 2</h1>
+            
        <font color="blue"> <b> <?php include('lenasesf2.php');?></b></font>
          
         </div>
   
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Las Leñas todas fechas</a>
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha3').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
+        <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+        <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+        document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+        document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+        <a href="javascript:document.getElementById('fecha3').style.display='block'; javascript:document.getElementById('fecha3l').style.display='block';
+        document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+        document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+        document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 3</a>
     </div>
 
-    <div class="container" id=fecha3>
+    <div class="container" id=fecha3l>
         <div class="jumbotron">
-            <h1>Las Leñas Fecha 3</h1>
+            
        <font color="blue"> <b> <?php include('lenasesf3.php');?></b></font>
          
         </div>
   
-          <a href="javascript:document.getElementById('gral').style.display='block';document.getElementById('fecha1').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Las Leñas todas fechas</a>
-          <a href="javascript:document.getElementById('fecha1').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha2').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
-          <a href="javascript:document.getElementById('fecha2').style.display='block';document.getElementById('gral').style.display='none';document.getElementById('fecha1').style.display='none';document.getElementById('fecha3').style.display='none';void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
+          <a href="javascript:document.getElementById('gral').style.display='block'; javascript:document.getElementById('grall').style.display='block';
+          document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+          document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none';void0" class="btn btn-info btn-lg" role="button">Viñedos todas fechas</a>
+
+          <a href="javascript:document.getElementById('fecha1').style.display='block';javascript:document.getElementById('fecha1l').style.display='block';
+          document.getElementById('gral').style.display='none';document.getElementById('grall').style.display='none';
+          document.getElementById('fecha2').style.display='none'; document.getElementById('fecha2l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 1</a>
+
+          <a href="javascript:document.getElementById('fecha2').style.display='block'; javascript:document.getElementById('fecha2l').style.display='block';
+          document.getElementById('gral').style.display='none'; document.getElementById('grall').style.display='none';
+          document.getElementById('fecha1').style.display='none'; document.getElementById('fecha1l').style.display='none';
+          document.getElementById('fecha3').style.display='none'; document.getElementById('fecha3l').style.display='none'; void0" class="btn btn-info btn-lg" role="button">Fecha 2</a>
           
     </div>
 
