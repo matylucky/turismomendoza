@@ -89,7 +89,7 @@ exit;
 
  <div class="container">
         <div class="jumbotron">
-            <h1>Listado de reservas para las Leñas</h1>
+            <h1>Listado de las Leñas</h1>
        <font color="blue"> <b> <?php include('lenases.php');?></b></font>
          
         </div>
