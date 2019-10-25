@@ -85,7 +85,7 @@ exit;
 </nav>
 
   
-<h2 class="w3-container w3-teal>Formulario de alta de móviles</h2>	
+<h2>Formulario de alta de móviles</h2>	
    <form class="form-horizontal" action="registrar-movil.php" method="post">
 
 
