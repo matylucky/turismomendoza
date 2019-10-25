@@ -24,7 +24,7 @@
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
  while ($columna = mysqli_fetch_array( $resultado )) {
-   echo "<tr>"; 
+   echo "<tr nth-child(even) {background-color: #f2f2f2;}>"; 
    echo "<td>" . $columna["RES_ID"] . "</td>";
    echo "<td>" . $columna["PAS_NOMBRE"] . "</td>"; 
    echo "<td>" . $columna["PAS_DNI"] . "</td>"; 
