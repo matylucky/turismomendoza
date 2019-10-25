@@ -105,10 +105,10 @@ exit;
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
     
     
- echo "<table borde='2'>";
- echo "<tr>";
- echo "<th>RES_ID</th><th>PAS_NOMBRE</th><th>PAS_DNI</th>"; 
- echo "<th>RES_MAIL</th><th>PAQ_ID</th><th>PAQ_FECHA</th>"; 
+ echo "<table border='2' style='background-color:#FFFFFF;border-collapse:separate;border:2px solid #6699FF;color:#000000'>";
+ echo "<tr style='background-color:#4CAF50;color:white'>";
+ echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
+ echo "<th>Mail de usuario</th><th>Destino</th><th>Fecha</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
