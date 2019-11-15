@@ -101,7 +101,7 @@ exit;
     <div class="form-group">
       <label class="control-label col-sm-2" for="descripcion">Descripcion del destino:</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Ingresar número" required>
+        <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Ingresar descripcion" required>
       </div>
     </div>
 
