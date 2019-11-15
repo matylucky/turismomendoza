@@ -93,9 +93,9 @@ exit;
 
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="patente">Patente</label>
+      <label class="control-label col-sm-2" for="destino">Destino</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" maxlength="7" placeholder="Ingrese Nombre destino" name="destino" id="destino" required>
+        <input type="text" class="form-control" maxlength="50" placeholder="Ingrese Nombre destino" name="destino" id="destino" required>
       </div>
     </div>
     <div class="form-group">
