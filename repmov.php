@@ -29,8 +29,8 @@
    echo "<td>" . $columna["BUS_PATENTE"] . "</td>"; 
    echo "<td>" . $columna["BUS_CAPACIDAD"] . "</td>"; 
    //echo "<td>" . $columna["BUS_ESTADO"] . "</td>"; 
-   if ($columna["BUS_ESTADO"] == 1 ){ echo "<td>" "OPERATIVO" "</td>";}
-     elseif ($columna["BUS_ESTADO"] == NULL) { echo "<td>" " NO OPERATIVO" "</td>";}
+   if ($columna["BUS_ESTADO"] == 1 ){ echo "<td>". $columna["BUS_PRUEBA"] ."</td>";}
+     elseif ($columna["BUS_ESTADO"] == NULL) { echo "<td>". $columna["BUS_PRUEBA2"] . "</td>";}
   
    echo "</tr>"; 
  } 
