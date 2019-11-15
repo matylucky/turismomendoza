@@ -11,4 +11,5 @@ $host_db = "us-cdbr-iron-east-02.cleardb.net";
  $tbl_name3 = "pasajeros";
  $tbl_buses = "buses";
  $tbl_destinos = "destinos";
+ $tbl_paquetes = "paquetes";
 ?>
