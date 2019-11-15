@@ -124,9 +124,9 @@ exit;
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="destino">Destino</label>
+      <label class="control-label col-sm-2" for="bus">Destino</label>
       <div class="col-sm-4">
-           <select class="form-control" id="paquete" name="paquete">
+           <select class="form-control" id="bus" name="bus">
 	            <option>Seleccionar...</option>
 
 	            <?php
