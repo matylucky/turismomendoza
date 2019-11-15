@@ -127,7 +127,7 @@ exit;
 <div class="w3-container w3-teal">
   <h2>Ubicación de móvil</h2>	
 </div>         
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.2915528392073!2d-68.84291688421517!3d-32.890458976377346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091a2f8805c3%3A0xa38e6a62298a1d76!2sPaseo%20Sarmiento%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1573848039162!5m2!1ses-419!2sar" width="1200" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>         
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.2915528392073!2d-68.84291688421517!3d-32.890458976377346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091a2f8805c3%3A0xa38e6a62298a1d76!2sPaseo%20Sarmiento%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1573848039162!5m2!1ses-419!2sar" width="1020" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>         
         </div>
 </div>
 			
