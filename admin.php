@@ -92,7 +92,7 @@ exit;
 <div class="container text-center">    
   <h3>Modulo de Administración</h3><br>
 
-
+  <a href="destinos.php" class="btn btn-info btn-lg" role="button">Alta de destinos</a>
   
   <a href="movil.php" class="btn btn-info btn-lg" role="button">Alta de móviles</a>
 
