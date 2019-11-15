@@ -29,7 +29,7 @@
    echo "<td>" . $columna["BUS_PATENTE"] . "</td>"; 
    echo "<td>" . $columna["BUS_CAPACIDAD"] . "</td>"; 
    //echo "<td>" . $columna["BUS_ESTADO"] . "</td>"; 
-   if ($columna["BUS_ESTADO"] = 1 ){
+   if ($columna["BUS_ESTADO"] == 1 ){
     echo "<td>" "OPERATIVO" "</td>";
    }else { echo "<td>" " NO OPERATIVO" "</td>";}
   
