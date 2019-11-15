@@ -6,7 +6,7 @@ include 'conexion.php';
  die("La conexion falló: " . $conexion->connect_error);
 }
  
-$query = "INSERT INTO $tbl_paquetes (DES_ID, PAQ_FECHA, PAQ_PRECIO, BUS_ID) VALUES ('$_POST[destino]', '$_POST[fecha]', '$_POST[precio]', '$_POST[bus]')";
+$query = "INSERT INTO $tbl_paquetes (DES_ID, PAQ_FECHA, PAQ_PRECIO, BUS_ID) VALUES ('$_POST[paquete]', '$_POST[fecha]', '$_POST[precio]', '$_POST[bus]')";
  if ($conexion->query($query) === TRUE) {
  
  echo "<h3>" . "Se realizo el alta del paquete: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
