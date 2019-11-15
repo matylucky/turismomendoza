@@ -101,14 +101,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
     <select class="form-control" id="paquet2" name="paquet2">
 	<option>Seleccionar...</option>
-        <?php
-             $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-
-          $query = $mysqli -> query ("SELECT * FROM destinos");
-          while ($valores = mysqli_fetch_array($query)) {
-            echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_NOMBRE].'</option>';
-          }
-        ?>
+    <option value="vinedos">Viñedos</option>
+	<option value="Lenas">Las Leñas</option>
+	    
     </select> 
         </div>
     </div>
@@ -124,8 +119,15 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
     <select class="form-control" id="paquete" name="paquete">
 	<option>Seleccionar...</option>
-    <option value="vinedos">Viñedos</option>
-	<option value="Lenas">Las Leñas</option>
+
+	            <?php
+             $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+
+          $query = $mysqli -> query ("SELECT * FROM destinos");
+          while ($valores = mysqli_fetch_array($query)) {
+            echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
+          }
+        ?>
     </select> 
         </div>
     </div>
