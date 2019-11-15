@@ -75,7 +75,8 @@ exit;
         <li><a href="admin.php">Inicio</a></li>
         <li><a href="moviles.php">Moviles</a></li>
         <li><a href="viajes.php">Reservas</a></li>
-        <li class="active"><a href="#">Destinos</a></li>
+	<li><a href="Destinos.php">Destinos</a></li>
+        <li class="active"><a href="#">Paquetes</a></li>
       </ul>
              </button> <a class="navbar-brand navbar-right" href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a>
       <!--<ul class="nav navbar-nav navbar-right">
