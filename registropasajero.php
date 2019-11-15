@@ -94,6 +94,26 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	
 	
 <body>
+	<div class="form-group">
+    <label class="control-label col-sm-2" for="Paquet">Paquet2</label>
+      <div class="col-sm-10">
+
+
+    <select class="form-control" id="paquet2" name="paquet2">
+	<option>Seleccionar...</option>
+        <?php
+             $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+
+          $query = $mysqli -> query ("SELECT * FROM destinos");
+          while ($valores = mysqli_fetch_array($query)) {
+            echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_NOMBRE].'</option>';
+          }
+        ?>
+    </select> 
+        </div>
+    </div>
+	
+	
 <h2>Seleccione destino y fecha a reservar</h2>	
    <form class="form-horizontal" action="registrar-reserva.php" method="post">
 
