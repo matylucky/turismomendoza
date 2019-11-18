@@ -125,7 +125,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
           $query = $mysqli -> query ("SELECT * FROM destinos");
           while ($valores = mysqli_fetch_array($query)) {
+             if($valores[DES_ESTADO] == 1 ){
             echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
+            }
           }
         ?>
     </select> 
