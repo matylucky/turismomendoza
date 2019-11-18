@@ -145,7 +145,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 		    $query = $mysqli -> query ("SELECT * FROM destinos");
 		    $consulta = $mysqli -> query("SELECT * FROM paquetes");
 		    while ($valores = mysqli_fetch_array($query) && $referencia = mysqli_fetch_array($consulta)) {
-		    if($valores[DES_NOMBRE] == $consulta[DES_ID] && $consulta[PAQ_ESTADO] == 1 ){
+		    if($valores[DES_NOMBRE] == $consulta[DES_ID]){
 			echo '<option value="'.$valores[PAQ_FECHA].'">'.$valores[PAQ_FECHA].'</option>';
 			}
 		    }
