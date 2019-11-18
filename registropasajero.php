@@ -140,9 +140,16 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
     <select class="form-control" id="fechas" name="fechas">
 	<option>Seleccionar...</option>
-    <option value="Fecha 1">Fecha 1</option>
-	<option value="Fecha 2">Fecha 2</option>
-	<option value="Fecha 3">Fecha 3</option>
+      		<?php
+		    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+		    $query = $mysqli -> query ("SELECT * FROM destinos");
+		    $consulta = $mysqli -> query("SELECT * FROM paquetes");
+		    while ($valores = mysqli_fetch_array($query) && $referencia = mysqli_fetch_array($consulta)) {
+		    if($valores[DES_NOMBRE] == $consulta[DES_ID] && $consulta[PAQ_ESTADO] == 1 ){
+			echo '<option value="'.$valores[PAQ_FECHA].'">'.$valores[PAQ_FECHA].'</option>';
+			}
+		    }
+		?>
 	</select>
         </div>
     </div>
