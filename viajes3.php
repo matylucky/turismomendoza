@@ -168,7 +168,7 @@ echo "<td>" . $fila['PAQ_FECHA'] . "</td>";
 echo "<td>" . $fila['PAQ_FECHA2'] . "</td>"; 
 echo "</tr>";
 
-
+}
  } ?>
 </table>
 </div>
