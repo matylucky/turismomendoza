@@ -138,7 +138,38 @@ exit;
 <b>Acciones</b>
 </div></td>
 </tr>
+ <?php 
+include 'conexion.php';
+ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+ if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+}
+ $sql = "SELECT * FROM $tbl_name2";
+$consulta = mysqli_query($sql); ?>
  
+<? while($fila = mysqli_fetch_array($consulta)){
+foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); } ?>
+ 
+<tr>
+<td><? echo $fila['RES_ID'] ?></td>
+<td><? echo $fila['PAS_NOMBRE'] ?></td>
+<td><? echo $fila['PAS_DNI'] ?></td>
+<td><? echo $fila['RES_MAIL'] ?></td>
+<td><? echo $fila['PAQ_ID'] ?></td>
+<td><? echo $fila['PAQ_FECHA'] ?></td>
+<td><? echo $fila['PAQ_FECHA2'] ?></td>
+//<td><img src="imagenes/<? echo $fila['foto1'] ?>" width="150" height="75" /></td>
+//<td width="103"><div align="center"><a href=edit.php?id=<? echo $fila['id'] ?>>Modificar</a></div></td>
+</tr>
+<? } ?>
+</table>
+</div>
+<br />
+
+ $resultado->close(); 
+ // Cierra la conexión 
+ $conexion->close(); 
+?> 
 
 
     
