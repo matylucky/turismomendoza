@@ -22,7 +22,9 @@ echo "Tu sesion a expirado,
 exit;
 }
 ?>
-
+<?php
+include 'conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
