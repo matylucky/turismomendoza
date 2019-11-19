@@ -167,7 +167,7 @@ include 'conexion.php';
 <td>' echo $fila['PAQ_FECHA2'] '</td>
 
 </tr>'
-<? } ?>
+ } ?>
 </table>
 </div>
 <br /><br /><br /><br /><br /><br />
