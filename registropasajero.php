@@ -39,6 +39,23 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script language="javascript" src="js/jquery-3.1.1.min.js"></script>
+		
+	<script language="javascript">
+	    $(document).ready(function(){
+		$("#paquete").change(function () {
+
+		    $('#fechas').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
+
+		    $("#paquete option:selected").each(function () {
+			DES_ID = $(this).val();
+			$.post("includes/getfechas.php", { DES_ID: DES_ID }, function(data){
+			    $("#fechas").html(data);
+			});            
+		    });
+		})
+	    });
+	</script> 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -139,21 +156,10 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
     <label class="control-label col-sm-2" for="Fechas">Fechas</label>
       <div class="col-sm-10">
     <select class="form-control" id="fechas" name="fechas">
-	<option>Seleccionar...</option>
-      		<!--<option value="Fecha1">Fecha 1</option>
+	<!--<option>Seleccionar...</option>
+      		<option value="Fecha1">Fecha 1</option>
 	<option value="Fecha2">Fecha 2</option>-->
-	    	<?php
-		    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-
-		    $cat=$_POST['paquete'];
-		    $result = $mysqli -> query ("select * from paquetes where DES_ID = '$cat'" )
-
-		    while ($referencia = mysqli_fetch_array($result)) {
-		    if($referencia[PAQ_ESTADO] == 1 ){
-			echo '<option value="'.$referencia[PAQ_FECHA].'">'.$referencia[PAQ_FECHA].'</option>';
-			}
-		    }
-		?>
+	    
 	</select>
         </div>
     </div>
