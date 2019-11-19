@@ -35,6 +35,21 @@ exit;
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script language="javascript" src="js/jquery-3.1.1.min.js"></script>
+		
+	<script language="javascript">
+	    $(document).ready(function(){
+		$("#paquete").change(function () {
+		    //$('#fechas').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
+		    $("#paquete option:selected").each(function () {
+			DES_ID = $(this).val();
+			$.post("getfechas.php", { DES_ID: DES_ID }, function(data){
+			    $("#fechas").html(data);
+			});            
+		    });
+		})
+	    });
+	</script> 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -100,6 +115,46 @@ exit;
     
     <a href="admin.php" class="btn btn-info btn-lg" role="button">Volver</a>
  
+ <h2>Seleccione destino y fecha a reservar</h2>	
+   <form class="form-horizontal" action="#" method="get">
+
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Paquete">Paquete</label>
+        <div class="col-sm-10">
+      <select class="form-control" id="paquete" name="paquete">
+        <option>Seleccionar...</option>
+
+               <?php
+               $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+            $query = $mysqli -> query ("SELECT DISTINCT DES_ID, PAQ_ESTADO FROM paquetes");
+            while ($valores = mysqli_fetch_array($query)) {
+               if($valores[PAQ_ESTADO] == 1 ){
+              echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_ID].'</option>';
+              }
+            }
+          ?>
+      </select> 
+          </div>
+    </div>
+ 
+ 
+	 <div class="form-group">
+    <label class="control-label col-sm-2" for="fechas">Fechas</label>
+             <div class="col-sm-10">
+           <select class="form-control" id="fechas" name="fechas">
+        <!--<option>Seleccionar...</option>
+               <option value="Fecha1">Fecha 1</option>
+        <option value="Fecha2">Fecha 2</option>-->
+
+        </select>
+               </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">realizar busqueda</button>
+        <!--<button type="button" class="btn btn-default" onclick="location.href=#">Agregar otro pasajero</button>-->
+      </div>
+    </div>	
  <?php 
  // Conecta con el servidor de MySQL 
  include 'conexion.php';
