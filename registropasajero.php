@@ -139,15 +139,13 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	
 	
 	 <div class="form-group">
-    <label class="control-label col-sm-2" for="Fechas">Fechas</label>
+    <label class="control-label col-sm-2" for="fechas">Fechas</label>
       <div class="col-sm-10">
     <select class="form-control" id="fechas" name="fechas">
 	<!--<option>Seleccionar...</option>
       		<option value="Fecha1">Fecha 1</option>
 	<option value="Fecha2">Fecha 2</option>-->
-	    	<?php while($rowM = $resultadoM->fetch_assoc()) { ?>
-					<option value="<?php echo $rowM['PAQ_FECHA']; ?>" <?php if($rowM['PAQ_FECHA']==$fechas) { echo 'selected'; } ?>><?php echo $rowM['PAQ_FECHA']; ?></option>
-				<?php } ?>
+
 	</select>
         </div>
     </div>
