@@ -25,7 +25,7 @@ $row = mysql_fetch_array($result)
  //else{
 */
 // $query = "INSERT INTO $tbl_name2 (USU_ID, ) VALUES ('$_POST[email]')";
-$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST[paquete]', '$_POST[fechas]')";
+$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FECHA2) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]', '$_POST[paquete]', '$_POST[fechas]')";
 //$query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL) VALUES ('$_POST[username]', '$_POST[dni]', '$_POST[email]')";
  // $query = "INSERT INTO $tbl_name2 (USU_ID, PAQ_ID) VALUES ('$_POST["email"]', '$_POST["20"]')";
 
@@ -33,7 +33,7 @@ $query = "INSERT INTO $tbl_name2 (PAS_NOMBRE, PAS_DNI, RES_MAIL, PAQ_ID, PAQ_FEC
  // header('Location: http://localhost/Login/login.html');
  // echo "<br />" . "<h1>" . "Gracias por registrarse!" . "</h1>";
  echo "<h3>" . "Gracias por su reserva: " . $_POST['username'] . "</h3>" . "\n\n";
- echo "<h3>" .  "<a href='index2.php'>Inicio</a>" . "</h3>"; 
+ echo "<h3>" .  "<a href='reservas.php'>Ver sus reservas</a>" . "</h3>"; 
  
 
  }
