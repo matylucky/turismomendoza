@@ -22,7 +22,8 @@ echo "Tu sesion a expirado,
 exit;
 }
 ?>
-
+<?php //incluimos la conexión a la base de datos
+include('conexion.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,20 +36,6 @@ exit;
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery-3.1.1.min.js"></script>
-		
-	<script language="javascript">
-	    $(document).ready(function(){
-		$("#paquete").change(function () {
-		    //$('#fechas').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
-		    $("#paquete option:selected").each(function () {
-			DES_ID = $(this).val();
-			$.post("getfechas.php", { DES_ID: DES_ID }, function(data){
-			    $("#fechas").html(data);
-			});            
-		    });
-		})
-	    });
-	</script> 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -108,8 +95,7 @@ exit;
 
 
 
-<? //incluimos la conexión a la base de datos
-include('conexion.php'); ?>
+
 
 
 <!-- Panel para filtro Jquery -->
@@ -123,7 +109,7 @@ include('conexion.php'); ?>
 <td>
 	 <select name="destino"> //vehiculo
 	 <option>Seleccionar</option>
-        <? while($filadestino = mysql_fetch_array($consultatipo)){ ?>
+        <?php while($filadestino = mysql_fetch_array($consultatipo)){ ?>
                             <option value="<? echo $filadestino['PAQ_ID'] ?>"><? echo $filatipo['PAQ_ID'] ?></option>
         <? } ?>
 	 </select>
@@ -156,22 +142,22 @@ include('conexion.php'); ?>
 </div></td>
 </tr>
  
-<? $sql = "SELECT * FROM $tbl_name2";
+<?php $sql = "SELECT * FROM $tbl_name2";
 $consulta = mysqli_query($sql); ?>
  
-<? while($fila = mysqli_fetch_array($consulta)){
+<?php while($fila = mysqli_fetch_array($consulta)){
 foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); } ?>
  
 <tr>
-<td><? echo $fila['RES_ID'] ?></td>
-<td><? echo $fila['PAS_NOMBRE'] ?></td>
-<td><? echo $fila['PAS_DNI'] ?></td>
-<td><? echo $fila['RES_MAIL'] ?></td>
-<td><? echo $fila['PAQ_ID'] ?></td>
-<td><? echo $fila['PAQ_FECHA'] ?></td>
-<td><? echo $fila['PAQ_FECHA2'] ?></td>
+<td><?php echo $fila['RES_ID'] ?></td>
+<td><?php echo $fila['PAS_NOMBRE'] ?></td>
+<td><?php echo $fila['PAS_DNI'] ?></td>
+<td><?php echo $fila['RES_MAIL'] ?></td>
+<td><?php echo $fila['PAQ_ID'] ?></td>
+<td><?php echo $fila['PAQ_FECHA'] ?></td>
+<td><?php echo $fila['PAQ_FECHA2'] ?></td>
 </tr>
-<? } ?>
+<?php } ?>
 </table>
 </div>
 <br />
