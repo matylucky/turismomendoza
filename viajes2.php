@@ -126,9 +126,9 @@ exit;
 
           <?php
             $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-            $query = $mysqli -> query ("SELECT DISTINCT DES_ID, PAQ_ESTADO FROM paquetes");
+            $query = $mysqli -> query ("SELECT DISTINCT PAQ_ID FROM reserva2");
             while ($valores = mysqli_fetch_array($query)) {
-               echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_ID].'</option>';
+               echo '<option value="'.$valores[PAQ_ID].'">'.$valores[PAQ_ID].'</option>';
             }
           ?>
       </select> 
