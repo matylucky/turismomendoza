@@ -45,7 +45,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	    $(document).ready(function(){
 		$("#paquete").change(function () {
 
-		    $('#fechas').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
+		    //$('#fechas').find('option').remove().end().append('<option value="whatever"></option>').val('whatever');
 
 		    $("#paquete option:selected").each(function () {
 			DES_ID = $(this).val();
