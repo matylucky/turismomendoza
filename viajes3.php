@@ -147,33 +147,26 @@ include 'conexion.php';
 <td><b>Destino</b></td>
 <td><b>Fecha</b></td>
 <td><b>Fecha2</b></td>
-<td colspan="2">
-<div align="center">
-<b>Acciones</b>
-</div></td>
-</tr>
- <?php 
-include 'conexion.php';
- $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
- if ($conexion->connect_error) {
- die("La conexion falló: " . $conexion->connect_error);
-}
- $sql = "SELECT * FROM $tbl_name2";
-$consulta = mysqli_query($sql); 
-	
-while($fila = mysqli_fetch_array($consulta)){
-foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); } ?>
- 
-<tr>
-<td><?php echo $fila['RES_ID'] ?></td>
-<td><?php echo $fila['PAS_NOMBRE'] ?></td>
-<td><?php echo $fila['PAS_DNI'] ?></td>
-<td><?php echo $fila['RES_MAIL'] ?></td>
-<td><?php echo $fila['PAQ_ID'] ?></td>
-<td><?php echo $fila['PAQ_FECHA'] ?></td>
-<td><?php echo $fila['PAQ_FECHA2'] ?></td>
 
 </tr>
+ <?php 
+	
+	 $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+			  $query = $mysqli -> query ("SELECT * FROM reserva2");
+			  while ($fila = mysql_fetch_array($consulta)){
+	foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); 	
+
+ 	
+'<tr>
+<td>' echo $fila['RES_ID'] '</td>
+<td>' echo $fila['PAS_NOMBRE'] '</td>
+<td>' echo $fila['PAS_DNI'] '</td>
+<td>' echo $fila['RES_MAIL'] '</td>
+<td>' echo $fila['PAQ_ID']'</td>
+<td>' echo $fila['PAQ_FECHA'] '</td>
+<td>' echo $fila['PAQ_FECHA2'] '</td>
+
+</tr>'
 <? } ?>
 </table>
 </div>
