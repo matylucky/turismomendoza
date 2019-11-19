@@ -7,7 +7,7 @@
 	$queryM = "SELECT PAQ_FECHA FROM paquetes WHERE DES_ID = '$DES_ID'";	
 	$resultadoM = $mysqli->query($queryM);
 	
-	$html= "<option value='0'>Seleccionar fecha</option>";
+	$html= "<option>Seleccionar fecha</option>";
 	
 	//while($rowM = $resultadoM->fetch_assoc())
 	while($rowM = mysqli_fetch_array($resultadoM))
