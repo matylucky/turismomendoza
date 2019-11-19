@@ -8,7 +8,8 @@
 	
 	$html= "<option value='0'>Seleccionar fecha</option>";
 	
-	while($rowM = $resultadoM->fetch_assoc())
+	//while($rowM = $resultadoM->fetch_assoc())
+	while($rowM = mysqli_fetch_array($resultadoM))
 	{
         $html.= "<option value='".$rowM['PAQ_FECHAS']."'>".$rowM['PAQ_FECHAS']."</option>";
         
