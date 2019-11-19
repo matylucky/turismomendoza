@@ -10,9 +10,8 @@
 	
 	while($rowM = $resultadoM->fetch_assoc())
 	{
-        $html.= "<option value='".$rowM['id_municipio']."'>".$rowM['municipio']."</option>";
-        $html.= "<option value='".$rowM['id_municipio']."'>".$rowM['municipio']."</option>";
-
+        $html.= "<option value='".$rowM['PAQ_FECHAS']."'>".$rowM['PAQ_FECHAS']."</option>";
+        
 	}
 	
 	echo $html;
