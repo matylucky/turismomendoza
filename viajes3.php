@@ -113,10 +113,16 @@ include 'conexion.php';
 	 <select name="destino"> //vehiculo
 	 <option>Seleccionar</option>
 		<option>Seleccionar</option>
-		<?php
-		 while($filadestino = mysql_fetch_array($consultatipo)){ ?>
-				    <option value="<?php echo $filadestino['PAQ_ID'];?>"><?php echo $filatipo['PAQ_ID'];?></option>
-		<? } ?>
+
+		 
+		 <?php
+		     $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+			  $query = $mysqli -> query ("SELECT DISTINCT PAQ_ID FROM reserva2");
+			  while ($valores = mysqli_fetch_array($query)) {
+			      echo '<option value="'.$valores[PAQ_ID].'">'.$valores[PAQ_ID].'</option>';
+		    }
+		  }
+		?>
 	 </select>
 </td>
 <td>
