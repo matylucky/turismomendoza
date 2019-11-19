@@ -24,7 +24,7 @@
  echo "<table border='2' style='background-color:#FFFFFF;border-collapse:separate;border:2px solid #6699FF;color:#000000'>";
  echo "<tr style='background-color:#4CAF50;color:white'>";
  echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
- echo "<th>Destino</th><th>Fecha</th>"; 
+ echo "<th>Destino</th><th>Fecha</th><th>Fecha2</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
@@ -36,6 +36,7 @@
    //echo "<td>" . $columna["RES_MAIL"] . "</td>"; 
    echo "<td>" . $columna["PAQ_ID"] . "</td>"; 
    echo "<td>" . $columna["PAQ_FECHA"] . "</td>"; 
+   echo "<td>" . $columna["PAQ_FECHA2"] . "</td>"; 
    echo "</tr>"; 
  } 
  echo "</table>"; 
