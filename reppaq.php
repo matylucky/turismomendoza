@@ -29,7 +29,9 @@
    echo "<td>" . $columna["PAQ_FECHA"] . "</td>"; 
    echo "<td>" . $columna["PAQ_PRECIO"] . "</td>"; 
    echo "<td>" . $columna["BUS_ID"] . "</td>"; 
-   echo "<td>" . $columna["PAQ_ESTADO"] . "</td>"; 
+   //echo "<td>" . $columna["PAQ_ESTADO"] . "</td>"; 
+   if ($columna["PAQ_ESTADO"] == 1 ){ echo "<td>". $columna["ESTADO1"] ."</td>";}
+     elseif ($columna["PAQ_ESTADO"] != 1) { echo "<td>". $columna["ESTADO2"] . "</td>";}
    echo "</tr>"; 
  } 
  echo "</table>"; 
