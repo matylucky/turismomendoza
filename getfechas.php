@@ -14,6 +14,7 @@
 	{
         //$html.= '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>";
 	$html.= "<option value='".$rowM[PAQ_FECHAS]."'>".$rowM[PAQ_FECHAS]."</option>";
+	echo '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>';
         
 	}
 	
