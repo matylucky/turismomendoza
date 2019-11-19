@@ -12,10 +12,11 @@
 	//while($rowM = $resultadoM->fetch_assoc())
 	while($rowM = mysqli_fetch_array($resultadoM))
 	{
-        //$html.= '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>";
-	$html.= "<option value='".$rowM[PAQ_FECHA]."'>".$rowM[PAQ_FECHA]."</option>";
-	//echo '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>';
-        
+	 if($rowM[PAQ_ESTADO] == 1 ){
+		//$html.= '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>";
+		$html.= "<option value='".$rowM[PAQ_FECHA]."'>".$rowM[PAQ_FECHA]."</option>";
+	 	//echo '<option value="'.$rowM[PAQ_FECHAS].'">'.$rowM[PAQ_FECHAS].'</option>';
+	 }
 	}
 	
 	echo $html;
