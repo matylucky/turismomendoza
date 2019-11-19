@@ -140,8 +140,20 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
     <select class="form-control" id="fechas" name="fechas">
 	<option>Seleccionar...</option>
-      		<option value="Fecha1">Fecha 1</option>
-	<option value="Fecha2">Fecha 2</option>
+      		<!--<option value="Fecha1">Fecha 1</option>
+	<option value="Fecha2">Fecha 2</option>-->
+	    	<?php
+		    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+
+		    $cat=$_POST['paquete'];
+		    $result = $mysqli -> query ("select * from paquetes where DES_ID = '$cat'" )
+
+		    while ($referencia = mysqli_fetch_array($result)) {
+		    if($referencia[PAQ_ESTADO] == 1 ){
+			echo '<option value="'.$referencia[PAQ_FECHA].'">'.$referencia[PAQ_FECHA].'</option>';
+			}
+		    }
+		?>
 	</select>
         </div>
     </div>
