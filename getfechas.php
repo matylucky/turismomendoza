@@ -4,7 +4,7 @@
 	$DES_ID = $_POST['DES_ID'];
 	
 	//$queryM = "SELECT PAQ_FECHA FROM paquetes WHERE DES_ID = '$DES_ID' ORDER BY PAQ_FECHA";
-	$queryM = "SELECT PAQ_FECHA FROM paquetes WHERE DES_ID = '$DES_ID'";	
+	$queryM = "SELECT PAQ_FECHA,PAQ_ESTADO FROM paquetes WHERE DES_ID = '$DES_ID' ORDER BY PAQ_FECHA";	
 	$resultadoM = $mysqli->query($queryM);
 	
 	$html= "<option>Seleccionar fecha</option>";
