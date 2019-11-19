@@ -145,7 +145,9 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	<!--<option>Seleccionar...</option>
       		<option value="Fecha1">Fecha 1</option>
 	<option value="Fecha2">Fecha 2</option>-->
-	    
+	    	<?php while($rowM = $resultadoM->fetch_assoc()) { ?>
+					<option value="<?php echo $rowM['PAQ_FECHA']; ?>" <?php if($rowM['PAQ_FECHA']==$fechas) { echo 'selected'; } ?>><?php echo $rowM['PAQ_FECHA']; ?></option>
+				<?php } ?>
 	</select>
         </div>
     </div>
