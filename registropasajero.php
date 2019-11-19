@@ -123,7 +123,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	            <?php
              $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 
-          $query = $mysqli -> query ("SELECT DISTINCT DES_ID FROM paquetes");
+          $query = $mysqli -> query ("SELECT DISTINCT DES_ID, PAQ_ESTADO FROM paquetes");
           while ($valores = mysqli_fetch_array($query)) {
              if($valores[PAQ_ESTADO] == 1 ){
             echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_ID].'</option>';
