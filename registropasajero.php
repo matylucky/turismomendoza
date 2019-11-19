@@ -49,7 +49,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 
 		    $("#paquete option:selected").each(function () {
 			DES_ID = $(this).val();
-			$.post("includes/getfechas.php", { DES_ID: DES_ID }, function(data){
+			$.post("getfechas.php", { DES_ID: DES_ID }, function(data){
 			    $("#fechas").html(data);
 			});            
 		    });
@@ -110,21 +110,7 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	
 	
 	
-<body>
-	<div class="form-group">
-    <label class="control-label col-sm-2" for="Paquet">Paquet2</label>
-      <div class="col-sm-10">
-
-
-    <select class="form-control" id="paquet2" name="paquet2">
-	<option>Seleccionar...</option>
-    <option value="vinedos">Viñedos</option>
-	<option value="Lenas">Las Leñas</option>
-	    
-    </select> 
-        </div>
-    </div>
-	
+<body>	
 	
 <h2>Seleccione destino y fecha a reservar</h2>	
    <form class="form-horizontal" action="registrar-reserva.php" method="post">
