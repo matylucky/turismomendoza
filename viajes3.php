@@ -142,26 +142,41 @@ include('conexion.php'); ?>
 </div></td>
 </tr>
  
-<?php $sql = "SELECT * FROM $tbl_name2";
-$consulta = mysqli_query($sql); ?>
- 
-<?php while($fila = mysqli_fetch_array($consulta)){
+<?php 
+ include 'conexion.php';
+ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+ if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+ }
+	$sql = "SELECT * FROM $tbl_name2";
+$consulta = mysqli_query($conexion, $sql); 
+	while($fila = mysqli_fetch_array($consulta)){
 foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); } ?>
  
-<tr>
-<td><?php echo $fila['RES_ID'] ?></td>
-<td><?php echo $fila['PAS_NOMBRE'] ?></td>
-<td><?php echo $fila['PAS_DNI'] ?></td>
-<td><?php echo $fila['RES_MAIL'] ?></td>
-<td><?php echo $fila['PAQ_ID'] ?></td>
-<td><?php echo $fila['PAQ_FECHA'] ?></td>
-<td><?php echo $fila['PAQ_FECHA2'] ?></td>
-</tr>
-<?php } ?>
-</table>
+ echo "<table borde='2'>";
+ echo "<tr>";
+ echo "<th>RES_ID</th><th>PAS_NOMBRE</th><th>PAS_DNI</th>"; 
+ echo "<th>RES_MAIL</th><th>PAQ_ID</th><th>PAQ_FECHA</th>"; 
+ echo "</tr>"; 
+ // Recorre el resultado y lo muestra en forma de tabla HTML 
+ //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
+ while ($columna = mysqli_fetch_array( $resultado )) {
+   echo "<tr>"; 
+   echo "<td>" . $columna["RES_ID"] . "</td>"; 
+   echo "<td>" . $columna["PAS_NOMBRE"] . "</td>"; 
+   echo "<td>" . $columna["PAS_DNI"] . "</td>"; 
+   echo "<td>" . $columna["RES_MAIL"] . "</td>"; 
+   echo "<td>" . $columna["PAQ_ID"] . "</td>"; 
+   echo "<td>" . $columna["PAQ_FECHA"] . "</td>"; 
+   echo "</tr>"; 
+ } 
+ echo "</table>";
 </div>
 <br />
-
+$consulta->close(); 
+ // Cierra la conexión 
+ $conexion->close(); 
+?> 
 
     
 </body> 
