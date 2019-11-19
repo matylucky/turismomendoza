@@ -170,18 +170,13 @@ foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); } ?>
 <td><? echo $fila['PAQ_ID'] ?></td>
 <td><? echo $fila['PAQ_FECHA'] ?></td>
 <td><? echo $fila['PAQ_FECHA2'] ?></td>
-//<td><img src="imagenes/<? echo $fila['foto1'] ?>" width="150" height="75" /></td>
-//<td width="103"><div align="center"><a href=edit.php?id=<? echo $fila['id'] ?>>Modificar</a></div></td>
 </tr>
 <? } ?>
 </table>
 </div>
 <br />
 
- $resultado->close(); 
- // Cierra la conexión 
- $conexion->close(); 
-?> 
+
     
 </body> 
 </html>
