@@ -123,10 +123,10 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
 	            <?php
              $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 
-          $query = $mysqli -> query ("SELECT * FROM destinos");
+          $query = $mysqli -> query ("SELECT DISTINCT * FROM paquetes");
           while ($valores = mysqli_fetch_array($query)) {
-             if($valores[DES_ESTADO] == 1 ){
-            echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
+             if($valores[PAQ_ESTADO] == 1 ){
+            echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_ID].'</option>';
             }
           }
         ?>
@@ -140,16 +140,8 @@ $paquete2 = "<br> paquete " . $i . ": " . $paquete[$i];
       <div class="col-sm-10">
     <select class="form-control" id="fechas" name="fechas">
 	<option>Seleccionar...</option>
-      		<?php
-		    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-		    $query = $mysqli -> query ("SELECT * FROM destinos");
-		    $consulta = $mysqli -> query("SELECT * FROM paquetes");
-		    while ($valores = mysqli_fetch_array($query) && $referencia = mysqli_fetch_array($consulta)) {
-		    if($valores[DES_NOMBRE] == $consulta[DES_ID]){
-			echo '<option value="'.$valores[PAQ_FECHA].'">'.$valores[PAQ_FECHA].'</option>';
-			}
-		    }
-		?>
+      		<option value="Fecha1">Fecha 1</option>
+	<option value="Fecha2">Fecha 2</option>
 	</select>
         </div>
     </div>
