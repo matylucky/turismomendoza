@@ -157,16 +157,18 @@ include 'conexion.php';
 	foreach($fila AS $key => $value) { $fila[$key] = stripslashes($value); 	
 
  	
-'<tr>
-<td>' echo $fila['RES_ID'] '</td>
-<td>' echo $fila['PAS_NOMBRE'] '</td>
-<td>' echo $fila['PAS_DNI'] '</td>
-<td>' echo $fila['RES_MAIL'] '</td>
-<td>' echo $fila['PAQ_ID']'</td>
-<td>' echo $fila['PAQ_FECHA'] '</td>
-<td>' echo $fila['PAQ_FECHA2'] '</td>
 
-</tr>'
+echo "<tr>";
+echo "<td>" . $fila['RES_ID'] . "</td>"; 
+echo "<td>" . $fila['PAS_NOMBRE'] . "</td>"; 
+echo "<td>" . $fila['PAS_DNI'] . "</td>"; 
+echo "<td>" . $fila['RES_MAIL'] . "</td>"; 
+echo "<td>" . $fila['PAQ_ID'] . "</td>"; 
+echo "<td>" . $fila['PAQ_FECHA'] . "</td>"; 
+echo "<td>" . $fila['PAQ_FECHA2'] . "</td>"; 
+echo "</tr>";
+
+
  } ?>
 </table>
 </div>
