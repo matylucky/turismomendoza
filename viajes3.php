@@ -110,7 +110,10 @@ exit;
 <td>
 	 <select name="destino"> //vehiculo
 	 <option>Seleccionar</option>
-
+		<option>Seleccionar</option>
+		<? while($filadestino = mysql_fetch_array($consultatipo)){ ?>
+				    <option value="<? echo $filadestino['PAQ_ID'] ?>"><? echo $filatipo['PAQ_ID'] ?></option>
+		<? } ?>
 	 </select>
 </td>
 <td>
