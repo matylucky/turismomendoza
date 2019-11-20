@@ -18,7 +18,7 @@
     
  echo "<table border='2' style='background-color:#FFFFFF;border-collapse:separate;border:2px solid #6699FF;color:#000000'>";
  echo "<tr style='background-color:#4CAF50;color:white'>";
- echo "<th>Nombre del destino</th><th>Descripcion del destino</th><th>Estado del destino</th>"; 
+ echo "<th>Nombre del destino</th><th>Descripcion del destino</th><th>Estado del destino</th><th>Foto del destino</th>"; 
  echo "</tr>"; 
  // Recorre el resultado y lo muestra en forma de tabla HTML 
  //while($fila = $resultado->ffetch_array(MYSQLI_ASSOC)) { 
@@ -30,6 +30,7 @@
    if ($columna["DES_ESTADO"] == 1 ){ echo "<td>". $columna["DES_HAB"] ."</td>";}
      elseif ($columna["DES_ESTADO"] != 1) { echo "<td>". $columna["DES_NOH"] . "</td>";} 
   echo "</tr>"; 
+  echo "<td>" . [<img src=" echo $columna["DES_FOTO"] " width="150" height="75" />] . "</td>"; 
  } 
  echo "</table>"; 
  
