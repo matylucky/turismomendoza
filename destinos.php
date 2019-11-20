@@ -145,7 +145,7 @@ exit;
 				  while ($valores = mysqli_fetch_array($query)) {
 				   
 				    echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
-				    }
+				   
 				  }
 				?>
 			</select> 
