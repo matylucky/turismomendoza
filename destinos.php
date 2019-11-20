@@ -144,7 +144,7 @@ exit;
 				  $query = $mysqli -> query ("SELECT DES_NOMBRE, DES_ESTADO FROM destinos");
 				  while ($valores = mysqli_fetch_array($query)) {
 				   
-				    echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE]. + " " .$valores[DES_ESTADO]. '</option>';
+				    echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE]. + .$valores[DES_ESTADO]. '</option>';
 				    }
 				  }
 				?>
