@@ -29,7 +29,7 @@
    //echo "<td>" . $columna["DES_ESTADO"] . "</td>"; 
    if ($columna["DES_ESTADO"] == 1 ){ echo "<td>". $columna["DES_HAB"] ."</td>";}
      elseif ($columna["DES_ESTADO"] != 1) { echo "<td>". $columna["DES_NOH"] . "</td>";} 
-  echo "<td><img src=" . $columna["DES_FOTO"]  . " width="150" height="75" /></td>"; 
+  echo "<td><img src='" . $columna["DES_FOTO"]  . "' width="150" height="75" /></td>"; 
   echo "</tr>"; 
  } 
  echo "</table>"; 
