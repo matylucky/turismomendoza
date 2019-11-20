@@ -132,11 +132,12 @@ exit;
 </div>
 						     
 <div class="container" id=mod>
+	<form class="form-horizontal" action="modestado-destino.php" method="post">
 	<div class="jumbotron">
 		<div class="w3-container w3-teal">
 		  <h2>Cambio de estado de destinos</h2>	
 		</div>         
-			<select id="des" name="des">
+			<select class="form-control" id="des" name="des">
 				<option>Seleccionar...</option>
 
 					    <?php
@@ -149,9 +150,9 @@ exit;
 				  }
 				?>
 			</select> 
-		
+		<button type="submit" class="btn btn-default" >Modificar estado</button>
         </div>
-		 <button >Modificar estado</button>
+		 
 </div>						     
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
