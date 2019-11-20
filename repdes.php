@@ -29,8 +29,8 @@
    //echo "<td>" . $columna["DES_ESTADO"] . "</td>"; 
    if ($columna["DES_ESTADO"] == 1 ){ echo "<td>". $columna["DES_HAB"] ."</td>";}
      elseif ($columna["DES_ESTADO"] != 1) { echo "<td>". $columna["DES_NOH"] . "</td>";} 
-  echo "</tr>"; 
   echo "<td>" . $columna["DES_FOTO"]  . "</td>"; 
+  echo "</tr>"; 
  } 
  echo "</table>"; 
  
