@@ -148,7 +148,7 @@ exit;
 				    }
 				  }
 				?>
-				
+			</select> 
 				
         </div>
 		 <button type="submit" class="btn btn-default">Modificar estado</button>
