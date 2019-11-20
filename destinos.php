@@ -131,11 +131,11 @@ exit;
         </div>
 </div>
 						     
-<div class="container" id=modificacion>
-        <div class="jumbotron">
-		<div class="w3-container w3-teal">
-		  <h2>Habilitar o deshabilitar un destino</h2>	
-		</div>         
+<div class="container">
+  <h2>Cambio de estado del destino</h2>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Paquete">Seleccionar destino a cambiar de estado</label>
+      <div class="col-sm-10">  
 			<select class="form-control" id="paquete" name="paquete">
 				<option>Seleccionar...</option>
 
@@ -149,7 +149,7 @@ exit;
 				  }
 				?>
 			</select> 
-				
+		</div>		
         </div>
 		 <button type="submit" class="btn btn-default">Modificar estado</button>
 </div>						     
