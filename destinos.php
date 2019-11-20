@@ -131,7 +131,28 @@ exit;
         </div>
 </div>
 						     
-						     
+<div class="container" id=modificacion>
+        <div class="jumbotron">
+		<div class="w3-container w3-teal">
+		  <h2>Habilitar o deshabilitar un destino</h2>	
+		</div>         
+			<select class="form-control" id="paquete" name="paquete">
+				<option>Seleccionar...</option>
+
+					    <?php
+				     $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+				  $query = $mysqli -> query ("SELECT DES_NOMBRE, DES_ESTADO FROM destinos");
+				  while ($valores = mysqli_fetch_array($query)) {
+				   
+				    echo '<option value="'.$valores[DES_ID].'">'.$valores[DES_ID]. +" ".$valores[DES_ESTADO].'</option>';
+				    }
+				  }
+				?>
+				
+				
+        </div>
+		 <button type="submit" class="btn btn-default">Modificar estado</button>
+</div>						     
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
 
