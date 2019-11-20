@@ -8,11 +8,11 @@ include 'conexion.php';
 
              $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 
-$query2 = $mysqli -> query ("SELECT DES_ESTADO FROM destinos");
+$query2 = $mysqli -> query ("SELECT * FROM destinos WHERE DES_NOMBRE='$_POST[des]'");
           while ($valores = mysqli_fetch_array($query2)) {
              if($valores[DES_ESTADO] == 1 ){
                  $query = "UPDATE destinos SET DES_ESTADO= 0 WHERE DES_NOMBRE='$_POST[des]'";
-                 if ($conexion->query($query) === TRUE) {
+                 if ($mysqli->query($query) === TRUE) {
 
                  echo "<h3>" . "Se realizo la deshabilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
                  echo "<h3>" .  "<a href='destinos.php'>volver</a>" . "</h3>"; 
@@ -22,7 +22,7 @@ $query2 = $mysqli -> query ("SELECT DES_ESTADO FROM destinos");
                      else {
 
                      else{$query = "UPDATE destinos SET DES_ESTADO= 1 WHERE DES_NOMBRE='$_POST[des]'";
-                     if ($conexion->query($query) === TRUE) {
+                     if ($mysqli->query($query) === TRUE) {
 
                      echo "<h3>" . "Se realizo la habilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
                      echo "<h3>" .  "<a href='destinos.php'>volver</a>" . "</h3>"; 
