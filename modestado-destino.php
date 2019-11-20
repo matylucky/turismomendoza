@@ -11,7 +11,7 @@ include 'conexion.php';
 $query2 = $mysqli -> query ("SELECT DES_ESTADO FROM destinos");
           while ($valores = mysqli_fetch_array($query2)) {
              if($valores[DES_ESTADO] == 1 ){
-                 $query = "UPDATE destinos SET DES_ESTADO= 0 WHERE DES_NOMBRE='$des'";
+                 $query = "UPDATE destinos SET DES_ESTADO= 0 WHERE DES_NOMBRE='$_POST[des]'";
                  if ($conexion->query($query) === TRUE) {
 
                  echo "<h3>" . "Se realizo la deshabilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
@@ -21,7 +21,7 @@ $query2 = $mysqli -> query ("SELECT DES_ESTADO FROM destinos");
                  }
                      else {
 
-                     else{$query = "UPDATE destinos SET DES_ESTADO= 1 WHERE DES_NOMBRE='$des'";
+                     else{$query = "UPDATE destinos SET DES_ESTADO= 1 WHERE DES_NOMBRE='$_POST[des]'";
                      if ($conexion->query($query) === TRUE) {
 
                      echo "<h3>" . "Se realizo la habilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
