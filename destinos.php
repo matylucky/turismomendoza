@@ -131,12 +131,12 @@ exit;
         </div>
 </div>
 						     
-<div class="container">
-  <h2>Cambio de estado del destino</h2>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="Paquete">Seleccionar destino a cambiar de estado</label>
-      <div class="col-sm-10">  
-			<select class="form-control" id="paquete" name="paquete">
+<div class="container" id=mod>
+	<div class="jumbotron">
+		<div class="w3-container w3-teal">
+		  <h2>Cambio de estado de destinos</h2>	
+		</div>         
+			<select id="des" name="des">
 				<option>Seleccionar...</option>
 
 					    <?php
@@ -149,9 +149,9 @@ exit;
 				  }
 				?>
 			</select> 
-		</div>		
+		
         </div>
-		 <button type="submit" class="btn btn-default">Modificar estado</button>
+		 <button >Modificar estado</button>
 </div>						     
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
