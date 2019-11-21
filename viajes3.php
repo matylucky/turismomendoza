@@ -123,7 +123,7 @@ include 'conexion.php';
 </tr>
 <tr>
 <td>
-	 <select name="destino"> //vehiculo
+	 <select name="destino" id="destino"> //vehiculo
 	 <option>Seleccionar</option>
 		<option>Seleccionar</option>
 
