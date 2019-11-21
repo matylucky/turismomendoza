@@ -9,5 +9,5 @@ $sqltipo="SELECT * FROM reserva2 where PAQ_ID=".$id;
 $consultatipo = mysqli_query($sqltipo, $mysqli);
 //devuelvo el resultado
 while($filatipo = mysqli_fetch_array($consultatipo)){ 
-			echo "<option>" . $filatipo['PAQ_FECHA2'] . "</option>";
+			echo "<option>" . $filatipo['PAQ_FECHA'] . "</option>";
 } ?>
