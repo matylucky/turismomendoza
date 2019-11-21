@@ -154,7 +154,7 @@ include 'conexion.php';
 	 $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 			  $query = $mysqli -> query ("SELECT * FROM reserva2");
 			  while ($fila = mysqli_fetch_array($query)){
-	foreach($fila AS $key => $value) { $fila[$key] = $value; 	
+	foreach($fila AS $key => $value) { $fila[$key] = $value; }	
 
  	
 
@@ -168,7 +168,7 @@ echo "<td>" . $fila['PAQ_FECHA'] . "</td>";
 echo "<td>" . $fila['PAQ_FECHA2'] . "</td>"; 
 echo "</tr>";
 
-}
+
  } ?>
 </table>
 </div>
