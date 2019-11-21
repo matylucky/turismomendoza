@@ -43,13 +43,14 @@ include 'conexion.php';
 		$("#destino").on('change',function(){ // se activa el script cuando selecciono el select vehiculo
 			//alert("se ha seleccionado");
 			destin=$(this).val(); // Tomo el valor seleccionado
-
+				
+			alert ("se ha elergido " destin);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 
-			 $.get("getfechas2.php?PAQ_ID="+destin,
+			 /*$.get("getfechas2.php?PAQ_ID="+destin,
 				 function(data){
 					 $("#fecha").html(data); // Tomo el resultado e inserto los datos en el select marca	
-				 });															
+				 });	*/														
 		});
 		});	
   </script>
