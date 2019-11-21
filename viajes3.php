@@ -44,7 +44,7 @@ include 'conexion.php';
 			//alert("se ha seleccionado");
 			destin=$(this).val(); // Tomo el valor seleccionado
 				
-			alert ("se ha elergido " destin);
+			alert ("se ha elegido "+ destin);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 
 			 /*$.get("getfechas2.php?PAQ_ID="+destin,
