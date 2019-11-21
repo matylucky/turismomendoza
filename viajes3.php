@@ -37,22 +37,26 @@ include 'conexion.php';
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
   <script>
-	$(function(){
+	 $(document).ready(function(){
 		$("#destino").on('change',function(){ // se activa el script cuando selecciono el select vehiculo
 			//alert("se ha seleccionado");
+			$("#destino option:selected").each(function () {
 			destin=$(this).val(); // Tomo el valor seleccionado
 				
 			//alert ("se ha elegido "+ destin);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 
-			 $.post("getfechas2.php", {destino: destino},
-				 function(data){
+			 $.post("getfechas2.php", {destino: destino}, function(data){
 					 $("#fecha").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
+				
+			});
+			
 		});
-		});	
+		
+	 });	
   </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
