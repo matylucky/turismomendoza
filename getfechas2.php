@@ -21,10 +21,10 @@ $id = $_POST['destino'];
 
 $html= "<option value='0'>Seleccionar</option>";
 
-$sqltipo="SELECT * FROM reserva2 where PAQ_ID= '$id'";
+$sqltipo = "SELECT * FROM reserva2 where PAQ_ID= '$id'";
 $consultatipo = $mysqli->query($sqltipo);
 //devuelvo el resultado
-while($filatipo = $consultatipo->fetch_array()){ 
+while($filatipo = mysqli_fetch_array($consultatipo)){ 
 	$html.= "<option value='". $filatipo['PAQ_FECHA2'] ."'>". $filatipo['PAQ_FECHA2'] ."</option>";
 			//echo "<option>" . $filatipo['PAQ_FECHA'] . "</option>";
 } 
