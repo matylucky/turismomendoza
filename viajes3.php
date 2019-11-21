@@ -47,7 +47,7 @@ include 'conexion.php';
 			//alert ("se ha elegido "+ destin);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 
-			 $.get("getfechas2.php?DEST="+destin;
+			 $.get("getfechas2.php", {destino: destino},
 				 function(data){
 					 $("#fecha").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
