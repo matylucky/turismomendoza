@@ -130,7 +130,7 @@ include 'conexion.php';
 <tr>
 <td>
 	 <select name="destino" id="destino"> //vehiculo
-	 <option>Seleccionar</option>
+	 
 		<option>Seleccionar</option>
 
 		 
@@ -146,14 +146,13 @@ include 'conexion.php';
 </td>
 <td>
 	 <select name="fecha" id="fecha"> //marca
-	 <option>Seleccionar</option>
 	 </select>
 </td>
-<td>
+<!--<td>
 	 <select name="cliente" id="cliente"> //modelo
 	 <option>Seleccionar</option>
 	 </select>
-</td>
+</td>-->
 </tr>
 </table>
 
