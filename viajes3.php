@@ -126,12 +126,12 @@ include 'conexion.php';
 	 </select>
 </td>
 <td>
-	 <select name="fecha"> //marca
+	 <select name="fecha" id="fecha"> //marca
 	 <option>Seleccionar</option>
 	 </select>
 </td>
 <td>
-	 <select name="cliente"> //modelo
+	 <select name="cliente" id="cliente"> //modelo
 	 <option>Seleccionar</option>
 	 </select>
 </td>
