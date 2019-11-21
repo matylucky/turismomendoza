@@ -6,8 +6,8 @@
 $id = $_GET['DEST'];
 //Consulto la tabla reserva2 por id de vehiculo
 $sqltipo="SELECT * FROM reserva2 where PAQ_ID=".$id;
-$consultatipo = mysqli_query($sqltipo);
+$consultatipo = mysqli_query($sqltipo, $mysqli);
 //devuelvo el resultado
 while($filatipo = mysqli_fetch_array($consultatipo)){ 
-			 "<option>" echo $filatipo['PAQ_FECHA2'] "</option>"
+			echo "<option>" . $filatipo['PAQ_FECHA2'] . "</option>";
 } ?>
