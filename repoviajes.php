@@ -11,6 +11,10 @@
  die("La conexion falló: " . $conexion->connect_error);
 }*/
 
+
+
+/*BORRAR ESTA
+
 	 $conexion = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 
 $destino = $_POST['destino'];
@@ -26,7 +30,8 @@ $fecha = $_POST['fecha'];
    exit; 
  } */
 // $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
- $resultado = $mysqli->query($consulta);
+/*BORRAR ESTA
+$resultado = $mysqli->query($consulta);
    
   echo "  <table width="615" border=1 cellpadding="3" cellspacing="0" >"; 
  echo "<tr><td><b>N° Reserva</b></td>"; 
@@ -62,4 +67,8 @@ echo "</tr>  ";
  $resultado->close(); 
  // Cierra la conexión 
  $conexion->close(); 
+ 
+ BORRAR ESTA*/
+ECHO	"HOLA MUNDO";
+
 ?> 
