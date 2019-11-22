@@ -13,7 +13,7 @@
 
 
 
-/*BORRAR ESTA
+
 
 	 $conexion = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 
@@ -30,7 +30,7 @@ $fecha = $_POST['fecha'];
    exit; 
  } */
 // $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
-/*BORRAR ESTA
+
 $resultado = $mysqli->query($consulta);
    
   echo "  <table width="615" border=1 cellpadding="3" cellspacing="0" >"; 
@@ -68,7 +68,5 @@ echo "</tr>  ";
  // Cierra la conexión 
  $conexion->close(); 
  
- BORRAR ESTA*/
-ECHO	'alert ("HOLA MUNDO")';
 
 ?> 
