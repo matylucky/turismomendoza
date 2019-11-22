@@ -141,11 +141,11 @@ include 'conexion.php';
 
 <!-- Panel para filtro Jquery -->
 	
-<table width="615" border="0" cellpadding="0" cellspacing="0">
+<table width="615" border="0" cellpadding="5" cellspacing="0">
 <tr>
 <td><strong>Destino</strong></td>
 <td><strong>Fecha</strong></td>
-<td><strong>Cliente</strong></td>
+
 </tr>
 <tr>
 <td>
