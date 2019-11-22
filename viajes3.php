@@ -58,6 +58,25 @@ include 'conexion.php';
 		
 	 });	
   </script>
+	<script language="javascript">
+	 $(document).ready(function(){
+		$("#fecha").change(function () { // se activa el script cuando selecciono el select vehiculo
+			//alert("se ha seleccionado");
+			$("#fecha option:selected").each(function () {
+			fecha = $(this).val(); // Tomo el valor seleccionado
+			destino = $("#destino").val();	
+			//alert ("se ha elegido "+ destin);
+			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
+			 $.post("repoviajes.php", { fecha: fecha }, { destino: destino }, function(data){
+					 $("#listado").html(data); // Tomo el resultado e inserto los datos en el select marca	
+				 });																
+				
+			});
+			
+		});
+		
+	 });	
+  </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -121,6 +140,7 @@ include 'conexion.php';
 
 
 <!-- Panel para filtro Jquery -->
+	
 <table width="615" border="0" cellpadding="0" cellspacing="0">
 <tr>
 <td><strong>Destino</strong></td>
