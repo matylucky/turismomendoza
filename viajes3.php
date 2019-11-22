@@ -175,8 +175,9 @@ include 'conexion.php';
 </table>
   <div class="form-group">	
 	 <form action="a.php">
+			<!--<select name="fecha" id="fecha" onchange="this.form.submit()> //marca-->
 			<select name="fecha" id="fecha" onchange="this.form.submit()> //marca
-	
+
 	    </form>
 
 	</div>
