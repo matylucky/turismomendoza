@@ -165,23 +165,21 @@ include 'conexion.php';
 	 </select>
 </td>
 <td>
-	 <select name="fecha" id="fecha" onchange="this.form.submit()> //marca
-	 </select>
+	 
 </td>
-<!--<td>
+
+
+				   
+
+</tr>
+</table>
   <div class="form-group">	
 	 <form action="a.php">
-			 <select name="cliente" id="cliente"> //modelo
-			 <option>Seleccionar</option>
-			 </select>
+			<select name="fecha" id="fecha" onchange="this.form.submit()> //marca
+	
 	    </form>
 
 	</div>
-				   
-</td>-->
-</tr>
-</table>
-
 <div id=”listado2” name="listado2">
 	  <div class="jumbotron">
             
