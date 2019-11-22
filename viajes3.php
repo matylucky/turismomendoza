@@ -68,7 +68,7 @@ include 'conexion.php';
 			//alert ("se ha elegido "+ fecha);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 			 $.post("repoviajes.php", { fecha: fecha }, function(data){
-					 $("#listado2").html(data); // Tomo el resultado e inserto los datos en el select marca	
+					 $("#listado").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
 				
 			});
@@ -165,7 +165,9 @@ include 'conexion.php';
 	 </select>
 </td>
 <td>
-	 
+	 <select name="fecha" id="fecha"> //marca
+	 <option>Seleccionar</option>	
+	 </select>		 </select>
 </td>
 
 
@@ -173,15 +175,6 @@ include 'conexion.php';
 
 </tr>
 </table>
-  <div class="form-group">	
-	 <form>
-		 <!--<form action="a.php">
-			<select name="fecha" id="fecha" onchange="this.form.submit()> //marca-->
-			<select name="fecha" id="fecha"> //marca
-
-	    </form>
-
-	</div>
 
 	  
 <div id=”listado”>
