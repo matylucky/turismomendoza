@@ -223,7 +223,7 @@ echo "</tr>";
 
  <?php 
  // Conecta con el servidor de MySQL 
- /*include 'conexion.php';
+ include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
@@ -231,7 +231,7 @@ echo "</tr>";
  
  // Ejecuta una sentencia SQL 
  $consulta = "SELECT * FROM $tbl_name2"; 
- /*if(!($resultado = $conexion->query($consulta))) { 
+ if(!($resultado = $conexion->query($consulta))) { 
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
    exit; 
@@ -260,7 +260,7 @@ echo "</tr>";
  // Libera la memoria ocupada por el resultado 
  $resultado->close(); 
  // Cierra la conexión 
- $conexion->close(); */
+ $conexion->close(); 
 ?> 
 
 
