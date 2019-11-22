@@ -69,6 +69,6 @@ echo "</tr>  ";
  $conexion->close(); 
  
  BORRAR ESTA*/
-ECHO	"HOLA MUNDO";
+ECHO	'alert ("HOLA MUNDO")';
 
 ?> 
