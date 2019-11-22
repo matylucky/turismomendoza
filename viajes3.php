@@ -68,7 +68,7 @@ include 'conexion.php';
 			//alert ("se ha elegido "+ fecha);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 			 $.post("repoviajes.php", { fecha: fecha }, function(data){
-					 $("#listado").html(data); // Tomo el resultado e inserto los datos en el select marca	
+					 $("#listado2").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
 				
 			});
@@ -176,6 +176,9 @@ include 'conexion.php';
 </tr>
 </table>
 
+<div id=”listado2”>
+</div>	
+	
 <div id=”listado”>
 <table width="615" border=1 cellpadding="3" cellspacing="0" >
 <tr><td><b>N° Reserva</b></td>
@@ -215,7 +218,7 @@ echo "</tr>";
 
  <?php 
  // Conecta con el servidor de MySQL 
- include 'conexion.php';
+ /*include 'conexion.php';
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
  if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
@@ -227,7 +230,7 @@ echo "</tr>";
    echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
    echo ’</p>’; 
    exit; 
- } */
+ } 
  $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
   
  echo "<table borde='2'>";
@@ -252,7 +255,7 @@ echo "</tr>";
  // Libera la memoria ocupada por el resultado 
  $resultado->close(); 
  // Cierra la conexión 
- $conexion->close(); 
+ $conexion->close(); */
 ?> 
 
 
