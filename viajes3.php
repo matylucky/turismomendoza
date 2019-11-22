@@ -167,7 +167,7 @@ include 'conexion.php';
 <td>
 	 <select name="fecha" id="fecha"> //marca
 	 <option>Seleccionar</option>	
-	 </select>		 </select>
+	 </select>		
 </td>
 
 
