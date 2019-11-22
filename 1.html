@@ -1,7 +1,7 @@
 <?php
 $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 $sql = "SELECT * FROM reserva2";
-$rs = $mysqli->query($sql);
+$rs = mysqli_query($sql,$mysqli);
 ?>
  
 <!DOCTYPE html>
