@@ -1,7 +1,12 @@
 <?php
-$mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-$sql = "SELECT * FROM reserva2";
-$rs = mysqli_query($sql,$mysqli);
+//$mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+ include 'conexion.php';
+ $cn = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+ if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+}
+$sql = "SELECT * FROM $tbl_name2";
+$rs = mysqli_query($sql,$cn);
 ?>
  
 <!DOCTYPE html>
@@ -24,7 +29,7 @@ if(isset($_POST["btn1"])){
 	if($btn=="Buscar"){
  
 $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIENTE
-		$cs=mysqli_query($sql,$mysqli);
+		$cs=mysqli_query($sql,$cn);
 		while($resul=mysqli_fetch_array($cs)){
 			$var=$resul[6];
 			$var1=$resul[4];
