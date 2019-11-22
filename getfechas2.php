@@ -21,7 +21,7 @@ $id = $_POST['destino'];
 
 $html= "<option value='0'>Seleccionar</option>";
 
-$sqltipo = "SELECT * FROM reserva2 where PAQ_ID= '$id'";
+$sqltipo = "SELECT DISTINCT * FROM reserva2 where PAQ_ID= '$id'";
 $consultatipo = $mysqli->query($sqltipo);
 //devuelvo el resultado
 while($filatipo = mysqli_fetch_array($consultatipo)){ 
