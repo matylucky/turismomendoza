@@ -1,7 +1,7 @@
 <?php
 $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-$sql = $mysqli -> query ("SELECT * FROM reserva2");
-$rs = mysqli_query($sql, $cn);
+$sql = $mysqli->query ("SELECT * FROM reserva2");
+$rs = mysqli_query($sql, $mysqli);
 ?>
  
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ if(isset($_POST["btn1"])){
 	if($btn=="Buscar"){
  
 $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIENTE
-		$cs=mysqli_query($sql,$cn);
+		$cs=mysqli_query($sql,$mysqli);
 		while($resul=mysqli_fetch_array($cs)){
 			$var=$resul[6];
 			$var1=$resul[4];
