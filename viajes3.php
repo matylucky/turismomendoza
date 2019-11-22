@@ -176,7 +176,7 @@ include 'conexion.php';
 </tr>
 </table>
 
-<div id=”listado2”>
+<div id=”listado2” name="listado2">
 </div>	
 	
 <div id=”listado”>
