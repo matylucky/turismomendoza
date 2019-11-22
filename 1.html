@@ -1,6 +1,4 @@
 <?php
-//include("conexion.php");//CONEXION A LA BASE DE DATOS
-//$sql = "SELECT * from reserva2 ";*//ABRI LA TABLA CLIENTE 
 $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
 $sql = $mysqli -> query ("SELECT * FROM reserva2");
 $rs = mysqli_query($sql, $cn);
@@ -55,7 +53,7 @@ $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIE
     <td width="206" class="Estilo4">Fecha</td>
     <td width="99"><select name="txtbus" id="txtbus" >
       <option value="">Seleccione</option>
-      <? if(mysqli_num_rows($rs)>0)
+      <?php if(mysqli_num_rows($rs)>0)
 {
 while($row = mysqli_fetch_assoc($rs))
 {
@@ -63,7 +61,7 @@ while($row = mysqli_fetch_assoc($rs))
       <option value="<?=$row["PAQ_FECHA2"]?>">//CONSULTA LA FECHA DE RESERVA
         <?=$row["PAQ_FECHA2"]?>
         </option>
-      <?
+      <?php
 }
 }
 ?>
