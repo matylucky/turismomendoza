@@ -49,7 +49,7 @@ include 'conexion.php';
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
 
 			 $.post("getfechas2.php", { destino: destino }, function(data){
-					 $("#fecha").html(data); // Tomo el resultado e inserto los datos en el select marca	
+					 $("#txtbus").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
 				
 			});
@@ -245,18 +245,7 @@ $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIE
     <td width="206" class="Estilo4">Fecha</td>
     <td width="99"><select name="txtbus" id="txtbus" >
       <option value="">Seleccione</option>
-      <?php if(mysqli_num_rows($rs)>0)
-{
-while($row = mysqli_fetch_assoc($rs))
-{
-?>
-      <option value="<?=$row["PAQ_FECHA2"]?>">//CONSULTA LA FECHA DE RESERVA
-        <?=$row["PAQ_FECHA2"]?>
-        </option>
-      <?php
-}
-}
-?>
+
     </select></td>
     <td width="61"><input type="submit" name="btn1"  value="Buscar" onClick="asdf(3)" /></td>
   </tr>
