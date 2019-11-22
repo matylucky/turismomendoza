@@ -184,8 +184,19 @@ include 'conexion.php';
 	</div>
 <div id=”listado2” name="listado2">
 	  <div class="jumbotron">
-            
+		  
+            	<table width="615" border=1 cellpadding="3" cellspacing="0" > 
+		 <tr><td><b>N° Reserva</b></td>
+		 <td><b>Nombre Pasajero</b></td>
+		 <td><b>DNI</b></td>
+		 <td><b>Mail de usuario</b></td>
+		 <td><b>Destino</b></td>
+		 <td><b>Fecha</b></td>
+		 <td><b>Fecha2</b></td>
+		</tr>  
+			
 		 <?php 
+			
 
 		  //$mail = $_SESSION['mail'];
 
@@ -198,11 +209,12 @@ include 'conexion.php';
 		 die("La conexion falló: " . $conexion->connect_error);
 		}*/
 			 $conexion = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-		$destino = $_POST['destino'];
-		$fecha = $_POST['fecha'];
+		//$destino = $_POST['destino'];
+		//$fecha = $_POST['fecha'];
 		 // Ejecuta una sentencia SQL 
 		 //$consulta = "SELECT * FROM $tbl_name2"; 
-		 $consulta = "SELECT * FROM reserva2 WHERE PAQ_FECHA2='.$_GET["fecha"]' ";
+		 //$consulta = "SELECT * FROM reserva2 WHERE PAQ_FECHA2='.$_GET["fecha"]' ";
+		 $consulta = "SELECT * FROM reserva2";
 		 /*if(!($resultado = $conexion->query($consulta))) { 
 		   echo "<p>Error al ejecutar la sentencia <b>$consulta</b>: " . $conexion->error; 
 		   echo ’</p>’; 
@@ -211,15 +223,7 @@ include 'conexion.php';
 		// $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
 		$resultado = $mysqli->query($consulta);
 
-		  echo "  <table width="615" border=1 cellpadding="3" cellspacing="0" >"; 
-		 echo "<tr><td><b>N° Reserva</b></td>"; 
-		 echo "<td><b>Nombre Pasajero</b></td>"; 
-		 echo "<td><b>DNI</b></td>"; 
-		 echo "<td><b>Mail de usuario</b></td>"; 
-		 echo "<td><b>Destino</b></td>"; 
-		 echo "<td><b>Fecha</b></td>"; 
-		 echo "<td><b>Fecha2</b></td>"; 
-		echo "</tr>  "; 
+	 
 		 //echo "<table border='2' style='background-color:#FFFFFF;border-collapse:separate;border:2px solid #6699FF;color:#000000'>";
 		 //echo "<tr style='background-color:#4CAF50;color:white'>";
 		 //echo "<th>N° reserva</th><th>Nombre Pasajaero</th><th>DNI</th>"; 
