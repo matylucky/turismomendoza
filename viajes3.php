@@ -179,7 +179,7 @@ include 'conexion.php';
 <div id=”listado2” name="listado2">
 	  <div class="jumbotron">
             
-       <font color="blue"> <b> <?php include('reservaes.php');?></b></font>
+       <font color="blue"> <b> <?php include('repoviajes.php');?></b></font>
          
         </div>
 </div>	
