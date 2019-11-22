@@ -169,9 +169,15 @@ include 'conexion.php';
 	 </select>
 </td>
 <!--<td>
-	 <select name="cliente" id="cliente"> //modelo
-	 <option>Seleccionar</option>
-	 </select>
+  <div class="form-group">	
+	 <form action="a.php">
+			 <select name="cliente" id="cliente"> //modelo
+			 <option>Seleccionar</option>
+			 </select>
+	    </form>
+
+	</div>
+				   
 </td>-->
 </tr>
 </table>
