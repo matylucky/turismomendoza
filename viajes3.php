@@ -64,10 +64,10 @@ include 'conexion.php';
 			//alert("se ha seleccionado");
 			$("#fecha option:selected").each(function () {
 			fecha = $(this).val(); // Tomo el valor seleccionado
-			destino = $("#destino").val();	
+			//destino = $("#destino").val();	
 			//alert ("se ha elegido "+ destin);
 			 //envio a una pagina que hara la consulta sql y me devolvera los datos para poner en el select
-			 $.post("repoviajes.php", { fecha: fecha }, { destino: destino }, function(data){
+			 $.post("repoviajes.php", { fecha: fecha }, function(data){
 					 $("#listado").html(data); // Tomo el resultado e inserto los datos en el select marca	
 				 });																
 				
