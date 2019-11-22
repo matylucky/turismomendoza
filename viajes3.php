@@ -179,5 +179,105 @@ include 'conexion.php';
 <div id="listado2" name="listado2">
 	</div>
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<?php
+	
+include 'conexion.php';
+ $cn = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+$sql = "SELECT * FROM $tbl_name2";
+$rs = mysqli_query($sql,$cn);
+	
+$var="";
+$var1="";
+$var2="";
+$var3="";
+$var4="";
+$var5="";
+if(isset($_POST["btn1"])){
+	$btn=$_POST["btn1"];
+	$bus=$_POST["txtbus"];
+	if($btn=="Buscar"){
+ 
+$sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIENTE
+		$cs=mysqli_query($sql,$cn);
+		while($resul=mysqli_fetch_array($cs)){
+			$var=$resul[6];
+			$var1=$resul[4];
+			$var2=$resul[3];
+			$var6=$resul[5];
+			$var3=$resul[1];
+			$var4=$resul[0];
+			$var5=$resul[2];
+			}
+ 
+		}
+ 
+	}
+ 
+?>
+<!--FIN DE CODIGO PHP PRINCIPAL-->
+<form name="fe" id="f1" action="" method="post">
+<center>
+<table width="391" border="2" bgcolor="#99CCFF">
+<tr>
+<td width="379"><div align="center"><strong>CONSULTA POR FECHA</strong></div></td>
+</tr></table>
+ 
+<table width="390" border="2">
+  <tr>
+    <td width="206" class="Estilo4">Fecha</td>
+    <td width="99"><select name="txtbus" id="txtbus" >
+      <option value="">Seleccione</option>
+      <?php if(mysqli_num_rows($rs)>0)
+{
+while($row = mysqli_fetch_assoc($rs))
+{
+?>
+      <option value="<?=$row["PAQ_FECHA2"]?>">//CONSULTA LA FECHA DE RESERVA
+        <?=$row["PAQ_FECHA2"]?>
+        </option>
+      <?php
+}
+}
+?>
+    </select></td>
+    <td width="61"><input type="submit" name="btn1"  value="Buscar" onClick="asdf(3)" /></td>
+  </tr>
+</table>
+</center>
+<br />
+<hr>
+</form>
+<?php
+echo "<tr>
+<td>$var</td>
+<td>$var1</td>
+<td>$var2</td>
+<td>$var3</td>
+<td>$var4</td>
+<td>$var5</td>
+<td>$var6</td>
+</tr>";
+ 
+?>
+	
+	
 </body> 
 </html>
