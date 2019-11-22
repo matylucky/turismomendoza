@@ -177,6 +177,11 @@ include 'conexion.php';
 </table>
 
 <div id=”listado2” name="listado2">
+	  <div class="jumbotron">
+            
+       <font color="blue"> <b> <?php include('reservaes.php');?></b></font>
+         
+        </div>
 </div>	
 	
 <div id=”listado”>
