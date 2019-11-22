@@ -1,7 +1,9 @@
 <?php
-include("conexion.php");//CONEXION A LA BASE DE DATOS
-$sql = "SELECT * from reserva2 ";*//ABRI LA TABLA CLIENTE 
-$rs = mysql_query($sql, $cn);
+//include("conexion.php");//CONEXION A LA BASE DE DATOS
+//$sql = "SELECT * from reserva2 ";*//ABRI LA TABLA CLIENTE 
+$mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+$sql = $mysqli -> query ("SELECT * FROM reserva2");
+$rs = mysqli_query($sql, $cn);
 ?>
  
 <!DOCTYPE html>
@@ -24,8 +26,8 @@ if(isset($_POST["btn1"])){
 	if($btn=="Buscar"){
  
 $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIENTE
-		$cs=mysql_query($sql,$cn);
-		while($resul=mysql_fetch_array($cs)){
+		$cs=mysqli_query($sql,$cn);
+		while($resul=mysqli_fetch_array($cs)){
 			$var=$resul[6];
 			$var1=$resul[4];
 			$var2=$resul[3];
@@ -53,9 +55,9 @@ $sql="SELECT * FROM reserva2 WHERE PAQ_FECHA2 = '$bus'";//CONSULTA LA TABLA CLIE
     <td width="206" class="Estilo4">Fecha</td>
     <td width="99"><select name="txtbus" id="txtbus" >
       <option value="">Seleccione</option>
-      <? if(mysql_num_rows($rs)>0)
+      <? if(mysqli_num_rows($rs)>0)
 {
-while($row = mysql_fetch_assoc($rs))
+while($row = mysqli_fetch_assoc($rs))
 {
 ?>
       <option value="<?=$row["PAQ_FECHA2"]?>">//CONSULTA LA FECHA DE RESERVA
