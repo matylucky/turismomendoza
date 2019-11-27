@@ -138,9 +138,10 @@ exit;
 	
 	
   <div id="demo2" class="collapse">
-    <div class="container">		
+    <div class="container">	
+	    <div class="jumbotron">
 	<form class="form-horizontal" action="modestado-destino.php" method="post">
-	<div class="jumbotron">
+	
 		<div class="w3-container w3-teal">
 		  <h2>Habilitar destino</h2>	
 		</div>         
