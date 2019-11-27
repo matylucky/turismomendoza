@@ -145,7 +145,7 @@ exit;
 		<div class="w3-container w3-teal">
 		  <h2>Habilitar destino</h2>	
 		</div>         
-			<select class="form-control" id="des" name="des">
+			<select class="form-control" id="hab" name="hab">
 				<option>Seleccionar...</option>
 
 					    <?php
