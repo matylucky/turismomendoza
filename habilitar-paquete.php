@@ -6,7 +6,9 @@ include 'conexion.php';
  die("La conexion falló: " . $conexion->connect_error);
 }
  
-$query = "INSERT INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
+//$query = "INSERT INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
+$query = "UPDATE $tbl_paquetes SET PAQ_ESTADO='1' WHERE PAQ_ESTADO='0'";
+
  if ($conexion->query($query) === TRUE) {
  
  echo "<h3>" . "Se realizo la habilitación del paquete: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
