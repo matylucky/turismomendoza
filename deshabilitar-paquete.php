@@ -7,7 +7,7 @@ include 'conexion.php';
 }
  
 //$query = "INSERT INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
-$query = "UPDATE $tbl_paquetes SET PAQ_ESTADO='1' WHERE PAQ_ID='$_POST[nohabilita]'";
+$query = "UPDATE $tbl_paquetes SET PAQ_ESTADO='0' WHERE PAQ_ID='$_POST[nohabilita]'";
  if ($conexion->query($query) === TRUE) {
  
  echo "<h3>" . "Se realizo la deshabilitación del paquete: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
