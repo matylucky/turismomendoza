@@ -165,6 +165,11 @@ exit;
         </div>
 </div>
 						     
+<div class="w3-container w3-teal">
+  <h2>Habilitación de Paquetes</h2>	
+</div>  
+
+   <form class="form-horizontal" action="habilitar-paquete.php" method="post">
 
 	 <select class="form-control" id="habilita" name="habilita">
 	            <option>Seleccionar...</option>
@@ -174,12 +179,21 @@ exit;
                     $query = $mysqli -> query ("SELECT * FROM paquetes");
                     while ($valores = mysqli_fetch_array($query)) {
 			if($valores[PAQ_ESTADO] == 0 ){
-		    		echo '<option value="'.$valores[PAQ_ID].'">'.$valores[DES_ID].'</option>';
+		    		echo '<option value="'.$valores[PAQ_ID].'">'.$valores[DES_ID].',"",'.$valores[PAQ_FECHA].'</option>';
 		    	}
 		 
           }
         ?>
-    </select> 						     
+    </select> 		
+	   
+	       <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Habilitar destino</button>
+        </div>
+    </div>	
+	  
+
+</form>
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
 
