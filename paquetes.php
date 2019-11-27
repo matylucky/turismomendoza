@@ -198,6 +198,39 @@ exit;
 </div> 
 
 </form>
+	
+		    
+  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Deshabilitar paquete</a>
+  <div id="demo2" class="collapse">
+    <div class="container">						     
+<div class="w3-container w3-teal">
+  <h2>Deshabilitación de Paquetes</h2>	
+</div>  
+
+   <form class="form-horizontal" action="deshabilitar-paquete.php" method="post">
+
+	 <select class="form-control" id="nohabilita" name="nohabilita">
+	            <option>Seleccionar...</option>
+
+	            <?php
+                    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+                    $query = $mysqli -> query ("SELECT * FROM paquetes");
+                    while ($valores = mysqli_fetch_array($query)) {
+			if($valores[PAQ_ESTADO] == 1 ){
+		    		echo '<option value="'.$valores[PAQ_ID].'">'.$valores[DES_ID].',"",'.$valores[PAQ_FECHA].'</option>';
+		    	}
+		 
+          }
+        ?>
+    </select> 		
+	   
+	       <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Deshabilitar destino</button>
+        </div>
+    </div>	
+	   </div> 
+</div> 
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
 
