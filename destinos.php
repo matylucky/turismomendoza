@@ -142,7 +142,7 @@ exit;
 
 					    <?php
 				     $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
-				  $query = $mysqli -> query ("SELECT DES_NOMBRE FROM destinos");
+				  $query = $mysqli -> query ("SELECT * FROM destinos");
 				  while ($valores = mysqli_fetch_array($query)) {
 				   if($valores[DES_ESTADO] != 1 ){
 				    echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
