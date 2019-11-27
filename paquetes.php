@@ -153,6 +153,21 @@ exit;
 	  
 
 </form>	 
+	
+	 <select class="form-control" id="habilita" name="habilita">
+	            <option>Seleccionar...</option>
+
+	            <?php
+                    $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+                    $query = $mysqli -> query ("SELECT * FROM paquetes");
+                    while ($valores = mysqli_fetch_array($query)) {
+			if($valores[PAQ_ESTADO] == 0 ){
+		    		echo '<option value="'.$valores[PAQ_ID].'">'.$valores[DES_ID]+$valores[PAQ_FECHA].'</option>';
+		    	}
+		 
+          }
+        ?>
+    </select> 
 
 <div class="container" id=gral>
         <div class="jumbotron">
