@@ -162,7 +162,8 @@ exit;
 		</div>
 		</div>	 
 	</div>	 
-    
+    </form>
+
  <div id="demo" class="collapse">
     <div class="container">		
 	<div class="jumbotron">
@@ -188,6 +189,7 @@ exit;
         </div>
 	</div>	 
 </div>						     
+</form>
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
 
