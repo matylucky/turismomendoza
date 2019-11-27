@@ -6,7 +6,7 @@ include 'conexion.php';
  die("La conexion falló: " . $conexion->connect_error);
 }
  
-$query = "UPDATE INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
+$query = "UPDATE INTO $tbl_paquetes (PAQ_ESTADO) VALUES ("1")";
  if ($conexion->query($query) === TRUE) {
  
  echo "<h3>" . "Se realizo la habilitación del paquete: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
@@ -14,7 +14,7 @@ $query = "UPDATE INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
  
  }
  else {
- echo "Error al crear un movil." . $query . "<br>" . $conexion->error; 
+ echo "Error al crear una habiltiación." . $query . "<br>" . $conexion->error; 
    }
  mysqli_close($conexion);
 ?>
