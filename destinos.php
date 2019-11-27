@@ -134,7 +134,7 @@ exit;
 <div class="container" id=mod>
 	  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Habilitar paquete</a>
   <a href="#demo" class="btn btn-info" data-toggle="collapse">Deshabilitar paquete</a>
-	
+</div>		
 	
 	
   <div id="demo2" class="collapse">
@@ -159,9 +159,10 @@ exit;
 				?>
 			</select> 
 		<button type="submit" class="btn btn-default" >Habilitar</button>
-        </div>
+		</div>
+		</div>	 
 	</div>	 
-	    
+    
  <div id="demo" class="collapse">
     <div class="container">		
 	<form class="form-horizontal" action="modestado-destino3.php" method="post">
