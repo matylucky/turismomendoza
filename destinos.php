@@ -142,7 +142,7 @@ exit;
 	<form class="form-horizontal" action="modestado-destino.php" method="post">
 	<div class="jumbotron">
 		<div class="w3-container w3-teal">
-		  <h2>Habilitar de destino</h2>	
+		  <h2>Habilitar destino</h2>	
 		</div>         
 			<select class="form-control" id="des" name="des">
 				<option>Seleccionar...</option>
@@ -158,6 +158,30 @@ exit;
 				?>
 			</select> 
 		<button type="submit" class="btn btn-default" >Habilitar</button>
+        </div>
+	</div>	 
+	    
+ <div id="demo" class="collapse">
+    <div class="container">		
+	<form class="form-horizontal" action="modestado-destino3.php" method="post">
+	<div class="jumbotron">
+		<div class="w3-container w3-teal">
+		  <h2>Deshabilitar destino</h2>	
+		</div>         
+			<select class="form-control" id="des" name="des">
+				<option>Seleccionar...</option>
+
+					    <?php
+				     $mysqli = new mysqli("us-cdbr-iron-east-02.cleardb.net", "bdaacf63d00d60", "c1969fe7872181d", "heroku_06e2145fb0a0577");
+				  $query = $mysqli -> query ("SELECT * FROM destinos");
+				  while ($valores = mysqli_fetch_array($query)) {
+				   if($valores[DES_ESTADO] == 1 ){
+				    echo '<option value="'.$valores[DES_NOMBRE].'">'.$valores[DES_NOMBRE].'</option>';
+				   }
+				  }
+				?>
+			</select> 
+		<button type="submit" class="btn btn-default" >Deshabilitar</button>
         </div>
 	</div>	 
 </div>						     
