@@ -10,8 +10,8 @@ include 'conexion.php';
 $query = "UPDATE $tbl_destinos  SET DES_ESTADO='1' WHERE DES_NOMBRE='$_POST[des]'";
  if ($conexion->query($query) === TRUE) {
  
- echo "<h3>" . "Se realizo la deshabilitación del paquete: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
- echo "<h3>" .  "<a href='paquetes.php'>Inicio</a>" . "</h3>"; 
+ echo "<h3>" . "Se realizo la habilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
+ echo "<h3>" .  "<a href='destinos.php'>Inicio</a>" . "</h3>"; 
  
  }
  else {
