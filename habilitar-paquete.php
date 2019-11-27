@@ -7,7 +7,7 @@ include 'conexion.php';
 }
  
 //$query = "INSERT INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
-$query = "UPDATE $tbl_paquetes SET PAQ_ESTADO='1' WHERE PAQ_ESTADO='0'";
+$query = "UPDATE $tbl_paquetes SET PAQ_ESTADO='1' WHERE DES_ID='$_POST[DES_ID]'";
 
  if ($conexion->query($query) === TRUE) {
  
