@@ -164,7 +164,10 @@ exit;
          
         </div>
 </div>
-						     
+	    
+  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Habilitar paquete</a>
+  <div id="demo2" class="collapse">
+    <div class="container">						     
 <div class="w3-container w3-teal">
   <h2>Habilitación de Paquetes</h2>	
 </div>  
@@ -191,7 +194,8 @@ exit;
         <button type="submit" class="btn btn-default">Habilitar destino</button>
         </div>
     </div>	
-	  
+	   </div> 
+</div> 
 
 </form>
 						     
