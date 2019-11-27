@@ -7,7 +7,7 @@ include 'conexion.php';
 }
  
 //$query = "INSERT INTO $tbl_paquetes (PAQ_ESTADO) VALUES (1)";
-$query = "UPDATE $tbl_destinos  SET DES_ESTADO='1' WHERE DES_NOMBRE='$_POST[des]'";
+$query = "UPDATE $tbl_destinos  SET DES_ESTADO='1' WHERE DES_NOMBRE='$_POST[hab]'";
  if ($conexion->query($query) === TRUE) {
  
  echo "<h3>" . "Se realizo la habilitación del destino: " . $_SESSION['usuario'] . "</h3>" . "\n\n";
