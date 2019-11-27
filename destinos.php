@@ -132,6 +132,13 @@ exit;
 </div>
 						     
 <div class="container" id=mod>
+	  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Habilitar paquete</a>
+  <a href="#demo" class="btn btn-info" data-toggle="collapse">Deshabilitar paquete</a>
+	
+	
+	
+  <div id="demo2" class="collapse">
+    <div class="container">		
 	<form class="form-horizontal" action="modestado-destino.php" method="post">
 	<div class="jumbotron">
 		<div class="w3-container w3-teal">
@@ -152,7 +159,7 @@ exit;
 			</select> 
 		<button type="submit" class="btn btn-default" >Habilitar</button>
         </div>
-		 
+	</div>	 
 </div>						     
 						     
 <!--	<a href="reporte-movil.php" class="btn btn-info btn-lg" role="button">Reporte de buses</a>-->
